@@ -2,9 +2,10 @@
   "name": "era-discord-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "era.js",
+  "main": "src/bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
