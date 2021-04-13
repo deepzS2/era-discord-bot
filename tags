@@ -4,6 +4,18 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+isTypedArray	node_modules/is-typedarray/index.js	/^function isTypedArray(arr) {$/;"	f
+isStrictTypedArray	node_modules/is-typedarray/index.js	/^function isStrictTypedArray(arr) {$/;"	f
+isLooseTypedArray	node_modules/is-typedarray/index.js	/^function isLooseTypedArray(arr) {$/;"	f
+redis	node_modules/keyv/src/index.js	/^		redis: '@keyv\/redis',$/;"	p	class:const
+mongodb	node_modules/keyv/src/index.js	/^		mongodb: '@keyv\/mongo',$/;"	p	class:const
+mongo	node_modules/keyv/src/index.js	/^		mongo: '@keyv\/mongo',$/;"	p	class:const
+sqlite	node_modules/keyv/src/index.js	/^		sqlite: '@keyv\/sqlite',$/;"	p	class:const
+postgresql	node_modules/keyv/src/index.js	/^		postgresql: '@keyv\/postgres',$/;"	p	class:const
+postgres	node_modules/keyv/src/index.js	/^		postgres: '@keyv\/postgres',$/;"	p	class:const
+mysql	node_modules/keyv/src/index.js	/^		mysql: '@keyv\/mysql'$/;"	p	class:const
+module.exports	node_modules/emoji-regex/text.js	/^module.exports = function () {$/;"	f
+module.exports	node_modules/emoji-regex/index.js	/^module.exports = function () {$/;"	f
 Stream	node_modules/delayed-stream/lib/delayed_stream.js	/^var Stream = require('stream').Stream;$/;"	v
 util	node_modules/delayed-stream/lib/delayed_stream.js	/^var util = require('util');$/;"	v
 DelayedStream	node_modules/delayed-stream/lib/delayed_stream.js	/^function DelayedStream() {$/;"	c
@@ -17,6 +29,16 @@ pipe	node_modules/delayed-stream/lib/delayed_stream.js	/^DelayedStream.prototype
 _handleEmit	node_modules/delayed-stream/lib/delayed_stream.js	/^DelayedStream.prototype._handleEmit = function(args) {$/;"	m	class:DelayedStream
 _checkIfMaxDataSizeExceeded	node_modules/delayed-stream/lib/delayed_stream.js	/^DelayedStream.prototype._checkIfMaxDataSizeExceeded = function() {$/;"	m	class:DelayedStream
 SHELL	node_modules/delayed-stream/Makefile	/^SHELL := \/bin\/bash$/;"	m
+nopt	node_modules/nopt/lib/nopt.js	/^function nopt (types, shorthands, args, slice) {$/;"	f
+data.argv.toString	node_modules/nopt/lib/nopt.js	/^  data.argv.toString = function () {$/;"	f
+validateBoolean	node_modules/nopt/lib/nopt.js	/^function validateBoolean (data, k, val) {$/;"	f	function:validateDate
+validateDate	node_modules/nopt/lib/nopt.js	/^function validateDate (data, k, val) {$/;"	f	function:validateNumber
+validateStream	node_modules/nopt/lib/nopt.js	/^function validateStream (data, k, val) {$/;"	f	function:validateUrl
+validate	node_modules/nopt/lib/nopt.js	/^function validate (data, k, val, type, typeDefs) {$/;"	f	function:validateUrl
+aoa	node_modules/nopt/lib/nopt.js	/^    { aoa: Array$/;"	p
+nullstream	node_modules/nopt/lib/nopt.js	/^    , nullstream: [null, Stream]$/;"	p
+foofoo	node_modules/nopt/examples/my-program.js	/^  , shortHands = { "foofoo" : ["--foo", "Mr. Foo"]$/;"	p
+s	node_modules/nopt/bin/nopt.js	/^  , shorthands = { s: [ "--str", "astring" ]$/;"	p
 deflateOnData	node_modules/ws/lib/permessage-deflate.js	/^function deflateOnData(chunk) {$/;"	c
 inflateOnData	node_modules/ws/lib/permessage-deflate.js	/^function inflateOnData(chunk) {$/;"	c
 inflateOnError	node_modules/ws/lib/permessage-deflate.js	/^function inflateOnError(err) {$/;"	c
@@ -112,6 +134,166 @@ method	node_modules/@discordjs/form-data/lib/form_data.js	/^    , defaults = {me
 _error	node_modules/@discordjs/form-data/lib/form_data.js	/^FormData.prototype._error = function(err) {$/;"	m	class:FormData
 toString	node_modules/@discordjs/form-data/lib/form_data.js	/^FormData.prototype.toString = function () {$/;"	m	class:FormData
 module.exports	node_modules/@discordjs/form-data/lib/populate.js	/^module.exports = function(dst, src) {$/;"	f
+concatMap	node_modules/concat-map/example/map.js	/^var concatMap = require('..\/');$/;"	v
+xs	node_modules/concat-map/example/map.js	/^var xs = [ 1, 2, 3, 4, 5, 6 ];$/;"	v
+ys	node_modules/concat-map/example/map.js	/^var ys = concatMap(xs, function (x) {$/;"	v
+concatMap	node_modules/concat-map/test/map.js	/^var concatMap = require('..\/');$/;"	v
+test	node_modules/concat-map/test/map.js	/^var test = require('tape');$/;"	v
+module.exports	node_modules/concat-map/index.js	/^module.exports = function (xs, fn) {$/;"	f
+return	node_modules/concat-map/index.js	/^    return Object.prototype.toString.call(xs) === '[object Array]';$/;"	c
+toString	node_modules/concat-map/index.js	/^    return Object.prototype.toString.call(xs) === '[object Array]';$/;"	m	class:return
+isGlob	node_modules/glob-parent/index.js	/^var isGlob = require('is-glob');$/;"	v
+pathPosixDirname	node_modules/glob-parent/index.js	/^var pathPosixDirname = require('path').posix.dirname;$/;"	v
+isWin32	node_modules/glob-parent/index.js	/^var isWin32 = require('os').platform() === 'win32';$/;"	v
+slash	node_modules/glob-parent/index.js	/^var slash = '\/';$/;"	v
+backslash	node_modules/glob-parent/index.js	/^var backslash = \/\\\\\/g;$/;"	v
+module.exports	node_modules/glob-parent/index.js	/^module.exports = function globParent(str, opts) {$/;"	f
+globParent	node_modules/glob-parent/index.js	/^module.exports = function globParent(str, opts) {$/;"	f
+get	node_modules/import-lazy/index.js	/^			get: (target, property) => {$/;"	p	class:const
+negatives	node_modules/fill-range/index.js	/^  let parts = { negatives: [], positives: [] };$/;"	p	class:let
+module.exports	node_modules/is-number/index.js	/^module.exports = function(num) {$/;"	f
+value	node_modules/picomatch/lib/scan.js	/^  let token = { value: '', depth: 0, isGlob: false };$/;"	p	class:let
+depth	node_modules/picomatch/lib/scan.js	/^  let token = { value: '', depth: 0, isGlob: false };$/;"	p	class:let
+isGlob	node_modules/picomatch/lib/scan.js	/^  let token = { value: '', depth: 0, isGlob: false };$/;"	p	class:let
+value	node_modules/picomatch/lib/scan.js	/^      token = { value: '', depth: 0, isGlob: false };$/;"	p	class:token
+depth	node_modules/picomatch/lib/scan.js	/^      token = { value: '', depth: 0, isGlob: false };$/;"	p	class:token
+isGlob	node_modules/picomatch/lib/scan.js	/^      token = { value: '', depth: 0, isGlob: false };$/;"	p	class:token
+alnum	node_modules/picomatch/lib/constants.js	/^  alnum: 'a-zA-Z0-9',$/;"	p	class:const
+alpha	node_modules/picomatch/lib/constants.js	/^  alpha: 'a-zA-Z',$/;"	p	class:const
+ascii	node_modules/picomatch/lib/constants.js	/^  ascii: '\\\\x00-\\\\x7F',$/;"	p	class:const
+blank	node_modules/picomatch/lib/constants.js	/^  blank: ' \\\\t',$/;"	p	class:const
+cntrl	node_modules/picomatch/lib/constants.js	/^  cntrl: '\\\\x00-\\\\x1F\\\\x7F',$/;"	p	class:const
+digit	node_modules/picomatch/lib/constants.js	/^  digit: '0-9',$/;"	p	class:const
+graph	node_modules/picomatch/lib/constants.js	/^  graph: '\\\\x21-\\\\x7E',$/;"	p	class:const
+lower	node_modules/picomatch/lib/constants.js	/^  lower: 'a-z',$/;"	p	class:const
+print	node_modules/picomatch/lib/constants.js	/^  print: '\\\\x20-\\\\x7E ',$/;"	p	class:const
+punct	node_modules/picomatch/lib/constants.js	/^  punct: '\\\\-!"#$%&\\'()\\\\*+,.\/:;<=>?@[\\\\]^_`{|}~',$/;"	p	class:const
+space	node_modules/picomatch/lib/constants.js	/^  space: ' \\\\t\\\\r\\\\n\\\\v\\\\f',$/;"	p	class:const
+upper	node_modules/picomatch/lib/constants.js	/^  upper: 'A-Z',$/;"	p	class:const
+word	node_modules/picomatch/lib/constants.js	/^  word: 'A-Za-z0-9_',$/;"	p	class:const
+xdigit	node_modules/picomatch/lib/constants.js	/^  xdigit: 'A-Fa-f0-9'$/;"	p	class:const
+MAX_LENGTH	node_modules/picomatch/lib/constants.js	/^  MAX_LENGTH: 1024 * 64,$/;"	p	class:module.exports
+type	node_modules/picomatch/lib/parse.js	/^  const bos = { type: 'bos', value: '', output: opts.prepend || '' };$/;"	p	class:const
+value	node_modules/picomatch/lib/parse.js	/^  const bos = { type: 'bos', value: '', output: opts.prepend || '' };$/;"	p	class:const
+output	node_modules/picomatch/lib/parse.js	/^  const bos = { type: 'bos', value: '', output: opts.prepend || '' };$/;"	p	class:const
+index	node_modules/picomatch/lib/parse.js	/^    index: -1,$/;"	p	class:const
+negated	node_modules/picomatch/lib/picomatch.js	/^  let parsed = { negated: false, fastpaths: true };$/;"	p	class:let
+fastpaths	node_modules/picomatch/lib/picomatch.js	/^  let parsed = { negated: false, fastpaths: true };$/;"	p	class:let
+is	node_modules/@sindresorhus/is/dist/index.js	/^function is(value) {$/;"	f
+selectColor	node_modules/debug/src/common.js	/^  function selectColor(namespace) {$/;"	f	function:setup
+debug	node_modules/debug/src/common.js	/^    function debug() {$/;"	f	function:setup.createDebug
+createDebug	node_modules/debug/src/common.js	/^  function createDebug(namespace) {$/;"	f	function:setup
+destroy	node_modules/debug/src/common.js	/^  function destroy() {$/;"	f	function:setup
+extend	node_modules/debug/src/common.js	/^  function extend(namespace, delimiter) {$/;"	f	function:setup
+enable	node_modules/debug/src/common.js	/^  function enable(namespaces) {$/;"	f	function:setup
+disable	node_modules/debug/src/common.js	/^  function disable() {$/;"	f	function:setup
+enabled	node_modules/debug/src/common.js	/^  function enabled(name) {$/;"	f	function:setup
+coerce	node_modules/debug/src/common.js	/^  function coerce(val) {$/;"	f	function:setup
+setup	node_modules/debug/src/common.js	/^function setup(env) {$/;"	f
+_typeof	node_modules/debug/src/browser.js	/^function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }$/;"	f
+useColors	node_modules/debug/src/browser.js	/^function useColors() {$/;"	f
+formatArgs	node_modules/debug/src/browser.js	/^function formatArgs(args) {$/;"	f
+log	node_modules/debug/src/browser.js	/^function log() {$/;"	f
+save	node_modules/debug/src/browser.js	/^function save(namespaces) {$/;"	f
+load	node_modules/debug/src/browser.js	/^function load() {$/;"	f
+localstorage	node_modules/debug/src/browser.js	/^function localstorage() {$/;"	f
+formatters	node_modules/debug/src/browser.js	/^var formatters = module.exports.formatters;$/;"	v
+formatters.j	node_modules/debug/src/browser.js	/^formatters.j = function (v) {$/;"	f
+tty	node_modules/debug/src/node.js	/^var tty = require('tty');$/;"	v
+util	node_modules/debug/src/node.js	/^var util = require('util');$/;"	v
+useColors	node_modules/debug/src/node.js	/^function useColors() {$/;"	f
+formatArgs	node_modules/debug/src/node.js	/^function formatArgs(args) {$/;"	f
+getDate	node_modules/debug/src/node.js	/^function getDate() {$/;"	f
+log	node_modules/debug/src/node.js	/^function log() {$/;"	f
+save	node_modules/debug/src/node.js	/^function save(namespaces) {$/;"	f
+load	node_modules/debug/src/node.js	/^function load() {$/;"	f
+init	node_modules/debug/src/node.js	/^function init(debug) {$/;"	f
+formatters	node_modules/debug/src/node.js	/^var formatters = module.exports.formatters;$/;"	v
+formatters.o	node_modules/debug/src/node.js	/^formatters.o = function (v) {$/;"	c
+formatters.O	node_modules/debug/src/node.js	/^formatters.O = function (v) {$/;"	c
+a	node_modules/touch/bin/nodetouch.js	/^  a: 'atime',$/;"	p	class:const
+m	node_modules/touch/bin/nodetouch.js	/^  m: 'mtime',$/;"	p	class:const
+c	node_modules/touch/bin/nodetouch.js	/^  c: 'nocreate',$/;"	p	class:const
+f	node_modules/touch/bin/nodetouch.js	/^  f: 'force'$/;"	p	class:const
+r	node_modules/touch/bin/nodetouch.js	/^  r: 'ref',$/;"	p	class:const
+t	node_modules/touch/bin/nodetouch.js	/^  t: 'time'$/;"	p	class:const
+module.exports	node_modules/lowercase-keys/index.js	/^module.exports = function (obj) {$/;"	f
+stdout	node_modules/supports-color/browser.js	/^	stdout: false,$/;"	p	class:module.exports
+stderr	node_modules/supports-color/browser.js	/^	stderr: false$/;"	p	class:module.exports
+translateLevel	node_modules/supports-color/index.js	/^function translateLevel(level) {$/;"	f
+supportsColor	node_modules/supports-color/index.js	/^function supportsColor(stream) {$/;"	f
+getSupportLevel	node_modules/supports-color/index.js	/^function getSupportLevel(stream) {$/;"	f
+supportsColor	node_modules/supports-color/index.js	/^	supportsColor: getSupportLevel,$/;"	p	class:module.exports
+stdout	node_modules/supports-color/index.js	/^	stdout: getSupportLevel(process.stdout),$/;"	p	class:module.exports
+getStream	node_modules/get-stream/index.js	/^function getStream(inputStream, options) {$/;"	f
+module.exports	node_modules/normalize-path/index.js	/^module.exports = function(path, stripTrailing) {$/;"	f
+section	node_modules/ini/ini.js	/^      section: opt,$/;"	p	class:var.opt
+whitespace	node_modules/ini/ini.js	/^      whitespace: false,$/;"	p	class:var.opt
+dotSplit	node_modules/ini/ini.js	/^function dotSplit (str) {$/;"	f	function:function
+isQuoted	node_modules/ini/ini.js	/^function isQuoted (val) {$/;"	f	function:function.decode
+safe	node_modules/ini/ini.js	/^function safe (val) {$/;"	f	function:function.decode
+unsafe	node_modules/ini/ini.js	/^function unsafe (val, doUnesc) {$/;"	f	function:function.decode
+once	node_modules/end-of-stream/index.js	/^var once = require('once');$/;"	v
+noop	node_modules/end-of-stream/index.js	/^var noop = function() {};$/;"	f
+isRequest	node_modules/end-of-stream/index.js	/^var isRequest = function(stream) {$/;"	f
+onlegacyfinish	node_modules/end-of-stream/index.js	/^	var onlegacyfinish = function() {$/;"	f	function:eos
+onfinish	node_modules/end-of-stream/index.js	/^	var onfinish = function() {$/;"	f	function:eos
+onend	node_modules/end-of-stream/index.js	/^	var onend = function() {$/;"	f	function:eos
+onexit	node_modules/end-of-stream/index.js	/^	var onexit = function(exitCode) {$/;"	f	function:eos
+onerror	node_modules/end-of-stream/index.js	/^	var onerror = function(err) {$/;"	f	function:eos
+onclose	node_modules/end-of-stream/index.js	/^	var onclose = function() {$/;"	f	function:eos
+onclosenexttick	node_modules/end-of-stream/index.js	/^	var onclosenexttick = function() {$/;"	f	function:eos
+onrequest	node_modules/end-of-stream/index.js	/^	var onrequest = function() {$/;"	f	function:eos
+eos	node_modules/end-of-stream/index.js	/^var eos = function(stream, opts, callback) {$/;"	f	function:isChildProcess
+isChildProcess	node_modules/end-of-stream/index.js	/^var isChildProcess = function(stream) {$/;"	f
+stream	node_modules/duplexer3/index.js	/^var stream = require("stream");$/;"	v
+DuplexWrapper	node_modules/duplexer3/index.js	/^function DuplexWrapper(options, writable, readable) {$/;"	c
+_write	node_modules/duplexer3/index.js	/^DuplexWrapper.prototype._write = function _write(input, encoding, done) {$/;"	m	class:DuplexWrapper
+_read	node_modules/duplexer3/index.js	/^DuplexWrapper.prototype._read = function _read() {$/;"	m	class:DuplexWrapper
+module.exports	node_modules/duplexer3/index.js	/^module.exports = function duplex2(options, writable, readable) {$/;"	f
+duplex2	node_modules/duplexer3/index.js	/^module.exports = function duplex2(options, writable, readable) {$/;"	f
+f	node_modules/once/once.js	/^  var f = function () {$/;"	f	function:var
+f	node_modules/once/once.js	/^  var f = function () {$/;"	f	function:function.onceStrict
+relaxZeros	node_modules/to-regex-range/index.js	/^  let opts = { relaxZeros: true, ...options };$/;"	p	class:let
+collatePatterns	node_modules/to-regex-range/index.js	/^function collatePatterns(neg, pos, options) {$/;"	f
+splitToRanges	node_modules/to-regex-range/index.js	/^function splitToRanges(min, max) {$/;"	f
+rangeToPattern	node_modules/to-regex-range/index.js	/^function rangeToPattern(start, stop, options) {$/;"	f
+splitToPatterns	node_modules/to-regex-range/index.js	/^function splitToPatterns(min, max, tok, options) {$/;"	f
+filterPatterns	node_modules/to-regex-range/index.js	/^function filterPatterns(arr, comparison, prefix, intersection, options) {$/;"	f
+zip	node_modules/to-regex-range/index.js	/^function zip(a, b) {$/;"	f
+compare	node_modules/to-regex-range/index.js	/^function compare(a, b) {$/;"	f
+contains	node_modules/to-regex-range/index.js	/^function contains(arr, key, val) {$/;"	f
+countNines	node_modules/to-regex-range/index.js	/^function countNines(min, len) {$/;"	f
+countZeros	node_modules/to-regex-range/index.js	/^function countZeros(integer, zeros) {$/;"	f
+toQuantifier	node_modules/to-regex-range/index.js	/^function toQuantifier(digits) {$/;"	f
+toCharacterClass	node_modules/to-regex-range/index.js	/^function toCharacterClass(a, b, options) {$/;"	f
+hasPadding	node_modules/to-regex-range/index.js	/^function hasPadding(str) {$/;"	f
+padZeros	node_modules/to-regex-range/index.js	/^function padZeros(value, tok, options) {$/;"	f
+listeners	node_modules/chokidar/lib/fsevents-handler.js	/^      listeners: new Set([filteredListener]),$/;"	p	class:cont
+setFSEventsListener	node_modules/chokidar/lib/fsevents-handler.js	/^function setFSEventsListener(path, realPath, listener, rawEmitter) {$/;"	f
+dot	node_modules/chokidar/lib/constants.js	/^exports.ANYMATCH_OPTS = {dot: true};$/;"	p	class:exports.ANYMATCH_OPTS
+createFsWatchInstance	node_modules/chokidar/lib/nodefs-handler.js	/^function createFsWatchInstance(path, options, listener, errHandler, emitRaw) {$/;"	f
+listeners	node_modules/chokidar/lib/nodefs-handler.js	/^      listeners: listener,$/;"	p	class:cont
+errHandlers	node_modules/chokidar/lib/nodefs-handler.js	/^      errHandlers: errHandler,$/;"	p	class:cont
+rawEmitters	node_modules/chokidar/lib/nodefs-handler.js	/^      rawEmitters: rawEmitter,$/;"	p	class:cont
+listeners	node_modules/chokidar/lib/nodefs-handler.js	/^      listeners: listener,$/;"	p	class:cont
+rawEmitters	node_modules/chokidar/lib/nodefs-handler.js	/^      rawEmitters: rawEmitter,$/;"	p	class:cont
+watcher	node_modules/chokidar/lib/nodefs-handler.js	/^      watcher: fs.watchFile(fullPath, options, (curr, prev) => {$/;"	p	class:cont
+persistent	node_modules/chokidar/lib/nodefs-handler.js	/^  const options = {persistent: opts.persistent};$/;"	p	class:const
+count	node_modules/chokidar/index.js	/^  const thr = {timeoutObject, clear, count: 0};$/;"	p	class:const
+type	node_modules/chokidar/index.js	/^  const options = {type: EV_ALL, alwaysStat: true, lstat: true, ...opts};$/;"	p	class:const
+alwaysStat	node_modules/chokidar/index.js	/^  const options = {type: EV_ALL, alwaysStat: true, lstat: true, ...opts};$/;"	p	class:const
+lstat	node_modules/chokidar/index.js	/^  const options = {type: EV_ALL, alwaysStat: true, lstat: true, ...opts};$/;"	p	class:const
+request	node_modules/got/source/request-as-event-emitter.js	/^			fn = {request: options.request};$/;"	p	class:fn
+gotOptions	node_modules/got/source/request-as-event-emitter.js	/^					gotOptions: options$/;"	p	class:response.request
+got	node_modules/got/source/create.js	/^	function got(url, options) {$/;"	f	function:function
+request	node_modules/got/source/normalize-arguments.js	/^		options.gotTimeout = {request: options.timeout};$/;"	p	class:options.gotTimeout
+retries	node_modules/got/source/normalize-arguments.js	/^		retries: 0,$/;"	p	class:options.retry
+methods	node_modules/got/source/normalize-arguments.js	/^		methods: [],$/;"	p	class:options.retry
+options	node_modules/got/source/index.js	/^	options: {$/;"	p	class:const
+protocol	node_modules/got/source/utils/url-to-options.js	/^		protocol: url.protocol,$/;"	p	class:const
+module.exports	node_modules/got/source/utils/deep-freeze.js	/^module.exports = function deepFreeze(object) {$/;"	f
+deepFreeze	node_modules/got/source/utils/deep-freeze.js	/^module.exports = function deepFreeze(object) {$/;"	f
 state	node_modules/asynckit/lib/state.js	/^function state(list, sortMethod)$/;"	f
 async	node_modules/asynckit/lib/streamify.js	/^var async = require('.\/async.js');$/;"	v
 iterator	node_modules/asynckit/lib/streamify.js	/^  iterator: wrapIterator,$/;"	p	class:module.exports
@@ -161,6 +343,54 @@ serial	node_modules/asynckit/serial.js	/^function serial(list, iterator, callbac
 parallel	node_modules/asynckit/index.js	/^  parallel      : require('.\/parallel.js'),$/;"	p	class:module.exports
 extension	node_modules/mime-types/index.js	/^function extension (type) {$/;"	f	function:contentType
 lookup	node_modules/mime-types/index.js	/^function lookup (path) {$/;"	f	function:contentType
+section	node_modules/rc/node_modules/ini/ini.js	/^      section: opt,$/;"	p	class:var.opt
+whitespace	node_modules/rc/node_modules/ini/ini.js	/^      whitespace: false,$/;"	p	class:var.opt
+dotSplit	node_modules/rc/node_modules/ini/ini.js	/^function dotSplit (str) {$/;"	f	function:function
+isQuoted	node_modules/rc/node_modules/ini/ini.js	/^function isQuoted (val) {$/;"	f	function:function.decode
+safe	node_modules/rc/node_modules/ini/ini.js	/^function safe (val) {$/;"	f	function:function.decode
+unsafe	node_modules/rc/node_modules/ini/ini.js	/^function unsafe (val, doUnesc) {$/;"	f	function:function.decode
+module.exports	node_modules/rc/browser.js	/^module.exports = function (name, defaults) {$/;"	f
+seed	node_modules/rc/test/nested-env-vars.js	/^var seed = Math.random();$/;"	v
+n	node_modules/rc/test/nested-env-vars.js	/^var n = 'rc'+ seed;$/;"	v
+N	node_modules/rc/test/nested-env-vars.js	/^var N = 'RC'+ seed;$/;"	v
+n	node_modules/rc/test/test.js	/^var n = 'rc'+Math.random()$/;"	v
+commentedJSON	node_modules/rc/test/test.js	/^var commentedJSON = require('..\/')(n, {$/;"	v
+minimatch.defaults	node_modules/minimatch/minimatch.js	/^minimatch.defaults = function (def) {$/;"	f
+m.Minimatch	node_modules/minimatch/minimatch.js	/^  m.Minimatch = function Minimatch (pattern, options) {$/;"	f
+Minimatch	node_modules/minimatch/minimatch.js	/^  m.Minimatch = function Minimatch (pattern, options) {$/;"	f
+ext	node_modules/minimatch/minimatch.js	/^function ext (a, b) {$/;"	f
+Minimatch.defaults	node_modules/minimatch/minimatch.js	/^Minimatch.defaults = function (def) {$/;"	f
+minimatch	node_modules/minimatch/minimatch.js	/^function minimatch (p, pattern, options) {$/;"	f
+Minimatch	node_modules/minimatch/minimatch.js	/^Minimatch.prototype.debug = function () {}$/;"	c
+debug	node_modules/minimatch/minimatch.js	/^Minimatch.prototype.debug = function () {}$/;"	m	class:Minimatch
+make	node_modules/minimatch/minimatch.js	/^Minimatch.prototype.make = make$/;"	m	class:Minimatch
+Minimatch	node_modules/minimatch/minimatch.js	/^Minimatch.prototype.parseNegate = parseNegate$/;"	c	class:Minimatch
+minimatch.braceExpand	node_modules/minimatch/minimatch.js	/^minimatch.braceExpand = function (pattern, options) {$/;"	f	function:Minimatch.Minimatch
+minimatch.makeRe	node_modules/minimatch/minimatch.js	/^minimatch.makeRe = function (pattern, options) {$/;"	f
+makeRe	node_modules/minimatch/minimatch.js	/^Minimatch.prototype.makeRe = makeRe$/;"	m	class:Minimatch
+minimatch	node_modules/minimatch/minimatch.js	/^minimatch.match = function (list, pattern, options) {$/;"	m	class:Minimatch.var
+Minimatch	node_modules/minimatch/minimatch.js	/^Minimatch.prototype.match = match$/;"	c	class:Minimatch.var
+globUnescape	node_modules/minimatch/minimatch.js	/^function globUnescape (s) {$/;"	f	function:function
+regExpEscape	node_modules/minimatch/minimatch.js	/^function regExpEscape (s) {$/;"	f	function:function
+use strict.directories	node_modules/ignore-by-default/index.js	/^'use strict'$/;"	f
+concatMap	node_modules/brace-expansion/index.js	/^var concatMap = require('concat-map');$/;"	v
+balanced	node_modules/brace-expansion/index.js	/^var balanced = require('balanced-match');$/;"	v
+escSlash	node_modules/brace-expansion/index.js	/^var escSlash = '\\0SLASH'+Math.random()+'\\0';$/;"	v
+escOpen	node_modules/brace-expansion/index.js	/^var escOpen = '\\0OPEN'+Math.random()+'\\0';$/;"	v
+escClose	node_modules/brace-expansion/index.js	/^var escClose = '\\0CLOSE'+Math.random()+'\\0';$/;"	v
+escComma	node_modules/brace-expansion/index.js	/^var escComma = '\\0COMMA'+Math.random()+'\\0';$/;"	v
+escPeriod	node_modules/brace-expansion/index.js	/^var escPeriod = '\\0PERIOD'+Math.random()+'\\0';$/;"	v
+numeric	node_modules/brace-expansion/index.js	/^function numeric(str) {$/;"	f
+escapeBraces	node_modules/brace-expansion/index.js	/^function escapeBraces(str) {$/;"	f
+unescapeBraces	node_modules/brace-expansion/index.js	/^function unescapeBraces(str) {$/;"	f
+parseCommaParts	node_modules/brace-expansion/index.js	/^function parseCommaParts(str) {$/;"	f
+expandTop	node_modules/brace-expansion/index.js	/^function expandTop(str) {$/;"	f
+identity	node_modules/brace-expansion/index.js	/^function identity(e) {$/;"	f
+embrace	node_modules/brace-expansion/index.js	/^function embrace(str) {$/;"	f
+isPadded	node_modules/brace-expansion/index.js	/^function isPadded(el) {$/;"	f
+lte	node_modules/brace-expansion/index.js	/^function lte(i, y) {$/;"	f
+gte	node_modules/brace-expansion/index.js	/^function gte(i, y) {$/;"	f
+expand	node_modules/brace-expansion/index.js	/^function expand(str, isTop) {$/;"	f
 readable._read	node_modules/node-fetch/lib/index.es.js	/^		readable._read = function () {};$/;"	f
 FetchError	node_modules/node-fetch/lib/index.es.js	/^function FetchError(message, type, systemError) {$/;"	c
 constructor	node_modules/node-fetch/lib/index.es.js	/^FetchError.prototype.constructor = FetchError;$/;"	m	class:FetchError
@@ -229,6 +459,18 @@ name	node_modules/node-fetch/lib/index.js	/^AbortError.prototype.name = 'AbortEr
 fetch	node_modules/node-fetch/lib/index.js	/^function fetch(url, opts) {$/;"	f
 fetch.isRedirect	node_modules/node-fetch/lib/index.js	/^fetch.isRedirect = function (code) {$/;"	f
 getGlobal	node_modules/node-fetch/browser.js	/^var getGlobal = function () {$/;"	f
+s	node_modules/ms/index.js	/^var s = 1000;$/;"	v
+m	node_modules/ms/index.js	/^var m = s * 60;$/;"	v
+h	node_modules/ms/index.js	/^var h = m * 60;$/;"	v
+d	node_modules/ms/index.js	/^var d = h * 24;$/;"	v
+w	node_modules/ms/index.js	/^var w = d * 7;$/;"	v
+y	node_modules/ms/index.js	/^var y = d * 365.25;$/;"	v
+module.exports	node_modules/ms/index.js	/^module.exports = function (val, options) {$/;"	f
+parse	node_modules/ms/index.js	/^function parse(str) {$/;"	f
+fmtShort	node_modules/ms/index.js	/^function fmtShort(ms) {$/;"	f
+fmtLong	node_modules/ms/index.js	/^function fmtLong(ms) {$/;"	f
+plural	node_modules/ms/index.js	/^function plural(ms, msAbs, n, name) {$/;"	f
+returnIndex	node_modules/anymatch/index.js	/^const DEFAULT_OPTIONS = {returnIndex: false};$/;"	p	class:const
 BITRATE	node_modules/prism-media/src/opus/Opus.js	/^  BITRATE: 4002,$/;"	p	class:const
 FEC	node_modules/prism-media/src/opus/Opus.js	/^  FEC: 4012,$/;"	p	class:const
 PLP	node_modules/prism-media/src/opus/Opus.js	/^  PLP: 4014,$/;"	p	class:const
@@ -243,379 +485,23 @@ exports.require	node_modules/prism-media/src/util/loader.js	/^exports.require = 
 loader	node_modules/prism-media/src/util/loader.js	/^exports.require = function loader(list) {$/;"	f
 WebmDemuxer	node_modules/prism-media/src/vorbis/index.js	/^  WebmDemuxer: require('.\/WebmDemuxer'),$/;"	p	class:module.exports
 opus	node_modules/prism-media/src/index.js	/^  opus: require('.\/opus'),$/;"	p	class:module.exports
-pd	node_modules/event-target-shim/dist/event-target-shim.js	/^function pd(event) {$/;"	f
-setCancelFlag	node_modules/event-target-shim/dist/event-target-shim.js	/^function setCancelFlag(data) {$/;"	f
-Event	node_modules/event-target-shim/dist/event-target-shim.js	/^function Event(eventTarget, event) {$/;"	f
-Event	node_modules/event-target-shim/dist/event-target-shim.js	/^Event.prototype = {$/;"	c
-defineRedirectDescriptor	node_modules/event-target-shim/dist/event-target-shim.js	/^function defineRedirectDescriptor(key) {$/;"	f
-defineCallDescriptor	node_modules/event-target-shim/dist/event-target-shim.js	/^function defineCallDescriptor(key) {$/;"	f
-CustomEvent	node_modules/event-target-shim/dist/event-target-shim.js	/^    function CustomEvent(eventTarget, event) {$/;"	f	function:defineWrapper
-CustomEvent	node_modules/event-target-shim/dist/event-target-shim.js	/^    CustomEvent.prototype = Object.create(BaseEvent.prototype, {$/;"	c
-defineWrapper	node_modules/event-target-shim/dist/event-target-shim.js	/^function defineWrapper(BaseEvent, proto) {$/;"	f
-getWrapper	node_modules/event-target-shim/dist/event-target-shim.js	/^function getWrapper(proto) {$/;"	f
-wrapEvent	node_modules/event-target-shim/dist/event-target-shim.js	/^function wrapEvent(eventTarget, event) {$/;"	f
-isStopped	node_modules/event-target-shim/dist/event-target-shim.js	/^function isStopped(event) {$/;"	f
-setEventPhase	node_modules/event-target-shim/dist/event-target-shim.js	/^function setEventPhase(event, eventPhase) {$/;"	f
-setCurrentTarget	node_modules/event-target-shim/dist/event-target-shim.js	/^function setCurrentTarget(event, currentTarget) {$/;"	f
-setPassiveListener	node_modules/event-target-shim/dist/event-target-shim.js	/^function setPassiveListener(event, passiveListener) {$/;"	f
-getListeners	node_modules/event-target-shim/dist/event-target-shim.js	/^function getListeners(eventTarget) {$/;"	f	function:isObject
-defineEventAttributeDescriptor	node_modules/event-target-shim/dist/event-target-shim.js	/^function defineEventAttributeDescriptor(eventName) {$/;"	f	function:isObject
-isObject	node_modules/event-target-shim/dist/event-target-shim.js	/^function isObject(x) {$/;"	f
-listenerType	node_modules/event-target-shim/dist/event-target-shim.js	/^                    listenerType: ATTRIBUTE,$/;"	p	class:const
-passive	node_modules/event-target-shim/dist/event-target-shim.js	/^                    passive: false,$/;"	p	class:const
-once	node_modules/event-target-shim/dist/event-target-shim.js	/^                    once: false,$/;"	p	class:const
-next	node_modules/event-target-shim/dist/event-target-shim.js	/^                    next: null,$/;"	p	class:const
-defineEventAttribute	node_modules/event-target-shim/dist/event-target-shim.js	/^function defineEventAttribute(eventTargetPrototype, eventName) {$/;"	f
-CustomEventTarget	node_modules/event-target-shim/dist/event-target-shim.js	/^    function CustomEventTarget() {$/;"	f	function:defineCustomEventTarget
-CustomEventTarget	node_modules/event-target-shim/dist/event-target-shim.js	/^    CustomEventTarget.prototype = Object.create(EventTarget.prototype, {$/;"	c
-defineCustomEventTarget	node_modules/event-target-shim/dist/event-target-shim.js	/^function defineCustomEventTarget(eventNames) {$/;"	f
-EventTarget	node_modules/event-target-shim/dist/event-target-shim.js	/^function EventTarget() {$/;"	f
-EventTarget	node_modules/event-target-shim/dist/event-target-shim.js	/^EventTarget.prototype = {$/;"	c
-passive	node_modules/event-target-shim/dist/event-target-shim.js	/^            passive: optionsIsObj && Boolean(options.passive),$/;"	p	class:const
-eventTargetShim	node_modules/abort-controller/dist/abort-controller.js	/^var eventTargetShim = require('event-target-shim');$/;"	v
-createAbortSignal	node_modules/abort-controller/dist/abort-controller.js	/^function createAbortSignal() {$/;"	f
-abortSignal	node_modules/abort-controller/dist/abort-controller.js	/^function abortSignal(signal) {$/;"	f
-getSignal	node_modules/abort-controller/dist/abort-controller.js	/^function getSignal(controller) {$/;"	f
-nextHandle	node_modules/setimmediate/setImmediate.js	/^    var nextHandle = 1; \/\/ Spec says greater than zero$/;"	v
-tasksByHandle	node_modules/setimmediate/setImmediate.js	/^    var tasksByHandle = {};$/;"	v
-currentlyRunningATask	node_modules/setimmediate/setImmediate.js	/^    var currentlyRunningATask = false;$/;"	v
-doc	node_modules/setimmediate/setImmediate.js	/^    var doc = global.document;$/;"	v
-registerImmediate	node_modules/setimmediate/setImmediate.js	/^    var registerImmediate;$/;"	v
-callback	node_modules/setimmediate/setImmediate.js	/^      var task = { callback: callback, args: args };$/;"	p	class:setImmediate.task
-args	node_modules/setimmediate/setImmediate.js	/^      var task = { callback: callback, args: args };$/;"	p	class:setImmediate.task
-setImmediate	node_modules/setimmediate/setImmediate.js	/^    function setImmediate(callback) {$/;"	f
-clearImmediate	node_modules/setimmediate/setImmediate.js	/^    function clearImmediate(handle) {$/;"	f
-run	node_modules/setimmediate/setImmediate.js	/^    function run(task) {$/;"	f
-runIfPresent	node_modules/setimmediate/setImmediate.js	/^    function runIfPresent(handle) {$/;"	f
-registerImmediate	node_modules/setimmediate/setImmediate.js	/^        registerImmediate = function(handle) {$/;"	f
-installNextTickImplementation	node_modules/setimmediate/setImmediate.js	/^    function installNextTickImplementation() {$/;"	f
-global.onmessage	node_modules/setimmediate/setImmediate.js	/^            global.onmessage = function() {$/;"	f
-canUsePostMessage	node_modules/setimmediate/setImmediate.js	/^    function canUsePostMessage() {$/;"	f
-onGlobalMessage	node_modules/setimmediate/setImmediate.js	/^        var onGlobalMessage = function(event) {$/;"	f	function:installPostMessageImplementation
-installPostMessageImplementation	node_modules/setimmediate/setImmediate.js	/^    function installPostMessageImplementation() {$/;"	f
-channel.port1.onmessage	node_modules/setimmediate/setImmediate.js	/^        channel.port1.onmessage = function(event) {$/;"	f
-installMessageChannelImplementation	node_modules/setimmediate/setImmediate.js	/^    function installMessageChannelImplementation() {$/;"	f
-script.onreadystatechange	node_modules/setimmediate/setImmediate.js	/^            script.onreadystatechange = function () {$/;"	f
-installReadyStateChangeImplementation	node_modules/setimmediate/setImmediate.js	/^    function installReadyStateChangeImplementation() {$/;"	f
-installSetTimeoutImplementation	node_modules/setimmediate/setImmediate.js	/^    function installSetTimeoutImplementation() {$/;"	f
-_sFetchProp	node_modules/discord.js/src/sharding/Shard.js	/^        const resp = { _sFetchProp: message._sFetchProp, _sFetchPropShard: message._sFetchPropShard };$/;"	p	class:const
-_sEval	node_modules/discord.js/src/sharding/Shard.js	/^        const resp = { _sEval: message._sEval, _sEvalShard: message._sEvalShard };$/;"	p	class:const
-channels	node_modules/discord.js/src/client/voice/player/BasePlayer.js	/^      channels: 2,$/;"	p	class:streamingData
-sequence	node_modules/discord.js/src/client/voice/player/BasePlayer.js	/^      sequence: 0,$/;"	p	class:streamingData
-timestamp	node_modules/discord.js/src/client/voice/player/BasePlayer.js	/^      timestamp: 0,$/;"	p	class:streamingData
-parseLocalPacket	node_modules/discord.js/src/client/voice/networking/VoiceUDPClient.js	/^function parseLocalPacket(message) {$/;"	f
-exports.applyToClass	node_modules/discord.js/src/client/voice/util/VolumeInterface.js	/^exports.applyToClass = function applyToClass(structure) {$/;"	f
-applyToClass	node_modules/discord.js/src/client/voice/util/VolumeInterface.js	/^exports.applyToClass = function applyToClass(structure) {$/;"	f
-sodium	node_modules/discord.js/src/client/voice/util/Secretbox.js	/^  sodium: sodium => ({$/;"	p	class:const
-token	node_modules/discord.js/src/client/websocket/WebSocketShard.js	/^      token: this.manager.client.token,$/;"	p	class:const
-permissions	node_modules/discord.js/src/client/Client.js	/^      options = { permissions: options };$/;"	p	class:options
-parseResponse	node_modules/discord.js/src/rest/RequestHandler.js	/^function parseResponse(res) {$/;"	f
-getAPIOffset	node_modules/discord.js/src/rest/RequestHandler.js	/^function getAPIOffset(serverDate) {$/;"	f
-calculateReset	node_modules/discord.js/src/rest/RequestHandler.js	/^function calculateReset(reset, serverDate) {$/;"	f
-buildRoute	node_modules/discord.js/src/rest/APIRouter.js	/^function buildRoute(manager) {$/;"	f
-users	node_modules/discord.js/src/structures/APIMessage.js	/^        allowedMentions = { users: [id] };$/;"	p	class:allowedMentions
-embed	node_modules/discord.js/src/structures/APIMessage.js	/^      embed: this.options.embed === null ? null : embeds[0],$/;"	p	class:data
-content	node_modules/discord.js/src/structures/APIMessage.js	/^        data = { content: this.data.content[i], tts: this.data.tts, allowed_mentions: this.options.allowedMentions };$/;"	p	class:data
-content	node_modules/discord.js/src/structures/APIMessage.js	/^        opt = { content: this.data.content[i], tts: this.data.tts, allowedMentions: this.options.allowedMentions };$/;"	p	class:opt
-name	node_modules/discord.js/src/structures/MessageEmbed.js	/^    this.author = { name: Util.resolveString(name), iconURL, url };$/;"	p	class:setAuthor.author
-afk	node_modules/discord.js/src/structures/ClientPresence.js	/^      afk: afk != null ? afk : false, \/\/ eslint-disable-line eqeqeq$/;"	p	class:const
-ALL	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  ALL: 'ALL',$/;"	p	class:const
-GUILD	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  GUILD: 'GUILD',$/;"	p	class:const
-CHANNEL	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  CHANNEL: 'CHANNEL',$/;"	p	class:const
-USER	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  USER: 'USER',$/;"	p	class:const
-ROLE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  ROLE: 'ROLE',$/;"	p	class:const
-INVITE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INVITE: 'INVITE',$/;"	p	class:const
-WEBHOOK	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  WEBHOOK: 'WEBHOOK',$/;"	p	class:const
-EMOJI	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  EMOJI: 'EMOJI',$/;"	p	class:const
-MESSAGE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MESSAGE: 'MESSAGE',$/;"	p	class:const
-INTEGRATION	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INTEGRATION: 'INTEGRATION',$/;"	p	class:const
-UNKNOWN	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  UNKNOWN: 'UNKNOWN',$/;"	p	class:const
-ALL	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  ALL: null,$/;"	p	class:const
-GUILD_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  GUILD_UPDATE: 1,$/;"	p	class:const
-CHANNEL_CREATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  CHANNEL_CREATE: 10,$/;"	p	class:const
-CHANNEL_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  CHANNEL_UPDATE: 11,$/;"	p	class:const
-CHANNEL_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  CHANNEL_DELETE: 12,$/;"	p	class:const
-CHANNEL_OVERWRITE_CREATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  CHANNEL_OVERWRITE_CREATE: 13,$/;"	p	class:const
-CHANNEL_OVERWRITE_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  CHANNEL_OVERWRITE_UPDATE: 14,$/;"	p	class:const
-CHANNEL_OVERWRITE_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  CHANNEL_OVERWRITE_DELETE: 15,$/;"	p	class:const
-MEMBER_KICK	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_KICK: 20,$/;"	p	class:const
-MEMBER_PRUNE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_PRUNE: 21,$/;"	p	class:const
-MEMBER_BAN_ADD	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_BAN_ADD: 22,$/;"	p	class:const
-MEMBER_BAN_REMOVE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_BAN_REMOVE: 23,$/;"	p	class:const
-MEMBER_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_UPDATE: 24,$/;"	p	class:const
-MEMBER_ROLE_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_ROLE_UPDATE: 25,$/;"	p	class:const
-MEMBER_MOVE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_MOVE: 26,$/;"	p	class:const
-MEMBER_DISCONNECT	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MEMBER_DISCONNECT: 27,$/;"	p	class:const
-BOT_ADD	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  BOT_ADD: 28,$/;"	p	class:const
-ROLE_CREATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  ROLE_CREATE: 30,$/;"	p	class:const
-ROLE_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  ROLE_UPDATE: 31,$/;"	p	class:const
-ROLE_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  ROLE_DELETE: 32,$/;"	p	class:const
-INVITE_CREATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INVITE_CREATE: 40,$/;"	p	class:const
-INVITE_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INVITE_UPDATE: 41,$/;"	p	class:const
-INVITE_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INVITE_DELETE: 42,$/;"	p	class:const
-WEBHOOK_CREATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  WEBHOOK_CREATE: 50,$/;"	p	class:const
-WEBHOOK_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  WEBHOOK_UPDATE: 51,$/;"	p	class:const
-WEBHOOK_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  WEBHOOK_DELETE: 52,$/;"	p	class:const
-EMOJI_CREATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  EMOJI_CREATE: 60,$/;"	p	class:const
-EMOJI_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  EMOJI_UPDATE: 61,$/;"	p	class:const
-EMOJI_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  EMOJI_DELETE: 62,$/;"	p	class:const
-MESSAGE_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MESSAGE_DELETE: 72,$/;"	p	class:const
-MESSAGE_BULK_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MESSAGE_BULK_DELETE: 73,$/;"	p	class:const
-MESSAGE_PIN	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MESSAGE_PIN: 74,$/;"	p	class:const
-MESSAGE_UNPIN	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  MESSAGE_UNPIN: 75,$/;"	p	class:const
-INTEGRATION_CREATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INTEGRATION_CREATE: 80,$/;"	p	class:const
-INTEGRATION_UPDATE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INTEGRATION_UPDATE: 81,$/;"	p	class:const
-INTEGRATION_DELETE	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^  INTEGRATION_DELETE: 82,$/;"	p	class:const
-removed	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^          removed: Number(data.options.members_removed),$/;"	p	class:case.MEMBER_PRUNE.extra
-channel	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^          channel: guild.channels.cache.get(data.options.channel_id) || { id: data.options.channel_id },$/;"	p	class:case.MEMBER_MOVE.MESSAGE_DELETE.MESSAGE_BULK_DELETE.extra
-channel	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^          channel: guild.client.channels.cache.get(data.options.channel_id) || { id: data.options.channel_id },$/;"	p	class:case.MESSAGE_PIN.MESSAGE_UNPIN.extra
-count	node_modules/discord.js/src/structures/GuildAuditLogs.js	/^          count: Number(data.options.count),$/;"	p	class:case.MEMBER_DISCONNECT.extra
-image	node_modules/discord.js/src/managers/GuildEmojiManager.js	/^    const data = { image: attachment, name };$/;"	p	class:data
-CREATE_INSTANT_INVITE	node_modules/discord.js/src/util/Permissions.js	/^  CREATE_INSTANT_INVITE: 1 << 0,$/;"	p	class:Permissions.FLAGS
-SPEAKING	node_modules/discord.js/src/util/Speaking.js	/^  SPEAKING: 1 << 0,$/;"	p	class:Speaking.FLAGS
-WELCOME_MESSAGE_DISABLED	node_modules/discord.js/src/util/SystemChannelFlags.js	/^  WELCOME_MESSAGE_DISABLED: 1 << 0,$/;"	p	class:SystemChannelFlags.FLAGS
-CROSSPOSTED	node_modules/discord.js/src/util/MessageFlags.js	/^  CROSSPOSTED: 1 << 0,$/;"	p	class:MessageFlags.FLAGS
-GUILDS	node_modules/discord.js/src/util/Intents.js	/^  GUILDS: 1 << 0,$/;"	p	class:Intents.FLAGS
-DISCORD_EMPLOYEE	node_modules/discord.js/src/util/UserFlags.js	/^  DISCORD_EMPLOYEE: 1 << 0,$/;"	p	class:UserFlags.FLAGS
-GuildEmoji	node_modules/discord.js/src/util/Structures.js	/^  GuildEmoji: require('..\/structures\/GuildEmoji'),$/;"	p	class:const
-timestamp	node_modules/discord.js/src/util/Snowflake.js	/^      timestamp: parseInt(BINARY.substring(0, 42), 2) + EPOCH,$/;"	p	class:const
-shardCount	node_modules/discord.js/src/util/Constants.js	/^  shardCount: 1,$/;"	p	class:exports.DefaultOptions
-messageCacheMaxSize	node_modules/discord.js/src/util/Constants.js	/^  messageCacheMaxSize: 200,$/;"	p	class:exports.DefaultOptions
-messageCacheLifetime	node_modules/discord.js/src/util/Constants.js	/^  messageCacheLifetime: 0,$/;"	p	class:exports.DefaultOptions
-messageSweepInterval	node_modules/discord.js/src/util/Constants.js	/^  messageSweepInterval: 0,$/;"	p	class:exports.DefaultOptions
-messageEditHistoryMaxSize	node_modules/discord.js/src/util/Constants.js	/^  messageEditHistoryMaxSize: -1,$/;"	p	class:exports.DefaultOptions
-1000	node_modules/discord.js/src/util/Constants.js	/^  1000: 'WS_CLOSE_REQUESTED',$/;"	p	class:exports.WSCodes
-4004	node_modules/discord.js/src/util/Constants.js	/^  4004: 'TOKEN_INVALID',$/;"	p	class:exports.WSCodes
-4010	node_modules/discord.js/src/util/Constants.js	/^  4010: 'SHARDING_INVALID',$/;"	p	class:exports.WSCodes
-4011	node_modules/discord.js/src/util/Constants.js	/^  4011: 'SHARDING_REQUIRED',$/;"	p	class:exports.WSCodes
-4013	node_modules/discord.js/src/util/Constants.js	/^  4013: 'INVALID_INTENTS',$/;"	p	class:exports.WSCodes
-4014	node_modules/discord.js/src/util/Constants.js	/^  4014: 'DISALLOWED_INTENTS',$/;"	p	class:exports.WSCodes
-makeImageUrl	node_modules/discord.js/src/util/Constants.js	/^function makeImageUrl(root, { format = 'webp', size } = {}) {$/;"	f
-READY	node_modules/discord.js/src/util/Constants.js	/^  READY: 0,$/;"	p	class:exports.Status
-CONNECTING	node_modules/discord.js/src/util/Constants.js	/^  CONNECTING: 1,$/;"	p	class:exports.Status
-RECONNECTING	node_modules/discord.js/src/util/Constants.js	/^  RECONNECTING: 2,$/;"	p	class:exports.Status
-IDLE	node_modules/discord.js/src/util/Constants.js	/^  IDLE: 3,$/;"	p	class:exports.Status
-NEARLY	node_modules/discord.js/src/util/Constants.js	/^  NEARLY: 4,$/;"	p	class:exports.Status
-DISCONNECTED	node_modules/discord.js/src/util/Constants.js	/^  DISCONNECTED: 5,$/;"	p	class:exports.Status
-WAITING_FOR_GUILDS	node_modules/discord.js/src/util/Constants.js	/^  WAITING_FOR_GUILDS: 6,$/;"	p	class:exports.Status
-IDENTIFYING	node_modules/discord.js/src/util/Constants.js	/^  IDENTIFYING: 7,$/;"	p	class:exports.Status
-RESUMING	node_modules/discord.js/src/util/Constants.js	/^  RESUMING: 8,$/;"	p	class:exports.Status
-CONNECTED	node_modules/discord.js/src/util/Constants.js	/^  CONNECTED: 0,$/;"	p	class:exports.VoiceStatus
-CONNECTING	node_modules/discord.js/src/util/Constants.js	/^  CONNECTING: 1,$/;"	p	class:exports.VoiceStatus
-AUTHENTICATING	node_modules/discord.js/src/util/Constants.js	/^  AUTHENTICATING: 2,$/;"	p	class:exports.VoiceStatus
-RECONNECTING	node_modules/discord.js/src/util/Constants.js	/^  RECONNECTING: 3,$/;"	p	class:exports.VoiceStatus
-DISCONNECTED	node_modules/discord.js/src/util/Constants.js	/^  DISCONNECTED: 4,$/;"	p	class:exports.VoiceStatus
-DISPATCH	node_modules/discord.js/src/util/Constants.js	/^  DISPATCH: 0,$/;"	p	class:exports.OPCodes
-HEARTBEAT	node_modules/discord.js/src/util/Constants.js	/^  HEARTBEAT: 1,$/;"	p	class:exports.OPCodes
-IDENTIFY	node_modules/discord.js/src/util/Constants.js	/^  IDENTIFY: 2,$/;"	p	class:exports.OPCodes
-STATUS_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  STATUS_UPDATE: 3,$/;"	p	class:exports.OPCodes
-VOICE_STATE_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  VOICE_STATE_UPDATE: 4,$/;"	p	class:exports.OPCodes
-VOICE_GUILD_PING	node_modules/discord.js/src/util/Constants.js	/^  VOICE_GUILD_PING: 5,$/;"	p	class:exports.OPCodes
-RESUME	node_modules/discord.js/src/util/Constants.js	/^  RESUME: 6,$/;"	p	class:exports.OPCodes
-RECONNECT	node_modules/discord.js/src/util/Constants.js	/^  RECONNECT: 7,$/;"	p	class:exports.OPCodes
-REQUEST_GUILD_MEMBERS	node_modules/discord.js/src/util/Constants.js	/^  REQUEST_GUILD_MEMBERS: 8,$/;"	p	class:exports.OPCodes
-INVALID_SESSION	node_modules/discord.js/src/util/Constants.js	/^  INVALID_SESSION: 9,$/;"	p	class:exports.OPCodes
-HELLO	node_modules/discord.js/src/util/Constants.js	/^  HELLO: 10,$/;"	p	class:exports.OPCodes
-HEARTBEAT_ACK	node_modules/discord.js/src/util/Constants.js	/^  HEARTBEAT_ACK: 11,$/;"	p	class:exports.OPCodes
-IDENTIFY	node_modules/discord.js/src/util/Constants.js	/^  IDENTIFY: 0,$/;"	p	class:exports.VoiceOPCodes
-SELECT_PROTOCOL	node_modules/discord.js/src/util/Constants.js	/^  SELECT_PROTOCOL: 1,$/;"	p	class:exports.VoiceOPCodes
-READY	node_modules/discord.js/src/util/Constants.js	/^  READY: 2,$/;"	p	class:exports.VoiceOPCodes
-HEARTBEAT	node_modules/discord.js/src/util/Constants.js	/^  HEARTBEAT: 3,$/;"	p	class:exports.VoiceOPCodes
-SESSION_DESCRIPTION	node_modules/discord.js/src/util/Constants.js	/^  SESSION_DESCRIPTION: 4,$/;"	p	class:exports.VoiceOPCodes
-SPEAKING	node_modules/discord.js/src/util/Constants.js	/^  SPEAKING: 5,$/;"	p	class:exports.VoiceOPCodes
-HELLO	node_modules/discord.js/src/util/Constants.js	/^  HELLO: 8,$/;"	p	class:exports.VoiceOPCodes
-CLIENT_CONNECT	node_modules/discord.js/src/util/Constants.js	/^  CLIENT_CONNECT: 12,$/;"	p	class:exports.VoiceOPCodes
-CLIENT_DISCONNECT	node_modules/discord.js/src/util/Constants.js	/^  CLIENT_DISCONNECT: 13,$/;"	p	class:exports.VoiceOPCodes
-RATE_LIMIT	node_modules/discord.js/src/util/Constants.js	/^  RATE_LIMIT: 'rateLimit',$/;"	p	class:exports.Events
-CLIENT_READY	node_modules/discord.js/src/util/Constants.js	/^  CLIENT_READY: 'ready',$/;"	p	class:exports.Events
-GUILD_CREATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_CREATE: 'guildCreate',$/;"	p	class:exports.Events
-GUILD_DELETE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_DELETE: 'guildDelete',$/;"	p	class:exports.Events
-GUILD_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_UPDATE: 'guildUpdate',$/;"	p	class:exports.Events
-GUILD_UNAVAILABLE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_UNAVAILABLE: 'guildUnavailable',$/;"	p	class:exports.Events
-GUILD_AVAILABLE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_AVAILABLE: 'guildAvailable',$/;"	p	class:exports.Events
-GUILD_MEMBER_ADD	node_modules/discord.js/src/util/Constants.js	/^  GUILD_MEMBER_ADD: 'guildMemberAdd',$/;"	p	class:exports.Events
-GUILD_MEMBER_REMOVE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_MEMBER_REMOVE: 'guildMemberRemove',$/;"	p	class:exports.Events
-GUILD_MEMBER_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_MEMBER_UPDATE: 'guildMemberUpdate',$/;"	p	class:exports.Events
-GUILD_MEMBER_AVAILABLE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_MEMBER_AVAILABLE: 'guildMemberAvailable',$/;"	p	class:exports.Events
-GUILD_MEMBER_SPEAKING	node_modules/discord.js/src/util/Constants.js	/^  GUILD_MEMBER_SPEAKING: 'guildMemberSpeaking',$/;"	p	class:exports.Events
-GUILD_MEMBERS_CHUNK	node_modules/discord.js/src/util/Constants.js	/^  GUILD_MEMBERS_CHUNK: 'guildMembersChunk',$/;"	p	class:exports.Events
-GUILD_INTEGRATIONS_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_INTEGRATIONS_UPDATE: 'guildIntegrationsUpdate',$/;"	p	class:exports.Events
-GUILD_ROLE_CREATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_ROLE_CREATE: 'roleCreate',$/;"	p	class:exports.Events
-GUILD_ROLE_DELETE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_ROLE_DELETE: 'roleDelete',$/;"	p	class:exports.Events
-INVITE_CREATE	node_modules/discord.js/src/util/Constants.js	/^  INVITE_CREATE: 'inviteCreate',$/;"	p	class:exports.Events
-INVITE_DELETE	node_modules/discord.js/src/util/Constants.js	/^  INVITE_DELETE: 'inviteDelete',$/;"	p	class:exports.Events
-GUILD_ROLE_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_ROLE_UPDATE: 'roleUpdate',$/;"	p	class:exports.Events
-GUILD_EMOJI_CREATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_EMOJI_CREATE: 'emojiCreate',$/;"	p	class:exports.Events
-GUILD_EMOJI_DELETE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_EMOJI_DELETE: 'emojiDelete',$/;"	p	class:exports.Events
-GUILD_EMOJI_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_EMOJI_UPDATE: 'emojiUpdate',$/;"	p	class:exports.Events
-GUILD_BAN_ADD	node_modules/discord.js/src/util/Constants.js	/^  GUILD_BAN_ADD: 'guildBanAdd',$/;"	p	class:exports.Events
-GUILD_BAN_REMOVE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_BAN_REMOVE: 'guildBanRemove',$/;"	p	class:exports.Events
-CHANNEL_CREATE	node_modules/discord.js/src/util/Constants.js	/^  CHANNEL_CREATE: 'channelCreate',$/;"	p	class:exports.Events
-CHANNEL_DELETE	node_modules/discord.js/src/util/Constants.js	/^  CHANNEL_DELETE: 'channelDelete',$/;"	p	class:exports.Events
-CHANNEL_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  CHANNEL_UPDATE: 'channelUpdate',$/;"	p	class:exports.Events
-CHANNEL_PINS_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  CHANNEL_PINS_UPDATE: 'channelPinsUpdate',$/;"	p	class:exports.Events
-MESSAGE_CREATE	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_CREATE: 'message',$/;"	p	class:exports.Events
-MESSAGE_DELETE	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_DELETE: 'messageDelete',$/;"	p	class:exports.Events
-MESSAGE_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_UPDATE: 'messageUpdate',$/;"	p	class:exports.Events
-MESSAGE_BULK_DELETE	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_BULK_DELETE: 'messageDeleteBulk',$/;"	p	class:exports.Events
-MESSAGE_REACTION_ADD	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_REACTION_ADD: 'messageReactionAdd',$/;"	p	class:exports.Events
-MESSAGE_REACTION_REMOVE	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_REACTION_REMOVE: 'messageReactionRemove',$/;"	p	class:exports.Events
-MESSAGE_REACTION_REMOVE_ALL	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_REACTION_REMOVE_ALL: 'messageReactionRemoveAll',$/;"	p	class:exports.Events
-MESSAGE_REACTION_REMOVE_EMOJI	node_modules/discord.js/src/util/Constants.js	/^  MESSAGE_REACTION_REMOVE_EMOJI: 'messageReactionRemoveEmoji',$/;"	p	class:exports.Events
-USER_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  USER_UPDATE: 'userUpdate',$/;"	p	class:exports.Events
-PRESENCE_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  PRESENCE_UPDATE: 'presenceUpdate',$/;"	p	class:exports.Events
-VOICE_SERVER_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  VOICE_SERVER_UPDATE: 'voiceServerUpdate',$/;"	p	class:exports.Events
-VOICE_STATE_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  VOICE_STATE_UPDATE: 'voiceStateUpdate',$/;"	p	class:exports.Events
-VOICE_BROADCAST_SUBSCRIBE	node_modules/discord.js/src/util/Constants.js	/^  VOICE_BROADCAST_SUBSCRIBE: 'subscribe',$/;"	p	class:exports.Events
-VOICE_BROADCAST_UNSUBSCRIBE	node_modules/discord.js/src/util/Constants.js	/^  VOICE_BROADCAST_UNSUBSCRIBE: 'unsubscribe',$/;"	p	class:exports.Events
-TYPING_START	node_modules/discord.js/src/util/Constants.js	/^  TYPING_START: 'typingStart',$/;"	p	class:exports.Events
-TYPING_STOP	node_modules/discord.js/src/util/Constants.js	/^  TYPING_STOP: 'typingStop',$/;"	p	class:exports.Events
-WEBHOOKS_UPDATE	node_modules/discord.js/src/util/Constants.js	/^  WEBHOOKS_UPDATE: 'webhookUpdate',$/;"	p	class:exports.Events
-ERROR	node_modules/discord.js/src/util/Constants.js	/^  ERROR: 'error',$/;"	p	class:exports.Events
-WARN	node_modules/discord.js/src/util/Constants.js	/^  WARN: 'warn',$/;"	p	class:exports.Events
-DEBUG	node_modules/discord.js/src/util/Constants.js	/^  DEBUG: 'debug',$/;"	p	class:exports.Events
-SHARD_DISCONNECT	node_modules/discord.js/src/util/Constants.js	/^  SHARD_DISCONNECT: 'shardDisconnect',$/;"	p	class:exports.Events
-SHARD_ERROR	node_modules/discord.js/src/util/Constants.js	/^  SHARD_ERROR: 'shardError',$/;"	p	class:exports.Events
-SHARD_RECONNECTING	node_modules/discord.js/src/util/Constants.js	/^  SHARD_RECONNECTING: 'shardReconnecting',$/;"	p	class:exports.Events
-SHARD_READY	node_modules/discord.js/src/util/Constants.js	/^  SHARD_READY: 'shardReady',$/;"	p	class:exports.Events
-SHARD_RESUME	node_modules/discord.js/src/util/Constants.js	/^  SHARD_RESUME: 'shardResume',$/;"	p	class:exports.Events
-INVALIDATED	node_modules/discord.js/src/util/Constants.js	/^  INVALIDATED: 'invalidated',$/;"	p	class:exports.Events
-RAW	node_modules/discord.js/src/util/Constants.js	/^  RAW: 'raw',$/;"	p	class:exports.Events
-CLOSE	node_modules/discord.js/src/util/Constants.js	/^  CLOSE: 'close',$/;"	p	class:exports.ShardEvents
-DESTROYED	node_modules/discord.js/src/util/Constants.js	/^  DESTROYED: 'destroyed',$/;"	p	class:exports.ShardEvents
-INVALID_SESSION	node_modules/discord.js/src/util/Constants.js	/^  INVALID_SESSION: 'invalidSession',$/;"	p	class:exports.ShardEvents
-READY	node_modules/discord.js/src/util/Constants.js	/^  READY: 'ready',$/;"	p	class:exports.ShardEvents
-RESUMED	node_modules/discord.js/src/util/Constants.js	/^  RESUMED: 'resumed',$/;"	p	class:exports.ShardEvents
-ALL_READY	node_modules/discord.js/src/util/Constants.js	/^  ALL_READY: 'allReady',$/;"	p	class:exports.ShardEvents
-TEXT	node_modules/discord.js/src/util/Constants.js	/^  TEXT: 0,$/;"	p	class:exports.ChannelTypes
-DM	node_modules/discord.js/src/util/Constants.js	/^  DM: 1,$/;"	p	class:exports.ChannelTypes
-VOICE	node_modules/discord.js/src/util/Constants.js	/^  VOICE: 2,$/;"	p	class:exports.ChannelTypes
-GROUP	node_modules/discord.js/src/util/Constants.js	/^  GROUP: 3,$/;"	p	class:exports.ChannelTypes
-CATEGORY	node_modules/discord.js/src/util/Constants.js	/^  CATEGORY: 4,$/;"	p	class:exports.ChannelTypes
-NEWS	node_modules/discord.js/src/util/Constants.js	/^  NEWS: 5,$/;"	p	class:exports.ChannelTypes
-STORE	node_modules/discord.js/src/util/Constants.js	/^  STORE: 6,$/;"	p	class:exports.ChannelTypes
-SMALL	node_modules/discord.js/src/util/Constants.js	/^  SMALL: 1,$/;"	p	class:exports.ClientApplicationAssetTypes
-BIG	node_modules/discord.js/src/util/Constants.js	/^  BIG: 2,$/;"	p	class:exports.ClientApplicationAssetTypes
-DEFAULT	node_modules/discord.js/src/util/Constants.js	/^  DEFAULT: 0x000000,$/;"	p	class:exports.Colors
-WHITE	node_modules/discord.js/src/util/Constants.js	/^  WHITE: 0xffffff,$/;"	p	class:exports.Colors
-AQUA	node_modules/discord.js/src/util/Constants.js	/^  AQUA: 0x1abc9c,$/;"	p	class:exports.Colors
-GREEN	node_modules/discord.js/src/util/Constants.js	/^  GREEN: 0x2ecc71,$/;"	p	class:exports.Colors
-BLUE	node_modules/discord.js/src/util/Constants.js	/^  BLUE: 0x3498db,$/;"	p	class:exports.Colors
-YELLOW	node_modules/discord.js/src/util/Constants.js	/^  YELLOW: 0xffff00,$/;"	p	class:exports.Colors
-PURPLE	node_modules/discord.js/src/util/Constants.js	/^  PURPLE: 0x9b59b6,$/;"	p	class:exports.Colors
-LUMINOUS_VIVID_PINK	node_modules/discord.js/src/util/Constants.js	/^  LUMINOUS_VIVID_PINK: 0xe91e63,$/;"	p	class:exports.Colors
-GOLD	node_modules/discord.js/src/util/Constants.js	/^  GOLD: 0xf1c40f,$/;"	p	class:exports.Colors
-ORANGE	node_modules/discord.js/src/util/Constants.js	/^  ORANGE: 0xe67e22,$/;"	p	class:exports.Colors
-RED	node_modules/discord.js/src/util/Constants.js	/^  RED: 0xe74c3c,$/;"	p	class:exports.Colors
-GREY	node_modules/discord.js/src/util/Constants.js	/^  GREY: 0x95a5a6,$/;"	p	class:exports.Colors
-NAVY	node_modules/discord.js/src/util/Constants.js	/^  NAVY: 0x34495e,$/;"	p	class:exports.Colors
-DARK_AQUA	node_modules/discord.js/src/util/Constants.js	/^  DARK_AQUA: 0x11806a,$/;"	p	class:exports.Colors
-DARK_GREEN	node_modules/discord.js/src/util/Constants.js	/^  DARK_GREEN: 0x1f8b4c,$/;"	p	class:exports.Colors
-DARK_BLUE	node_modules/discord.js/src/util/Constants.js	/^  DARK_BLUE: 0x206694,$/;"	p	class:exports.Colors
-DARK_PURPLE	node_modules/discord.js/src/util/Constants.js	/^  DARK_PURPLE: 0x71368a,$/;"	p	class:exports.Colors
-DARK_VIVID_PINK	node_modules/discord.js/src/util/Constants.js	/^  DARK_VIVID_PINK: 0xad1457,$/;"	p	class:exports.Colors
-DARK_GOLD	node_modules/discord.js/src/util/Constants.js	/^  DARK_GOLD: 0xc27c0e,$/;"	p	class:exports.Colors
-DARK_ORANGE	node_modules/discord.js/src/util/Constants.js	/^  DARK_ORANGE: 0xa84300,$/;"	p	class:exports.Colors
-DARK_RED	node_modules/discord.js/src/util/Constants.js	/^  DARK_RED: 0x992d22,$/;"	p	class:exports.Colors
-DARK_GREY	node_modules/discord.js/src/util/Constants.js	/^  DARK_GREY: 0x979c9f,$/;"	p	class:exports.Colors
-DARKER_GREY	node_modules/discord.js/src/util/Constants.js	/^  DARKER_GREY: 0x7f8c8d,$/;"	p	class:exports.Colors
-LIGHT_GREY	node_modules/discord.js/src/util/Constants.js	/^  LIGHT_GREY: 0xbcc0c0,$/;"	p	class:exports.Colors
-DARK_NAVY	node_modules/discord.js/src/util/Constants.js	/^  DARK_NAVY: 0x2c3e50,$/;"	p	class:exports.Colors
-BLURPLE	node_modules/discord.js/src/util/Constants.js	/^  BLURPLE: 0x7289da,$/;"	p	class:exports.Colors
-GREYPLE	node_modules/discord.js/src/util/Constants.js	/^  GREYPLE: 0x99aab5,$/;"	p	class:exports.Colors
-DARK_BUT_NOT_BLACK	node_modules/discord.js/src/util/Constants.js	/^  DARK_BUT_NOT_BLACK: 0x2c2f33,$/;"	p	class:exports.Colors
-NOT_QUITE_BLACK	node_modules/discord.js/src/util/Constants.js	/^  NOT_QUITE_BLACK: 0x23272a,$/;"	p	class:exports.Colors
-UNKNOWN_ACCOUNT	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_ACCOUNT: 10001,$/;"	p	class:exports.APIErrors
-UNKNOWN_APPLICATION	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_APPLICATION: 10002,$/;"	p	class:exports.APIErrors
-UNKNOWN_CHANNEL	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_CHANNEL: 10003,$/;"	p	class:exports.APIErrors
-UNKNOWN_GUILD	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_GUILD: 10004,$/;"	p	class:exports.APIErrors
-UNKNOWN_INTEGRATION	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_INTEGRATION: 10005,$/;"	p	class:exports.APIErrors
-UNKNOWN_INVITE	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_INVITE: 10006,$/;"	p	class:exports.APIErrors
-UNKNOWN_MEMBER	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_MEMBER: 10007,$/;"	p	class:exports.APIErrors
-UNKNOWN_MESSAGE	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_MESSAGE: 10008,$/;"	p	class:exports.APIErrors
-UNKNOWN_OVERWRITE	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_OVERWRITE: 10009,$/;"	p	class:exports.APIErrors
-UNKNOWN_PROVIDER	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_PROVIDER: 10010,$/;"	p	class:exports.APIErrors
-UNKNOWN_ROLE	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_ROLE: 10011,$/;"	p	class:exports.APIErrors
-UNKNOWN_TOKEN	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_TOKEN: 10012,$/;"	p	class:exports.APIErrors
-UNKNOWN_USER	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_USER: 10013,$/;"	p	class:exports.APIErrors
-UNKNOWN_EMOJI	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_EMOJI: 10014,$/;"	p	class:exports.APIErrors
-UNKNOWN_WEBHOOK	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_WEBHOOK: 10015,$/;"	p	class:exports.APIErrors
-UNKNOWN_BAN	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_BAN: 10026,$/;"	p	class:exports.APIErrors
-UNKNOWN_GUILD_TEMPLATE	node_modules/discord.js/src/util/Constants.js	/^  UNKNOWN_GUILD_TEMPLATE: 10057,$/;"	p	class:exports.APIErrors
-BOT_PROHIBITED_ENDPOINT	node_modules/discord.js/src/util/Constants.js	/^  BOT_PROHIBITED_ENDPOINT: 20001,$/;"	p	class:exports.APIErrors
-BOT_ONLY_ENDPOINT	node_modules/discord.js/src/util/Constants.js	/^  BOT_ONLY_ENDPOINT: 20002,$/;"	p	class:exports.APIErrors
-CHANNEL_HIT_WRITE_RATELIMIT	node_modules/discord.js/src/util/Constants.js	/^  CHANNEL_HIT_WRITE_RATELIMIT: 20028,$/;"	p	class:exports.APIErrors
-MAXIMUM_GUILDS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_GUILDS: 30001,$/;"	p	class:exports.APIErrors
-MAXIMUM_FRIENDS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_FRIENDS: 30002,$/;"	p	class:exports.APIErrors
-MAXIMUM_PINS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_PINS: 30003,$/;"	p	class:exports.APIErrors
-MAXIMUM_ROLES	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_ROLES: 30005,$/;"	p	class:exports.APIErrors
-MAXIMUM_WEBHOOKS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_WEBHOOKS: 30007,$/;"	p	class:exports.APIErrors
-MAXIMUM_REACTIONS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_REACTIONS: 30010,$/;"	p	class:exports.APIErrors
-MAXIMUM_CHANNELS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_CHANNELS: 30013,$/;"	p	class:exports.APIErrors
-MAXIMUM_ATTACHMENTS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_ATTACHMENTS: 30015,$/;"	p	class:exports.APIErrors
-MAXIMUM_INVITES	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_INVITES: 30016,$/;"	p	class:exports.APIErrors
-GUILD_ALREADY_HAS_TEMPLATE	node_modules/discord.js/src/util/Constants.js	/^  GUILD_ALREADY_HAS_TEMPLATE: 30031,$/;"	p	class:exports.APIErrors
-UNAUTHORIZED	node_modules/discord.js/src/util/Constants.js	/^  UNAUTHORIZED: 40001,$/;"	p	class:exports.APIErrors
-ACCOUNT_VERIFICATION_REQUIRED	node_modules/discord.js/src/util/Constants.js	/^  ACCOUNT_VERIFICATION_REQUIRED: 40002,$/;"	p	class:exports.APIErrors
-REQUEST_ENTITY_TOO_LARGE	node_modules/discord.js/src/util/Constants.js	/^  REQUEST_ENTITY_TOO_LARGE: 40005,$/;"	p	class:exports.APIErrors
-FEATURE_TEMPORARILY_DISABLED	node_modules/discord.js/src/util/Constants.js	/^  FEATURE_TEMPORARILY_DISABLED: 40006,$/;"	p	class:exports.APIErrors
-USER_BANNED	node_modules/discord.js/src/util/Constants.js	/^  USER_BANNED: 40007,$/;"	p	class:exports.APIErrors
-ALREADY_CROSSPOSTED	node_modules/discord.js/src/util/Constants.js	/^  ALREADY_CROSSPOSTED: 40033,$/;"	p	class:exports.APIErrors
-MISSING_ACCESS	node_modules/discord.js/src/util/Constants.js	/^  MISSING_ACCESS: 50001,$/;"	p	class:exports.APIErrors
-INVALID_ACCOUNT_TYPE	node_modules/discord.js/src/util/Constants.js	/^  INVALID_ACCOUNT_TYPE: 50002,$/;"	p	class:exports.APIErrors
-CANNOT_EXECUTE_ON_DM	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_EXECUTE_ON_DM: 50003,$/;"	p	class:exports.APIErrors
-EMBED_DISABLED	node_modules/discord.js/src/util/Constants.js	/^  EMBED_DISABLED: 50004,$/;"	p	class:exports.APIErrors
-CANNOT_EDIT_MESSAGE_BY_OTHER	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_EDIT_MESSAGE_BY_OTHER: 50005,$/;"	p	class:exports.APIErrors
-CANNOT_SEND_EMPTY_MESSAGE	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_SEND_EMPTY_MESSAGE: 50006,$/;"	p	class:exports.APIErrors
-CANNOT_MESSAGE_USER	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_MESSAGE_USER: 50007,$/;"	p	class:exports.APIErrors
-CANNOT_SEND_MESSAGES_IN_VOICE_CHANNEL	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_SEND_MESSAGES_IN_VOICE_CHANNEL: 50008,$/;"	p	class:exports.APIErrors
-CHANNEL_VERIFICATION_LEVEL_TOO_HIGH	node_modules/discord.js/src/util/Constants.js	/^  CHANNEL_VERIFICATION_LEVEL_TOO_HIGH: 50009,$/;"	p	class:exports.APIErrors
-OAUTH2_APPLICATION_BOT_ABSENT	node_modules/discord.js/src/util/Constants.js	/^  OAUTH2_APPLICATION_BOT_ABSENT: 50010,$/;"	p	class:exports.APIErrors
-MAXIMUM_OAUTH2_APPLICATIONS	node_modules/discord.js/src/util/Constants.js	/^  MAXIMUM_OAUTH2_APPLICATIONS: 50011,$/;"	p	class:exports.APIErrors
-INVALID_OAUTH_STATE	node_modules/discord.js/src/util/Constants.js	/^  INVALID_OAUTH_STATE: 50012,$/;"	p	class:exports.APIErrors
-MISSING_PERMISSIONS	node_modules/discord.js/src/util/Constants.js	/^  MISSING_PERMISSIONS: 50013,$/;"	p	class:exports.APIErrors
-INVALID_AUTHENTICATION_TOKEN	node_modules/discord.js/src/util/Constants.js	/^  INVALID_AUTHENTICATION_TOKEN: 50014,$/;"	p	class:exports.APIErrors
-NOTE_TOO_LONG	node_modules/discord.js/src/util/Constants.js	/^  NOTE_TOO_LONG: 50015,$/;"	p	class:exports.APIErrors
-INVALID_BULK_DELETE_QUANTITY	node_modules/discord.js/src/util/Constants.js	/^  INVALID_BULK_DELETE_QUANTITY: 50016,$/;"	p	class:exports.APIErrors
-CANNOT_PIN_MESSAGE_IN_OTHER_CHANNEL	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_PIN_MESSAGE_IN_OTHER_CHANNEL: 50019,$/;"	p	class:exports.APIErrors
-INVALID_OR_TAKEN_INVITE_CODE	node_modules/discord.js/src/util/Constants.js	/^  INVALID_OR_TAKEN_INVITE_CODE: 50020,$/;"	p	class:exports.APIErrors
-CANNOT_EXECUTE_ON_SYSTEM_MESSAGE	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_EXECUTE_ON_SYSTEM_MESSAGE: 50021,$/;"	p	class:exports.APIErrors
-INVALID_OAUTH_TOKEN	node_modules/discord.js/src/util/Constants.js	/^  INVALID_OAUTH_TOKEN: 50025,$/;"	p	class:exports.APIErrors
-BULK_DELETE_MESSAGE_TOO_OLD	node_modules/discord.js/src/util/Constants.js	/^  BULK_DELETE_MESSAGE_TOO_OLD: 50034,$/;"	p	class:exports.APIErrors
-INVALID_FORM_BODY	node_modules/discord.js/src/util/Constants.js	/^  INVALID_FORM_BODY: 50035,$/;"	p	class:exports.APIErrors
-INVITE_ACCEPTED_TO_GUILD_NOT_CONTAINING_BOT	node_modules/discord.js/src/util/Constants.js	/^  INVITE_ACCEPTED_TO_GUILD_NOT_CONTAINING_BOT: 50036,$/;"	p	class:exports.APIErrors
-INVALID_API_VERSION	node_modules/discord.js/src/util/Constants.js	/^  INVALID_API_VERSION: 50041,$/;"	p	class:exports.APIErrors
-CANNOT_DELETE_COMMUNITY_REQUIRED_CHANNEL	node_modules/discord.js/src/util/Constants.js	/^  CANNOT_DELETE_COMMUNITY_REQUIRED_CHANNEL: 50074,$/;"	p	class:exports.APIErrors
-REACTION_BLOCKED	node_modules/discord.js/src/util/Constants.js	/^  REACTION_BLOCKED: 90001,$/;"	p	class:exports.APIErrors
-RESOURCE_OVERLOADED	node_modules/discord.js/src/util/Constants.js	/^  RESOURCE_OVERLOADED: 130000,$/;"	p	class:exports.APIErrors
-keyMirror	node_modules/discord.js/src/util/Constants.js	/^function keyMirror(arr) {$/;"	f
-INSTANCE	node_modules/discord.js/src/util/ActivityFlags.js	/^  INSTANCE: 1 << 0,$/;"	p	class:ActivityFlags.FLAGS
-CLIENT_INVALID_OPTION	node_modules/discord.js/src/errors/Messages.js	/^  CLIENT_INVALID_OPTION: (prop, must) => `The ${prop} option must be ${must}`,$/;"	p	class:const
-makeDiscordjsError	node_modules/discord.js/src/errors/DJSError.js	/^function makeDiscordjsError(Base) {$/;"	c
-message	node_modules/discord.js/src/errors/DJSError.js	/^function message(key, args) {$/;"	f
-register	node_modules/discord.js/src/errors/DJSError.js	/^function register(sym, val) {$/;"	f
-Error	node_modules/discord.js/src/errors/DJSError.js	/^  Error: makeDiscordjsError(Error),$/;"	p	class:module.exports
-BaseClient	node_modules/discord.js/src/index.js	/^  BaseClient: require('.\/client\/BaseClient'),$/;"	p	class:module.exports
-util	node_modules/combined-stream/lib/combined_stream.js	/^var util = require('util');$/;"	v
-Stream	node_modules/combined-stream/lib/combined_stream.js	/^var Stream = require('stream').Stream;$/;"	v
-DelayedStream	node_modules/combined-stream/lib/combined_stream.js	/^var DelayedStream = require('delayed-stream');$/;"	v
-CombinedStream	node_modules/combined-stream/lib/combined_stream.js	/^function CombinedStream() {$/;"	c
-CombinedStream.create	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.create = function(options) {$/;"	f
-CombinedStream.isStreamLike	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.isStreamLike = function(stream) {$/;"	f
-append	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype.append = function(stream) {$/;"	m	class:CombinedStream
-pipe	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype.pipe = function(dest, options) {$/;"	m	class:CombinedStream
-Stream	node_modules/combined-stream/lib/combined_stream.js	/^  Stream.prototype.pipe.call(this, dest, options);$/;"	c	class:CombinedStream
-_getNext	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._getNext = function() {$/;"	m	class:CombinedStream
-_realGetNext	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._realGetNext = function() {$/;"	m	class:CombinedStream
-_pipeNext	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._pipeNext = function(stream) {$/;"	m	class:CombinedStream
-_handleErrors	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._handleErrors = function(stream) {$/;"	m	class:CombinedStream
-write	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype.write = function(data) {$/;"	m	class:CombinedStream
-pause	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype.pause = function() {$/;"	m	class:CombinedStream
-resume	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype.resume = function() {$/;"	m	class:CombinedStream
-end	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype.end = function() {$/;"	m	class:CombinedStream
-destroy	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype.destroy = function() {$/;"	m	class:CombinedStream
-_reset	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._reset = function() {$/;"	m	class:CombinedStream
-_checkDataSize	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._checkDataSize = function() {$/;"	m	class:CombinedStream
-_updateDataSize	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._updateDataSize = function() {$/;"	m	class:CombinedStream
-_emitError	node_modules/combined-stream/lib/combined_stream.js	/^CombinedStream.prototype._emitError = function(err) {$/;"	m	class:CombinedStream
-v	node_modules/tweetnacl/nacl-fast.min.js	/^!function(i){"use strict";var v=function(r){var t,n=new Float64Array(16);if(r)for(t=0;t<r.length;t++)n[t]=r[t];return n},h=function(){throw new Error("no PRNG")},o=new Uint8Array(16),n=new Uint8Array(32);n[0]=9;var s=v(),u=v([1]),p=v([56129,1]),c=v([30883,4953,19914,30187,55467,16705,2637,112,59544,30585,16505,36039,65139,11119,27886,20995]),y=v([61785,9906,39828,60374,45398,33411,5274,224,53552,61171,33010,6542,64743,22239,55772,9222]),e=v([54554,36645,11616,51542,42930,38181,51040,26924,56412,64982,57905,49316,21502,52590,14035,8553]),a=v([26200,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214]),l=v([41136,18958,6951,50414,58488,44335,6150,12099,55207,15867,153,11085,57099,20417,9344,11139]);function f(r,t,n,e){r[t]=n>>24&255,r[t+1]=n>>16&255,r[t+2]=n>>8&255,r[t+3]=255&n,r[t+4]=e>>24&255,r[t+5]=e>>16&255,r[t+6]=e>>8&255,r[t+7]=255&e}function w(r,t,n,e,o){var i,h=0;for(i=0;i<o;i++)h|=r[t+i]^n[e+i];return(1&h-1>>>8)-1}function b(r,t,n,e){return w(r,t,n,e,16)}function g(r,t,n,e){return w(r,t,n,e,32)}function A(r,t,n,e){!function(r,t,n,e){for(var o,i=255&e[0]|(255&e[1])<<8|(255&e[2])<<16|(255&e[3])<<24,h=255&n[0]|(255&n[1])<<8|(255&n[2])<<16|(255&n[3])<<24,a=255&n[4]|(255&n[5])<<8|(255&n[6])<<16|(255&n[7])<<24,f=255&n[8]|(255&n[9])<<8|(255&n[10])<<16|(255&n[11])<<24,s=255&n[12]|(255&n[13])<<8|(255&n[14])<<16|(255&n[15])<<24,u=255&e[4]|(255&e[5])<<8|(255&e[6])<<16|(255&e[7])<<24,c=255&t[0]|(255&t[1])<<8|(255&t[2])<<16|(255&t[3])<<24,y=255&t[4]|(255&t[5])<<8|(255&t[6])<<16|(255&t[7])<<24,l=255&t[8]|(255&t[9])<<8|(255&t[10])<<16|(255&t[11])<<24,w=255&t[12]|(255&t[13])<<8|(255&t[14])<<16|(255&t[15])<<24,v=255&e[8]|(255&e[9])<<8|(255&e[10])<<16|(255&e[11])<<24,p=255&n[16]|(255&n[17])<<8|(255&n[18])<<16|(255&n[19])<<24,b=255&n[20]|(255&n[21])<<8|(255&n[22])<<16|(255&n[23])<<24,g=255&n[24]|(255&n[25])<<8|(255&n[26])<<16|(255&n[27])<<24,A=255&n[28]|(255&n[29])<<8|(255&n[30])<<16|(255&n[31])<<24,_=255&e[12]|(255&e[13])<<8|(255&e[14])<<16|(255&e[15])<<24,U=i,d=h,E=a,x=f,M=s,m=u,B=c,S=y,k=l,K=w,Y=v,L=p,T=b,z=g,R=A,P=_,N=0;N<20;N+=2)U^=(o=(T^=(o=(k^=(o=(M^=(o=U+T|0)<<7|o>>>25)+U|0)<<9|o>>>23)+M|0)<<13|o>>>19)+k|0)<<18|o>>>14,m^=(o=(d^=(o=(z^=(o=(K^=(o=m+d|0)<<7|o>>>25)+m|0)<<9|o>>>23)+K|0)<<13|o>>>19)+z|0)<<18|o>>>14,Y^=(o=(B^=(o=(E^=(o=(R^=(o=Y+B|0)<<7|o>>>25)+Y|0)<<9|o>>>23)+R|0)<<13|o>>>19)+E|0)<<18|o>>>14,P^=(o=(L^=(o=(S^=(o=(x^=(o=P+L|0)<<7|o>>>25)+P|0)<<9|o>>>23)+x|0)<<13|o>>>19)+S|0)<<18|o>>>14,U^=(o=(x^=(o=(E^=(o=(d^=(o=U+x|0)<<7|o>>>25)+U|0)<<9|o>>>23)+d|0)<<13|o>>>19)+E|0)<<18|o>>>14,m^=(o=(M^=(o=(S^=(o=(B^=(o=m+M|0)<<7|o>>>25)+m|0)<<9|o>>>23)+B|0)<<13|o>>>19)+S|0)<<18|o>>>14,Y^=(o=(K^=(o=(k^=(o=(L^=(o=Y+K|0)<<7|o>>>25)+Y|0)<<9|o>>>23)+L|0)<<13|o>>>19)+k|0)<<18|o>>>14,P^=(o=(R^=(o=(z^=(o=(T^=(o=P+R|0)<<7|o>>>25)+P|0)<<9|o>>>23)+T|0)<<13|o>>>19)+z|0)<<18|o>>>14;U=U+i|0,d=d+h|0,E=E+a|0,x=x+f|0,M=M+s|0,m=m+u|0,B=B+c|0,S=S+y|0,k=k+l|0,K=K+w|0,Y=Y+v|0,L=L+p|0,T=T+b|0,z=z+g|0,R=R+A|0,P=P+_|0,r[0]=U>>>0&255,r[1]=U>>>8&255,r[2]=U>>>16&255,r[3]=U>>>24&255,r[4]=d>>>0&255,r[5]=d>>>8&255,r[6]=d>>>16&255,r[7]=d>>>24&255,r[8]=E>>>0&255,r[9]=E>>>8&255,r[10]=E>>>16&255,r[11]=E>>>24&255,r[12]=x>>>0&255,r[13]=x>>>8&255,r[14]=x>>>16&255,r[15]=x>>>24&255,r[16]=M>>>0&255,r[17]=M>>>8&255,r[18]=M>>>16&255,r[19]=M>>>24&255,r[20]=m>>>0&255,r[21]=m>>>8&255,r[22]=m>>>16&255,r[23]=m>>>24&255,r[24]=B>>>0&255,r[25]=B>>>8&255,r[26]=B>>>16&255,r[27]=B>>>24&255,r[28]=S>>>0&255,r[29]=S>>>8&255,r[30]=S>>>16&255,r[31]=S>>>24&255,r[32]=k>>>0&255,r[33]=k>>>8&255,r[34]=k>>>16&255,r[35]=k>>>24&255,r[36]=K>>>0&255,r[37]=K>>>8&255,r[38]=K>>>16&255,r[39]=K>>>24&255,r[40]=Y>>>0&255,r[41]=Y>>>8&255,r[42]=Y>>>16&255,r[43]=Y>>>24&255,r[44]=L>>>0&255,r[45]=L>>>8&255,r[46]=L>>>16&255,r[47]=L>>>24&255,r[48]=T>>>0&255,r[49]=T>>>8&255,r[50]=T>>>16&255,r[51]=T>>>24&255,r[52]=z>>>0&255,r[53]=z>>>8&255,r[54]=z>>>16&255,r[55]=z>>>24&255,r[56]=R>>>0&255,r[57]=R>>>8&255,r[58]=R>>>16&255,r[59]=R>>>24&255,r[60]=P>>>0&255,r[61]=P>>>8&255,r[62]=P>>>16&255,r[63]=P>>>24&255}(r,t,n,e)}function _(r,t,n,e){!function(r,t,n,e){for(var o,i=255&e[0]|(255&e[1])<<8|(255&e[2])<<16|(255&e[3])<<24,h=255&n[0]|(255&n[1])<<8|(255&n[2])<<16|(255&n[3])<<24,a=255&n[4]|(255&n[5])<<8|(255&n[6])<<16|(255&n[7])<<24,f=255&n[8]|(255&n[9])<<8|(255&n[10])<<16|(255&n[11])<<24,s=255&n[12]|(255&n[13])<<8|(255&n[14])<<16|(255&n[15])<<24,u=255&e[4]|(255&e[5])<<8|(255&e[6])<<16|(255&e[7])<<24,c=255&t[0]|(255&t[1])<<8|(255&t[2])<<16|(255&t[3])<<24,y=255&t[4]|(255&t[5])<<8|(255&t[6])<<16|(255&t[7])<<24,l=255&t[8]|(255&t[9])<<8|(255&t[10])<<16|(255&t[11])<<24,w=255&t[12]|(255&t[13])<<8|(255&t[14])<<16|(255&t[15])<<24,v=255&e[8]|(255&e[9])<<8|(255&e[10])<<16|(255&e[11])<<24,p=255&n[16]|(255&n[17])<<8|(255&n[18])<<16|(255&n[19])<<24,b=255&n[20]|(255&n[21])<<8|(255&n[22])<<16|(255&n[23])<<24,g=255&n[24]|(255&n[25])<<8|(255&n[26])<<16|(255&n[27])<<24,A=255&n[28]|(255&n[29])<<8|(255&n[30])<<16|(255&n[31])<<24,_=255&e[12]|(255&e[13])<<8|(255&e[14])<<16|(255&e[15])<<24,U=0;U<20;U+=2)i^=(o=(b^=(o=(l^=(o=(s^=(o=i+b|0)<<7|o>>>25)+i|0)<<9|o>>>23)+s|0)<<13|o>>>19)+l|0)<<18|o>>>14,u^=(o=(h^=(o=(g^=(o=(w^=(o=u+h|0)<<7|o>>>25)+u|0)<<9|o>>>23)+w|0)<<13|o>>>19)+g|0)<<18|o>>>14,v^=(o=(c^=(o=(a^=(o=(A^=(o=v+c|0)<<7|o>>>25)+v|0)<<9|o>>>23)+A|0)<<13|o>>>19)+a|0)<<18|o>>>14,_^=(o=(p^=(o=(y^=(o=(f^=(o=_+p|0)<<7|o>>>25)+_|0)<<9|o>>>23)+f|0)<<13|o>>>19)+y|0)<<18|o>>>14,i^=(o=(f^=(o=(a^=(o=(h^=(o=i+f|0)<<7|o>>>25)+i|0)<<9|o>>>23)+h|0)<<13|o>>>19)+a|0)<<18|o>>>14,u^=(o=(s^=(o=(y^=(o=(c^=(o=u+s|0)<<7|o>>>25)+u|0)<<9|o>>>23)+c|0)<<13|o>>>19)+y|0)<<18|o>>>14,v^=(o=(w^=(o=(l^=(o=(p^=(o=v+w|0)<<7|o>>>25)+v|0)<<9|o>>>23)+p|0)<<13|o>>>19)+l|0)<<18|o>>>14,_^=(o=(A^=(o=(g^=(o=(b^=(o=_+A|0)<<7|o>>>25)+_|0)<<9|o>>>23)+b|0)<<13|o>>>19)+g|0)<<18|o>>>14;r[0]=i>>>0&255,r[1]=i>>>8&255,r[2]=i>>>16&255,r[3]=i>>>24&255,r[4]=u>>>0&255,r[5]=u>>>8&255,r[6]=u>>>16&255,r[7]=u>>>24&255,r[8]=v>>>0&255,r[9]=v>>>8&255,r[10]=v>>>16&255,r[11]=v>>>24&255,r[12]=_>>>0&255,r[13]=_>>>8&255,r[14]=_>>>16&255,r[15]=_>>>24&255,r[16]=c>>>0&255,r[17]=c>>>8&255,r[18]=c>>>16&255,r[19]=c>>>24&255,r[20]=y>>>0&255,r[21]=y>>>8&255,r[22]=y>>>16&255,r[23]=y>>>24&255,r[24]=l>>>0&255,r[25]=l>>>8&255,r[26]=l>>>16&255,r[27]=l>>>24&255,r[28]=w>>>0&255,r[29]=w>>>8&255,r[30]=w>>>16&255,r[31]=w>>>24&255}(r,t,n,e)}var U=new Uint8Array([101,120,112,97,110,100,32,51,50,45,98,121,116,101,32,107]);function d(r,t,n,e,o,i,h){var a,f,s=new Uint8Array(16),u=new Uint8Array(64);for(f=0;f<16;f++)s[f]=0;for(f=0;f<8;f++)s[f]=i[f];for(;64<=o;){for(A(u,s,h,U),f=0;f<64;f++)r[t+f]=n[e+f]^u[f];for(a=1,f=8;f<16;f++)a=a+(255&s[f])|0,s[f]=255&a,a>>>=8;o-=64,t+=64,e+=64}if(0<o)for(A(u,s,h,U),f=0;f<o;f++)r[t+f]=n[e+f]^u[f];return 0}function E(r,t,n,e,o){var i,h,a=new Uint8Array(16),f=new Uint8Array(64);for(h=0;h<16;h++)a[h]=0;for(h=0;h<8;h++)a[h]=e[h];for(;64<=n;){for(A(f,a,o,U),h=0;h<64;h++)r[t+h]=f[h];for(i=1,h=8;h<16;h++)i=i+(255&a[h])|0,a[h]=255&i,i>>>=8;n-=64,t+=64}if(0<n)for(A(f,a,o,U),h=0;h<n;h++)r[t+h]=f[h];return 0}function x(r,t,n,e,o){var i=new Uint8Array(32);_(i,e,o,U);for(var h=new Uint8Array(8),a=0;a<8;a++)h[a]=e[a+16];return E(r,t,n,h,i)}function M(r,t,n,e,o,i,h){var a=new Uint8Array(32);_(a,i,h,U);for(var f=new Uint8Array(8),s=0;s<8;s++)f[s]=i[s+16];return d(r,t,n,e,o,f,a)}var m=function(r){var t,n,e,o,i,h,a,f;this.buffer=new Uint8Array(16),this.r=new Uint16Array(10),this.h=new Uint16Array(10),this.pad=new Uint16Array(8),this.leftover=0,t=255&r[this.fin=0]|(255&r[1])<<8,this.r[0]=8191&t,n=255&r[2]|(255&r[3])<<8,this.r[1]=8191&(t>>>13|n<<3),e=255&r[4]|(255&r[5])<<8,this.r[2]=7939&(n>>>10|e<<6),o=255&r[6]|(255&r[7])<<8,this.r[3]=8191&(e>>>7|o<<9),i=255&r[8]|(255&r[9])<<8,this.r[4]=255&(o>>>4|i<<12),this.r[5]=i>>>1&8190,h=255&r[10]|(255&r[11])<<8,this.r[6]=8191&(i>>>14|h<<2),a=255&r[12]|(255&r[13])<<8,this.r[7]=8065&(h>>>11|a<<5),f=255&r[14]|(255&r[15])<<8,this.r[8]=8191&(a>>>8|f<<8),this.r[9]=f>>>5&127,this.pad[0]=255&r[16]|(255&r[17])<<8,this.pad[1]=255&r[18]|(255&r[19])<<8,this.pad[2]=255&r[20]|(255&r[21])<<8,this.pad[3]=255&r[22]|(255&r[23])<<8,this.pad[4]=255&r[24]|(255&r[25])<<8,this.pad[5]=255&r[26]|(255&r[27])<<8,this.pad[6]=255&r[28]|(255&r[29])<<8,this.pad[7]=255&r[30]|(255&r[31])<<8};function B(r,t,n,e,o,i){var h=new m(i);return h.update(n,e,o),h.finish(r,t),0}function S(r,t,n,e,o,i){var h=new Uint8Array(16);return B(h,0,n,e,o,i),b(r,t,h,0)}function k(r,t,n,e,o){var i;if(n<32)return-1;for(M(r,0,t,0,n,e,o),B(r,16,r,32,n-32,r),i=0;i<16;i++)r[i]=0;return 0}function K(r,t,n,e,o){var i,h=new Uint8Array(32);if(n<32)return-1;if(x(h,0,32,e,o),0!==S(t,16,t,32,n-32,h))return-1;for(M(r,0,t,0,n,e,o),i=0;i<32;i++)r[i]=0;return 0}function Y(r,t){var n;for(n=0;n<16;n++)r[n]=0|t[n]}function L(r){var t,n,e=1;for(t=0;t<16;t++)n=r[t]+e+65535,e=Math.floor(n\/65536),r[t]=n-65536*e;r[0]+=e-1+37*(e-1)}function T(r,t,n){for(var e,o=~(n-1),i=0;i<16;i++)e=o&(r[i]^t[i]),r[i]^=e,t[i]^=e}function z(r,t){var n,e,o,i=v(),h=v();for(n=0;n<16;n++)h[n]=t[n];for(L(h),L(h),L(h),e=0;e<2;e++){for(i[0]=h[0]-65517,n=1;n<15;n++)i[n]=h[n]-65535-(i[n-1]>>16&1),i[n-1]&=65535;i[15]=h[15]-32767-(i[14]>>16&1),o=i[15]>>16&1,i[14]&=65535,T(h,i,1-o)}for(n=0;n<16;n++)r[2*n]=255&h[n],r[2*n+1]=h[n]>>8}function R(r,t){var n=new Uint8Array(32),e=new Uint8Array(32);return z(n,r),z(e,t),g(n,0,e,0)}function P(r){var t=new Uint8Array(32);return z(t,r),1&t[0]}function N(r,t){var n;for(n=0;n<16;n++)r[n]=t[2*n]+(t[2*n+1]<<8);r[15]&=32767}function O(r,t,n){for(var e=0;e<16;e++)r[e]=t[e]+n[e]}function C(r,t,n){for(var e=0;e<16;e++)r[e]=t[e]-n[e]}function F(r,t,n){var e,o,i=0,h=0,a=0,f=0,s=0,u=0,c=0,y=0,l=0,w=0,v=0,p=0,b=0,g=0,A=0,_=0,U=0,d=0,E=0,x=0,M=0,m=0,B=0,S=0,k=0,K=0,Y=0,L=0,T=0,z=0,R=0,P=n[0],N=n[1],O=n[2],C=n[3],F=n[4],I=n[5],Z=n[6],G=n[7],q=n[8],D=n[9],V=n[10],X=n[11],j=n[12],H=n[13],J=n[14],Q=n[15];i+=(e=t[0])*P,h+=e*N,a+=e*O,f+=e*C,s+=e*F,u+=e*I,c+=e*Z,y+=e*G,l+=e*q,w+=e*D,v+=e*V,p+=e*X,b+=e*j,g+=e*H,A+=e*J,_+=e*Q,h+=(e=t[1])*P,a+=e*N,f+=e*O,s+=e*C,u+=e*F,c+=e*I,y+=e*Z,l+=e*G,w+=e*q,v+=e*D,p+=e*V,b+=e*X,g+=e*j,A+=e*H,_+=e*J,U+=e*Q,a+=(e=t[2])*P,f+=e*N,s+=e*O,u+=e*C,c+=e*F,y+=e*I,l+=e*Z,w+=e*G,v+=e*q,p+=e*D,b+=e*V,g+=e*X,A+=e*j,_+=e*H,U+=e*J,d+=e*Q,f+=(e=t[3])*P,s+=e*N,u+=e*O,c+=e*C,y+=e*F,l+=e*I,w+=e*Z,v+=e*G,p+=e*q,b+=e*D,g+=e*V,A+=e*X,_+=e*j,U+=e*H,d+=e*J,E+=e*Q,s+=(e=t[4])*P,u+=e*N,c+=e*O,y+=e*C,l+=e*F,w+=e*I,v+=e*Z,p+=e*G,b+=e*q,g+=e*D,A+=e*V,_+=e*X,U+=e*j,d+=e*H,E+=e*J,x+=e*Q,u+=(e=t[5])*P,c+=e*N,y+=e*O,l+=e*C,w+=e*F,v+=e*I,p+=e*Z,b+=e*G,g+=e*q,A+=e*D,_+=e*V,U+=e*X,d+=e*j,E+=e*H,x+=e*J,M+=e*Q,c+=(e=t[6])*P,y+=e*N,l+=e*O,w+=e*C,v+=e*F,p+=e*I,b+=e*Z,g+=e*G,A+=e*q,_+=e*D,U+=e*V,d+=e*X,E+=e*j,x+=e*H,M+=e*J,m+=e*Q,y+=(e=t[7])*P,l+=e*N,w+=e*O,v+=e*C,p+=e*F,b+=e*I,g+=e*Z,A+=e*G,_+=e*q,U+=e*D,d+=e*V,E+=e*X,x+=e*j,M+=e*H,m+=e*J,B+=e*Q,l+=(e=t[8])*P,w+=e*N,v+=e*O,p+=e*C,b+=e*F,g+=e*I,A+=e*Z,_+=e*G,U+=e*q,d+=e*D,E+=e*V,x+=e*X,M+=e*j,m+=e*H,B+=e*J,S+=e*Q,w+=(e=t[9])*P,v+=e*N,p+=e*O,b+=e*C,g+=e*F,A+=e*I,_+=e*Z,U+=e*G,d+=e*q,E+=e*D,x+=e*V,M+=e*X,m+=e*j,B+=e*H,S+=e*J,k+=e*Q,v+=(e=t[10])*P,p+=e*N,b+=e*O,g+=e*C,A+=e*F,_+=e*I,U+=e*Z,d+=e*G,E+=e*q,x+=e*D,M+=e*V,m+=e*X,B+=e*j,S+=e*H,k+=e*J,K+=e*Q,p+=(e=t[11])*P,b+=e*N,g+=e*O,A+=e*C,_+=e*F,U+=e*I,d+=e*Z,E+=e*G,x+=e*q,M+=e*D,m+=e*V,B+=e*X,S+=e*j,k+=e*H,K+=e*J,Y+=e*Q,b+=(e=t[12])*P,g+=e*N,A+=e*O,_+=e*C,U+=e*F,d+=e*I,E+=e*Z,x+=e*G,M+=e*q,m+=e*D,B+=e*V,S+=e*X,k+=e*j,K+=e*H,Y+=e*J,L+=e*Q,g+=(e=t[13])*P,A+=e*N,_+=e*O,U+=e*C,d+=e*F,E+=e*I,x+=e*Z,M+=e*G,m+=e*q,B+=e*D,S+=e*V,k+=e*X,K+=e*j,Y+=e*H,L+=e*J,T+=e*Q,A+=(e=t[14])*P,_+=e*N,U+=e*O,d+=e*C,E+=e*F,x+=e*I,M+=e*Z,m+=e*G,B+=e*q,S+=e*D,k+=e*V,K+=e*X,Y+=e*j,L+=e*H,T+=e*J,z+=e*Q,_+=(e=t[15])*P,h+=38*(d+=e*O),a+=38*(E+=e*C),f+=38*(x+=e*F),s+=38*(M+=e*I),u+=38*(m+=e*Z),c+=38*(B+=e*G),y+=38*(S+=e*q),l+=38*(k+=e*D),w+=38*(K+=e*V),v+=38*(Y+=e*X),p+=38*(L+=e*j),b+=38*(T+=e*H),g+=38*(z+=e*J),A+=38*(R+=e*Q),i=(e=(i+=38*(U+=e*N))+(o=1)+65535)-65536*(o=Math.floor(e\/65536)),h=(e=h+o+65535)-65536*(o=Math.floor(e\/65536)),a=(e=a+o+65535)-65536*(o=Math.floor(e\/65536)),f=(e=f+o+65535)-65536*(o=Math.floor(e\/65536)),s=(e=s+o+65535)-65536*(o=Math.floor(e\/65536)),u=(e=u+o+65535)-65536*(o=Math.floor(e\/65536)),c=(e=c+o+65535)-65536*(o=Math.floor(e\/65536)),y=(e=y+o+65535)-65536*(o=Math.floor(e\/65536)),l=(e=l+o+65535)-65536*(o=Math.floor(e\/65536)),w=(e=w+o+65535)-65536*(o=Math.floor(e\/65536)),v=(e=v+o+65535)-65536*(o=Math.floor(e\/65536)),p=(e=p+o+65535)-65536*(o=Math.floor(e\/65536)),b=(e=b+o+65535)-65536*(o=Math.floor(e\/65536)),g=(e=g+o+65535)-65536*(o=Math.floor(e\/65536)),A=(e=A+o+65535)-65536*(o=Math.floor(e\/65536)),_=(e=_+o+65535)-65536*(o=Math.floor(e\/65536)),i=(e=(i+=o-1+37*(o-1))+(o=1)+65535)-65536*(o=Math.floor(e\/65536)),h=(e=h+o+65535)-65536*(o=Math.floor(e\/65536)),a=(e=a+o+65535)-65536*(o=Math.floor(e\/65536)),f=(e=f+o+65535)-65536*(o=Math.floor(e\/65536)),s=(e=s+o+65535)-65536*(o=Math.floor(e\/65536)),u=(e=u+o+65535)-65536*(o=Math.floor(e\/65536)),c=(e=c+o+65535)-65536*(o=Math.floor(e\/65536)),y=(e=y+o+65535)-65536*(o=Math.floor(e\/65536)),l=(e=l+o+65535)-65536*(o=Math.floor(e\/65536)),w=(e=w+o+65535)-65536*(o=Math.floor(e\/65536)),v=(e=v+o+65535)-65536*(o=Math.floor(e\/65536)),p=(e=p+o+65535)-65536*(o=Math.floor(e\/65536)),b=(e=b+o+65535)-65536*(o=Math.floor(e\/65536)),g=(e=g+o+65535)-65536*(o=Math.floor(e\/65536)),A=(e=A+o+65535)-65536*(o=Math.floor(e\/65536)),_=(e=_+o+65535)-65536*(o=Math.floor(e\/65536)),i+=o-1+37*(o-1),r[0]=i,r[1]=h,r[2]=a,r[3]=f,r[4]=s,r[5]=u,r[6]=c,r[7]=y,r[8]=l,r[9]=w,r[10]=v,r[11]=p,r[12]=b,r[13]=g,r[14]=A,r[15]=_}function I(r,t){F(r,t,t)}function Z(r,t){var n,e=v();for(n=0;n<16;n++)e[n]=t[n];for(n=253;0<=n;n--)I(e,e),2!==n&&4!==n&&F(e,e,t);for(n=0;n<16;n++)r[n]=e[n]}function G(r,t){var n,e=v();for(n=0;n<16;n++)e[n]=t[n];for(n=250;0<=n;n--)I(e,e),1!==n&&F(e,e,t);for(n=0;n<16;n++)r[n]=e[n]}function q(r,t,n){var e,o,i=new Uint8Array(32),h=new Float64Array(80),a=v(),f=v(),s=v(),u=v(),c=v(),y=v();for(o=0;o<31;o++)i[o]=t[o];for(i[31]=127&t[31]|64,i[0]&=248,N(h,n),o=0;o<16;o++)f[o]=h[o],u[o]=a[o]=s[o]=0;for(a[0]=u[0]=1,o=254;0<=o;--o)T(a,f,e=i[o>>>3]>>>(7&o)&1),T(s,u,e),O(c,a,s),C(a,a,s),O(s,f,u),C(f,f,u),I(u,c),I(y,a),F(a,s,a),F(s,f,c),O(c,a,s),C(a,a,s),I(f,a),C(s,u,y),F(a,s,p),O(a,a,u),F(s,s,a),F(a,u,y),F(u,f,h),I(f,c),T(a,f,e),T(s,u,e);for(o=0;o<16;o++)h[o+16]=a[o],h[o+32]=s[o],h[o+48]=f[o],h[o+64]=u[o];var l=h.subarray(32),w=h.subarray(16);return Z(l,l),F(w,w,l),z(r,w),0}function D(r,t){return q(r,t,n)}function V(r,t){return h(t,32),D(r,t)}function X(r,t,n){var e=new Uint8Array(32);return q(e,n,t),_(r,o,e,U)}m.prototype.blocks=function(r,t,n){for(var e,o,i,h,a,f,s,u,c,y,l,w,v,p,b,g,A,_,U,d=this.fin?0:2048,E=this.h[0],x=this.h[1],M=this.h[2],m=this.h[3],B=this.h[4],S=this.h[5],k=this.h[6],K=this.h[7],Y=this.h[8],L=this.h[9],T=this.r[0],z=this.r[1],R=this.r[2],P=this.r[3],N=this.r[4],O=this.r[5],C=this.r[6],F=this.r[7],I=this.r[8],Z=this.r[9];16<=n;)y=c=0,y+=(E+=8191&(e=255&r[t+0]|(255&r[t+1])<<8))*T,y+=(x+=8191&(e>>>13|(o=255&r[t+2]|(255&r[t+3])<<8)<<3))*(5*Z),y+=(M+=8191&(o>>>10|(i=255&r[t+4]|(255&r[t+5])<<8)<<6))*(5*I),y+=(m+=8191&(i>>>7|(h=255&r[t+6]|(255&r[t+7])<<8)<<9))*(5*F),c=(y+=(B+=8191&(h>>>4|(a=255&r[t+8]|(255&r[t+9])<<8)<<12))*(5*C))>>>13,y&=8191,y+=(S+=a>>>1&8191)*(5*O),y+=(k+=8191&(a>>>14|(f=255&r[t+10]|(255&r[t+11])<<8)<<2))*(5*N),y+=(K+=8191&(f>>>11|(s=255&r[t+12]|(255&r[t+13])<<8)<<5))*(5*P),y+=(Y+=8191&(s>>>8|(u=255&r[t+14]|(255&r[t+15])<<8)<<8))*(5*R),l=c+=(y+=(L+=u>>>5|d)*(5*z))>>>13,l+=E*z,l+=x*T,l+=M*(5*Z),l+=m*(5*I),c=(l+=B*(5*F))>>>13,l&=8191,l+=S*(5*C),l+=k*(5*O),l+=K*(5*N),l+=Y*(5*P),c+=(l+=L*(5*R))>>>13,l&=8191,w=c,w+=E*R,w+=x*z,w+=M*T,w+=m*(5*Z),c=(w+=B*(5*I))>>>13,w&=8191,w+=S*(5*F),w+=k*(5*C),w+=K*(5*O),w+=Y*(5*N),v=c+=(w+=L*(5*P))>>>13,v+=E*P,v+=x*R,v+=M*z,v+=m*T,c=(v+=B*(5*Z))>>>13,v&=8191,v+=S*(5*I),v+=k*(5*F),v+=K*(5*C),v+=Y*(5*O),p=c+=(v+=L*(5*N))>>>13,p+=E*N,p+=x*P,p+=M*R,p+=m*z,c=(p+=B*T)>>>13,p&=8191,p+=S*(5*Z),p+=k*(5*I),p+=K*(5*F),p+=Y*(5*C),b=c+=(p+=L*(5*O))>>>13,b+=E*O,b+=x*N,b+=M*P,b+=m*R,c=(b+=B*z)>>>13,b&=8191,b+=S*T,b+=k*(5*Z),b+=K*(5*I),b+=Y*(5*F),g=c+=(b+=L*(5*C))>>>13,g+=E*C,g+=x*O,g+=M*N,g+=m*P,c=(g+=B*R)>>>13,g&=8191,g+=S*z,g+=k*T,g+=K*(5*Z),g+=Y*(5*I),A=c+=(g+=L*(5*F))>>>13,A+=E*F,A+=x*C,A+=M*O,A+=m*N,c=(A+=B*P)>>>13,A&=8191,A+=S*R,A+=k*z,A+=K*T,A+=Y*(5*Z),_=c+=(A+=L*(5*I))>>>13,_+=E*I,_+=x*F,_+=M*C,_+=m*O,c=(_+=B*N)>>>13,_&=8191,_+=S*P,_+=k*R,_+=K*z,_+=Y*T,U=c+=(_+=L*(5*Z))>>>13,U+=E*Z,U+=x*I,U+=M*F,U+=m*C,c=(U+=B*O)>>>13,U&=8191,U+=S*N,U+=k*P,U+=K*R,U+=Y*z,E=y=8191&(c=(c=((c+=(U+=L*T)>>>13)<<2)+c|0)+(y&=8191)|0),x=l+=c>>>=13,M=w&=8191,m=v&=8191,B=p&=8191,S=b&=8191,k=g&=8191,K=A&=8191,Y=_&=8191,L=U&=8191,t+=16,n-=16;this.h[0]=E,this.h[1]=x,this.h[2]=M,this.h[3]=m,this.h[4]=B,this.h[5]=S,this.h[6]=k,this.h[7]=K,this.h[8]=Y,this.h[9]=L},m.prototype.finish=function(r,t){var n,e,o,i,h=new Uint16Array(10);if(this.leftover){for(i=this.leftover,this.buffer[i++]=1;i<16;i++)this.buffer[i]=0;this.fin=1,this.blocks(this.buffer,0,16)}for(n=this.h[1]>>>13,this.h[1]&=8191,i=2;i<10;i++)this.h[i]+=n,n=this.h[i]>>>13,this.h[i]&=8191;for(this.h[0]+=5*n,n=this.h[0]>>>13,this.h[0]&=8191,this.h[1]+=n,n=this.h[1]>>>13,this.h[1]&=8191,this.h[2]+=n,h[0]=this.h[0]+5,n=h[0]>>>13,h[0]&=8191,i=1;i<10;i++)h[i]=this.h[i]+n,n=h[i]>>>13,h[i]&=8191;for(h[9]-=8192,e=(1^n)-1,i=0;i<10;i++)h[i]&=e;for(e=~e,i=0;i<10;i++)this.h[i]=this.h[i]&e|h[i];for(this.h[0]=65535&(this.h[0]|this.h[1]<<13),this.h[1]=65535&(this.h[1]>>>3|this.h[2]<<10),this.h[2]=65535&(this.h[2]>>>6|this.h[3]<<7),this.h[3]=65535&(this.h[3]>>>9|this.h[4]<<4),this.h[4]=65535&(this.h[4]>>>12|this.h[5]<<1|this.h[6]<<14),this.h[5]=65535&(this.h[6]>>>2|this.h[7]<<11),this.h[6]=65535&(this.h[7]>>>5|this.h[8]<<8),this.h[7]=65535&(this.h[8]>>>8|this.h[9]<<5),o=this.h[0]+this.pad[0],this.h[0]=65535&o,i=1;i<8;i++)o=(this.h[i]+this.pad[i]|0)+(o>>>16)|0,this.h[i]=65535&o;r[t+0]=this.h[0]>>>0&255,r[t+1]=this.h[0]>>>8&255,r[t+2]=this.h[1]>>>0&255,r[t+3]=this.h[1]>>>8&255,r[t+4]=this.h[2]>>>0&255,r[t+5]=this.h[2]>>>8&255,r[t+6]=this.h[3]>>>0&255,r[t+7]=this.h[3]>>>8&255,r[t+8]=this.h[4]>>>0&255,r[t+9]=this.h[4]>>>8&255,r[t+10]=this.h[5]>>>0&255,r[t+11]=this.h[5]>>>8&255,r[t+12]=this.h[6]>>>0&255,r[t+13]=this.h[6]>>>8&255,r[t+14]=this.h[7]>>>0&255,r[t+15]=this.h[7]>>>8&255},m.prototype.update=function(r,t,n){var e,o;if(this.leftover){for(n<(o=16-this.leftover)&&(o=n),e=0;e<o;e++)this.buffer[this.leftover+e]=r[t+e];if(n-=o,t+=o,this.leftover+=o,this.leftover<16)return;this.blocks(this.buffer,0,16),this.leftover=0}if(16<=n&&(o=n-n%16,this.blocks(r,t,o),t+=o,n-=o),n){for(e=0;e<n;e++)this.buffer[this.leftover+e]=r[t+e];this.leftover+=n}};var j=k,H=K;var J=[1116352408,3609767458,1899447441,602891725,3049323471,3964484399,3921009573,2173295548,961987163,4081628472,1508970993,3053834265,2453635748,2937671579,2870763221,3664609560,3624381080,2734883394,310598401,1164996542,607225278,1323610764,1426881987,3590304994,1925078388,4068182383,2162078206,991336113,2614888103,633803317,3248222580,3479774868,3835390401,2666613458,4022224774,944711139,264347078,2341262773,604807628,2007800933,770255983,1495990901,1249150122,1856431235,1555081692,3175218132,1996064986,2198950837,2554220882,3999719339,2821834349,766784016,2952996808,2566594879,3210313671,3203337956,3336571891,1034457026,3584528711,2466948901,113926993,3758326383,338241895,168717936,666307205,1188179964,773529912,1546045734,1294757372,1522805485,1396182291,2643833823,1695183700,2343527390,1986661051,1014477480,2177026350,1206759142,2456956037,344077627,2730485921,1290863460,2820302411,3158454273,3259730800,3505952657,3345764771,106217008,3516065817,3606008344,3600352804,1432725776,4094571909,1467031594,275423344,851169720,430227734,3100823752,506948616,1363258195,659060556,3750685593,883997877,3785050280,958139571,3318307427,1322822218,3812723403,1537002063,2003034995,1747873779,3602036899,1955562222,1575990012,2024104815,1125592928,2227730452,2716904306,2361852424,442776044,2428436474,593698344,2756734187,3733110249,3204031479,2999351573,3329325298,3815920427,3391569614,3928383900,3515267271,566280711,3940187606,3454069534,4118630271,4000239992,116418474,1914138554,174292421,2731055270,289380356,3203993006,460393269,320620315,685471733,587496836,852142971,1086792851,1017036298,365543100,1126000580,2618297676,1288033470,3409855158,1501505948,4234509866,1607167915,987167468,1816402316,1246189591];function Q(r,t,n,e){for(var o,i,h,a,f,s,u,c,y,l,w,v,p,b,g,A,_,U,d,E,x,M,m,B,S=new Int32Array(16),k=new Int32Array(16),K=r[0],Y=r[1],L=r[2],T=r[3],z=r[4],R=r[5],P=r[6],N=r[7],O=t[0],C=t[1],F=t[2],I=t[3],Z=t[4],G=t[5],q=t[6],D=t[7],V=0;128<=e;){for(_=0;_<16;_++)U=8*_+V,S[_]=n[U+0]<<24|n[U+1]<<16|n[U+2]<<8|n[U+3],k[_]=n[U+4]<<24|n[U+5]<<16|n[U+6]<<8|n[U+7];for(_=0;_<80;_++)if(o=Y,i=L,h=T,c=C,y=F,l=I,x=65535&(E=D),M=E>>>16,m=65535&(d=N),B=d>>>16,x+=65535&(E=((w=Z)>>>14|(a=z)<<18)^(Z>>>18|z<<14)^(z>>>9|Z<<23)),M+=E>>>16,m+=65535&(d=(z>>>14|Z<<18)^(z>>>18|Z<<14)^(Z>>>9|z<<23)),B+=d>>>16,x+=65535&(E=Z&(v=G)^~Z&(p=q)),M+=E>>>16,m+=65535&(d=z&(f=R)^~z&(s=P)),B+=d>>>16,d=J[2*_],x+=65535&(E=J[2*_+1]),M+=E>>>16,m+=65535&d,B+=d>>>16,d=S[_%16],M+=(E=k[_%16])>>>16,m+=65535&d,B+=d>>>16,m+=(M+=(x+=65535&E)>>>16)>>>16,x=65535&(E=A=65535&x|M<<16),M=E>>>16,m=65535&(d=g=65535&m|(B+=m>>>16)<<16),B=d>>>16,x+=65535&(E=(O>>>28|K<<4)^(K>>>2|O<<30)^(K>>>7|O<<25)),M+=E>>>16,m+=65535&(d=(K>>>28|O<<4)^(O>>>2|K<<30)^(O>>>7|K<<25)),B+=d>>>16,M+=(E=O&C^O&F^C&F)>>>16,m+=65535&(d=K&Y^K&L^Y&L),B+=d>>>16,u=65535&(m+=(M+=(x+=65535&E)>>>16)>>>16)|(B+=m>>>16)<<16,b=65535&x|M<<16,x=65535&(E=l),M=E>>>16,m=65535&(d=h),B=d>>>16,M+=(E=A)>>>16,m+=65535&(d=g),B+=d>>>16,Y=K,L=o,T=i,z=h=65535&(m+=(M+=(x+=65535&E)>>>16)>>>16)|(B+=m>>>16)<<16,R=a,P=f,N=s,K=u,C=O,F=c,I=y,Z=l=65535&x|M<<16,G=w,q=v,D=p,O=b,_%16==15)for(U=0;U<16;U++)d=S[U],x=65535&(E=k[U]),M=E>>>16,m=65535&d,B=d>>>16,d=S[(U+9)%16],x+=65535&(E=k[(U+9)%16]),M+=E>>>16,m+=65535&d,B+=d>>>16,g=S[(U+1)%16],x+=65535&(E=((A=k[(U+1)%16])>>>1|g<<31)^(A>>>8|g<<24)^(A>>>7|g<<25)),M+=E>>>16,m+=65535&(d=(g>>>1|A<<31)^(g>>>8|A<<24)^g>>>7),B+=d>>>16,g=S[(U+14)%16],M+=(E=((A=k[(U+14)%16])>>>19|g<<13)^(g>>>29|A<<3)^(A>>>6|g<<26))>>>16,m+=65535&(d=(g>>>19|A<<13)^(A>>>29|g<<3)^g>>>6),B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,S[U]=65535&m|B<<16,k[U]=65535&x|M<<16;x=65535&(E=O),M=E>>>16,m=65535&(d=K),B=d>>>16,d=r[0],M+=(E=t[0])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[0]=K=65535&m|B<<16,t[0]=O=65535&x|M<<16,x=65535&(E=C),M=E>>>16,m=65535&(d=Y),B=d>>>16,d=r[1],M+=(E=t[1])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[1]=Y=65535&m|B<<16,t[1]=C=65535&x|M<<16,x=65535&(E=F),M=E>>>16,m=65535&(d=L),B=d>>>16,d=r[2],M+=(E=t[2])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[2]=L=65535&m|B<<16,t[2]=F=65535&x|M<<16,x=65535&(E=I),M=E>>>16,m=65535&(d=T),B=d>>>16,d=r[3],M+=(E=t[3])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[3]=T=65535&m|B<<16,t[3]=I=65535&x|M<<16,x=65535&(E=Z),M=E>>>16,m=65535&(d=z),B=d>>>16,d=r[4],M+=(E=t[4])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[4]=z=65535&m|B<<16,t[4]=Z=65535&x|M<<16,x=65535&(E=G),M=E>>>16,m=65535&(d=R),B=d>>>16,d=r[5],M+=(E=t[5])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[5]=R=65535&m|B<<16,t[5]=G=65535&x|M<<16,x=65535&(E=q),M=E>>>16,m=65535&(d=P),B=d>>>16,d=r[6],M+=(E=t[6])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[6]=P=65535&m|B<<16,t[6]=q=65535&x|M<<16,x=65535&(E=D),M=E>>>16,m=65535&(d=N),B=d>>>16,d=r[7],M+=(E=t[7])>>>16,m+=65535&d,B+=d>>>16,B+=(m+=(M+=(x+=65535&E)>>>16)>>>16)>>>16,r[7]=N=65535&m|B<<16,t[7]=D=65535&x|M<<16,V+=128,e-=128}return e}function W(r,t,n){var e,o=new Int32Array(8),i=new Int32Array(8),h=new Uint8Array(256),a=n;for(o[0]=1779033703,o[1]=3144134277,o[2]=1013904242,o[3]=2773480762,o[4]=1359893119,o[5]=2600822924,o[6]=528734635,o[7]=1541459225,i[0]=4089235720,i[1]=2227873595,i[2]=4271175723,i[3]=1595750129,i[4]=2917565137,i[5]=725511199,i[6]=4215389547,i[7]=327033209,Q(o,i,t,n),n%=128,e=0;e<n;e++)h[e]=t[a-n+e];for(h[n]=128,h[(n=256-128*(n<112?1:0))-9]=0,f(h,n-8,a\/536870912|0,a<<3),Q(o,i,h,n),e=0;e<8;e++)f(r,8*e,o[e],i[e]);return 0}function $(r,t){var n=v(),e=v(),o=v(),i=v(),h=v(),a=v(),f=v(),s=v(),u=v();C(n,r[1],r[0]),C(u,t[1],t[0]),F(n,n,u),O(e,r[0],r[1]),O(u,t[0],t[1]),F(e,e,u),F(o,r[3],t[3]),F(o,o,y),F(i,r[2],t[2]),O(i,i,i),C(h,e,n),C(a,i,o),O(f,i,o),O(s,e,n),F(r[0],h,a),F(r[1],s,f),F(r[2],f,a),F(r[3],h,s)}function rr(r,t,n){var e;for(e=0;e<4;e++)T(r[e],t[e],n)}function tr(r,t){var n=v(),e=v(),o=v();Z(o,t[2]),F(n,t[0],o),F(e,t[1],o),z(r,e),r[31]^=P(n)<<7}function nr(r,t,n){var e,o;for(Y(r[0],s),Y(r[1],u),Y(r[2],u),Y(r[3],s),o=255;0<=o;--o)rr(r,t,e=n[o\/8|0]>>(7&o)&1),$(t,r),$(r,r),rr(r,t,e)}function er(r,t){var n=[v(),v(),v(),v()];Y(n[0],e),Y(n[1],a),Y(n[2],u),F(n[3],e,a),nr(r,n,t)}function or(r,t,n){var e,o=new Uint8Array(64),i=[v(),v(),v(),v()];for(n||h(t,32),W(o,t,32),o[0]&=248,o[31]&=127,o[31]|=64,er(i,o),tr(r,i),e=0;e<32;e++)t[e+32]=r[e];return 0}var ir=new Float64Array([237,211,245,92,26,99,18,88,214,156,247,162,222,249,222,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16]);function hr(r,t){var n,e,o,i;for(e=63;32<=e;--e){for(n=0,o=e-32,i=e-12;o<i;++o)t[o]+=n-16*t[e]*ir[o-(e-32)],n=Math.floor((t[o]+128)\/256),t[o]-=256*n;t[o]+=n,t[e]=0}for(o=n=0;o<32;o++)t[o]+=n-(t[31]>>4)*ir[o],n=t[o]>>8,t[o]&=255;for(o=0;o<32;o++)t[o]-=n*ir[o];for(e=0;e<32;e++)t[e+1]+=t[e]>>8,r[e]=255&t[e]}function ar(r){var t,n=new Float64Array(64);for(t=0;t<64;t++)n[t]=r[t];for(t=0;t<64;t++)r[t]=0;hr(r,n)}function fr(r,t,n,e){var o,i,h=new Uint8Array(64),a=new Uint8Array(64),f=new Uint8Array(64),s=new Float64Array(64),u=[v(),v(),v(),v()];W(h,e,32),h[0]&=248,h[31]&=127,h[31]|=64;var c=n+64;for(o=0;o<n;o++)r[64+o]=t[o];for(o=0;o<32;o++)r[32+o]=h[32+o];for(W(f,r.subarray(32),n+32),ar(f),er(u,f),tr(r,u),o=32;o<64;o++)r[o]=e[o];for(W(a,r,n+64),ar(a),o=0;o<64;o++)s[o]=0;for(o=0;o<32;o++)s[o]=f[o];for(o=0;o<32;o++)for(i=0;i<32;i++)s[o+i]+=a[o]*h[i];return hr(r.subarray(32),s),c}function sr(r,t,n,e){var o,i=new Uint8Array(32),h=new Uint8Array(64),a=[v(),v(),v(),v()],f=[v(),v(),v(),v()];if(n<64)return-1;if(function(r,t){var n=v(),e=v(),o=v(),i=v(),h=v(),a=v(),f=v();if(Y(r[2],u),N(r[1],t),I(o,r[1]),F(i,o,c),C(o,o,r[2]),O(i,r[2],i),I(h,i),I(a,h),F(f,a,h),F(n,f,o),F(n,n,i),G(n,n),F(n,n,o),F(n,n,i),F(n,n,i),F(r[0],n,i),I(e,r[0]),F(e,e,i),R(e,o)&&F(r[0],r[0],l),I(e,r[0]),F(e,e,i),R(e,o))return 1;P(r[0])===t[31]>>7&&C(r[0],s,r[0]),F(r[3],r[0],r[1])}(f,e))return-1;for(o=0;o<n;o++)r[o]=t[o];for(o=0;o<32;o++)r[o+32]=e[o];if(W(h,r,n),ar(h),nr(a,f,h),er(f,t.subarray(32)),$(a,f),tr(i,a),n-=64,g(t,0,i,0)){for(o=0;o<n;o++)r[o]=0;return-1}for(o=0;o<n;o++)r[o]=t[o+64];return n}function ur(r,t){if(32!==r.length)throw new Error("bad key size");if(24!==t.length)throw new Error("bad nonce size")}function cr(){for(var r=0;r<arguments.length;r++)if(!(arguments[r]instanceof Uint8Array))throw new TypeError("unexpected type, use Uint8Array")}function yr(r){for(var t=0;t<r.length;t++)r[t]=0}i.lowlevel={crypto_core_hsalsa20:_,crypto_stream_xor:M,crypto_stream:x,crypto_stream_salsa20_xor:d,crypto_stream_salsa20:E,crypto_onetimeauth:B,crypto_onetimeauth_verify:S,crypto_verify_16:b,crypto_verify_32:g,crypto_secretbox:k,crypto_secretbox_open:K,crypto_scalarmult:q,crypto_scalarmult_base:D,crypto_box_beforenm:X,crypto_box_afternm:j,crypto_box:function(r,t,n,e,o,i){var h=new Uint8Array(32);return X(h,o,i),j(r,t,n,e,h)},crypto_box_open:function(r,t,n,e,o,i){var h=new Uint8Array(32);return X(h,o,i),H(r,t,n,e,h)},crypto_box_keypair:V,crypto_hash:W,crypto_sign:fr,crypto_sign_keypair:or,crypto_sign_open:sr,crypto_secretbox_KEYBYTES:32,crypto_secretbox_NONCEBYTES:24,crypto_secretbox_ZEROBYTES:32,crypto_secretbox_BOXZEROBYTES:16,crypto_scalarmult_BYTES:32,crypto_scalarmult_SCALARBYTES:32,crypto_box_PUBLICKEYBYTES:32,crypto_box_SECRETKEYBYTES:32,crypto_box_BEFORENMBYTES:32,crypto_box_NONCEBYTES:24,crypto_box_ZEROBYTES:32,crypto_box_BOXZEROBYTES:16,crypto_sign_BYTES:64,crypto_sign_PUBLICKEYBYTES:32,crypto_sign_SECRETKEYBYTES:64,crypto_sign_SEEDBYTES:32,crypto_hash_BYTES:64,gf:v,D:c,L:ir,pack25519:z,unpack25519:N,M:F,A:O,S:I,Z:C,pow2523:G,add:$,set25519:Y,modL:hr,scalarmult:nr,scalarbase:er},i.randomBytes=function(r){var t=new Uint8Array(r);return h(t,r),t},i.secretbox=function(r,t,n){cr(r,t,n),ur(n,t);for(var e=new Uint8Array(32+r.length),o=new Uint8Array(e.length),i=0;i<r.length;i++)e[i+32]=r[i];return k(o,e,e.length,t,n),o.subarray(16)},i.secretbox.open=function(r,t,n){cr(r,t,n),ur(n,t);for(var e=new Uint8Array(16+r.length),o=new Uint8Array(e.length),i=0;i<r.length;i++)e[i+16]=r[i];return e.length<32||0!==K(o,e,e.length,t,n)?null:o.subarray(32)},i.secretbox.keyLength=32,i.secretbox.nonceLength=24,i.secretbox.overheadLength=16,i.scalarMult=function(r,t){if(cr(r,t),32!==r.length)throw new Error("bad n size");if(32!==t.length)throw new Error("bad p size");var n=new Uint8Array(32);return q(n,r,t),n},i.scalarMult.base=function(r){if(cr(r),32!==r.length)throw new Error("bad n size");var t=new Uint8Array(32);return D(t,r),t},i.scalarMult.scalarLength=32,i.scalarMult.groupElementLength=32,i.box=function(r,t,n,e){var o=i.box.before(n,e);return i.secretbox(r,t,o)},i.box.before=function(r,t){cr(r,t),function(r,t){if(32!==r.length)throw new Error("bad public key size");if(32!==t.length)throw new Error("bad secret key size")}(r,t);var n=new Uint8Array(32);return X(n,r,t),n},i.box.after=i.secretbox,i.box.open=function(r,t,n,e){var o=i.box.before(n,e);return i.secretbox.open(r,t,o)},i.box.open.after=i.secretbox.open,i.box.keyPair=function(){var r=new Uint8Array(32),t=new Uint8Array(32);return V(r,t),{publicKey:r,secretKey:t}},i.box.keyPair.fromSecretKey=function(r){if(cr(r),32!==r.length)throw new Error("bad secret key size");var t=new Uint8Array(32);return D(t,r),{publicKey:t,secretKey:new Uint8Array(r)}},i.box.publicKeyLength=32,i.box.secretKeyLength=32,i.box.sharedKeyLength=32,i.box.nonceLength=24,i.box.overheadLength=i.secretbox.overheadLength,i.sign=function(r,t){if(cr(r,t),64!==t.length)throw new Error("bad secret key size");var n=new Uint8Array(64+r.length);return fr(n,r,r.length,t),n},i.sign.open=function(r,t){if(cr(r,t),32!==t.length)throw new Error("bad public key size");var n=new Uint8Array(r.length),e=sr(n,r,r.length,t);if(e<0)return null;for(var o=new Uint8Array(e),i=0;i<o.length;i++)o[i]=n[i];return o},i.sign.detached=function(r,t){for(var n=i.sign(r,t),e=new Uint8Array(64),o=0;o<e.length;o++)e[o]=n[o];return e},i.sign.detached.verify=function(r,t,n){if(cr(r,t,n),64!==t.length)throw new Error("bad signature size");if(32!==n.length)throw new Error("bad public key size");var e,o=new Uint8Array(64+r.length),i=new Uint8Array(64+r.length);for(e=0;e<64;e++)o[e]=t[e];for(e=0;e<r.length;e++)o[e+64]=r[e];return 0<=sr(i,o,o.length,n)},i.sign.keyPair=function(){var r=new Uint8Array(32),t=new Uint8Array(64);return or(r,t),{publicKey:r,secretKey:t}},i.sign.keyPair.fromSecretKey=function(r){if(cr(r),64!==r.length)throw new Error("bad secret key size");for(var t=new Uint8Array(32),n=0;n<t.length;n++)t[n]=r[32+n];return{publicKey:t,secretKey:new Uint8Array(r)}},i.sign.keyPair.fromSeed=function(r){if(cr(r),32!==r.length)throw new Error("bad seed size");for(var t=new Uint8Array(32),n=new Uint8Array(64),e=0;e<32;e++)n[e]=r[e];return or(t,n,!0),{publicKey:t,secretKey:n}},i.sign.publicKeyLength=32,i.sign.secretKeyLength=64,i.sign.seedLength=32,i.sign.signatureLength=64,i.hash=function(r
+singleComment	node_modules/strip-json-comments/index.js	/^var singleComment = 1;$/;"	v
+multiComment	node_modules/strip-json-comments/index.js	/^var multiComment = 2;$/;"	v
+stripWithoutWhitespace	node_modules/strip-json-comments/index.js	/^function stripWithoutWhitespace() {$/;"	f
+stripWithWhitespace	node_modules/strip-json-comments/index.js	/^function stripWithWhitespace(str, start, end) {$/;"	f
+module.exports	node_modules/strip-json-comments/index.js	/^module.exports = function (str, opts) {$/;"	f
+keepAlive	node_modules/package-json/index.js	/^	keepAlive: true,$/;"	p	class:const
+maxSockets	node_modules/package-json/index.js	/^	maxSockets: 50$/;"	p	class:const
+version	node_modules/package-json/index.js	/^		version: 'latest',$/;"	p	class:options
+accept	node_modules/package-json/index.js	/^		accept: 'application\/vnd.npm.install-v1+json; q=1.0, application\/json; q=0.8, *\/*'$/;"	p	class:const
+json	node_modules/package-json/index.js	/^		json: true,$/;"	p	class:const
+agent	node_modules/package-json/index.js	/^		agent: {$/;"	p	class:const
+encoding	node_modules/readdirp/index.js	/^    this._rdOptions = { encoding: 'utf8', withFileTypes: this._isDirent };$/;"	p	class:_rdOptions
+withFileTypes	node_modules/readdirp/index.js	/^    this._rdOptions = { encoding: 'utf8', withFileTypes: this._isDirent };$/;"	p	class:_rdOptions
+path	node_modules/readdirp/index.js	/^      entry = {path: sysPath.relative(this._root, fullPath), fullPath, basename};$/;"	p	class:entry
+module.exports	node_modules/is-extglob/index.js	/^module.exports = function isExtglob(str) {$/;"	f
+isExtglob	node_modules/is-extglob/index.js	/^module.exports = function isExtglob(str) {$/;"	f
+getPathSegments	node_modules/dot-prop/index.js	/^function getPathSegments(path) {$/;"	f
+e	node_modules/imurmurhash/imurmurhash.min.js	/^!function(){function t(h,r){var s=this instanceof t?this:e;return s.reset(r),"string"==typeof h&&h.length>0&&s.hash(h),s!==this?s:void 0}var e;t.prototype.hash=function(t){var e,h,r,s,i;switch(i=t.length,this.len+=i,h=this.k1,r=0,this.rem){case 0:h^=i>r?65535&t.charCodeAt(r++):0;case 1:h^=i>r?(65535&t.charCodeAt(r++))<<8:0;case 2:h^=i>r?(65535&t.charCodeAt(r++))<<16:0;case 3:h^=i>r?(255&t.charCodeAt(r))<<24:0,h^=i>r?(65280&t.charCodeAt(r++))>>8:0}if(this.rem=3&i+this.rem,i-=this.rem,i>0){for(e=this.h1;;){if(h=4294967295&11601*h+3432906752*(65535&h),h=h<<15|h>>>17,h=4294967295&13715*h+461832192*(65535&h),e^=h,e=e<<13|e>>>19,e=4294967295&5*e+3864292196,r>=i)break;h=65535&t.charCodeAt(r++)^(65535&t.charCodeAt(r++))<<8^(65535&t.charCodeAt(r++))<<16,s=t.charCodeAt(r++),h^=(255&s)<<24^(65280&s)>>8}switch(h=0,this.rem){case 3:h^=(65535&t.charCodeAt(r+2))<<16;case 2:h^=(65535&t.charCodeAt(r+1))<<8;case 1:h^=65535&t.charCodeAt(r)}this.h1=e}return this.k1=h,this},t.prototype.result=function(){var t,e;return t=this.k1,e=this.h1,t>0&&(t=4294967295&11601*t+3432906752*(65535&t),t=t<<15|t>>>17,t=4294967295&13715*t+461832192*(65535&t),e^=t),e^=this.len,e^=e>>>16,e=4294967295&51819*e+2246770688*(65535&e),e^=e>>>13,e=4294967295&44597*e+3266445312*(65535&e),e^=e>>>16,e>>>0},t.prototype.reset=function(t){return this.h1="number"==typeof t?t:0,this.rem=this.k1=this.len=0,this},e=new t,"undefined"!=typeof module?module.exports=t:this.MurmurHash3=t}();/;"	v
+t	node_modules/imurmurhash/imurmurhash.min.js	/^!function(){function t(h,r){var s=this instanceof t?this:e;return s.reset(r),"string"==typeof h&&h.length>0&&s.hash(h),s!==this?s:void 0}var e;t.prototype.hash=function(t){var e,h,r,s,i;switch(i=t.length,this.len+=i,h=this.k1,r=0,this.rem){case 0:h^=i>r?65535&t.charCodeAt(r++):0;case 1:h^=i>r?(65535&t.charCodeAt(r++))<<8:0;case 2:h^=i>r?(65535&t.charCodeAt(r++))<<16:0;case 3:h^=i>r?(255&t.charCodeAt(r))<<24:0,h^=i>r?(65280&t.charCodeAt(r++))>>8:0}if(this.rem=3&i+this.rem,i-=this.rem,i>0){for(e=this.h1;;){if(h=4294967295&11601*h+3432906752*(65535&h),h=h<<15|h>>>17,h=4294967295&13715*h+461832192*(65535&h),e^=h,e=e<<13|e>>>19,e=4294967295&5*e+3864292196,r>=i)break;h=65535&t.charCodeAt(r++)^(65535&t.charCodeAt(r++))<<8^(65535&t.charCodeAt(r++))<<16,s=t.charCodeAt(r++),h^=(255&s)<<24^(65280&s)>>8}switch(h=0,this.rem){case 3:h^=(65535&t.charCodeAt(r+2))<<16;case 2:h^=(65535&t.charCodeAt(r+1))<<8;case 1:h^=65535&t.charCodeAt(r)}this.h1=e}return this.k1=h,this},t.prototype.result=function(){var t,e;return t=this.k1,e=this.h1,t>0&&(t=4294967295&11601*t+3432906752*(65535&t),t=t<<15|t>>>17,t=4294967295&13715*t+461832192*(65535&t),e^=t),e^=this.len,e^=e>>>16,e=4294967295&51819*e+2246770688*(65535&e),e^=e>>>13,e=4294967295&44597*e+3266445312*(65535&e),e^=e>>>16,e>>>0},t.prototype.reset=function(t){return this.h1="number"==typeof t?t:0,this.rem=this.k1=this.len=0,this},e=new t,"undefined"!=typeof module?module.exports=t:this.MurmurHash3=t}();/;"	c
+hash	node_modules/imurmurhash/imurmurhash.min.js	/^!function(){function t(h,r){var s=this instanceof t?this:e;return s.rese

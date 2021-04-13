@@ -1,14 +1,16 @@
-require("dotenv").config();
-/* change this if u want to test locally */
-const ERA_DISC = process.env.ERA_DISCORD; // discord server id
-const BOT_TOKEN = process.env.DISCORD_TOKEN; // bot token
+const config = require("./config");
 
 const Discord = require("discord.js");
+const handler = require("./handler");
 const client = new Discord.Client();
-const PREFIX = "e!";
+
+// To store commands of the bot
+client.commands = new Discord.Collection();
+
+handler(client);
 
 client.on("ready", () => {
-  console.log("connected as " + client.user.tag);
+  console.log("Connected as " + client.user.tag);
   client.user.setActivity("ON ERA/EVIL CSURF SERVERS", { type: "PLAYING" });
 });
 
@@ -19,12 +21,23 @@ client.on("message", (msg) => {
     msg.react("❌");
   }
 
-  if (msg.author == client.user) return;
-  if (msg.content[0] + msg.content[1] === PREFIX) process_command(msg);
+  if (!msg.content.startsWith(config.prefix) || message.author.bot) return;
+
+  const args = msg.content.slice(config.prefix.length).trim().split(/ +/);
+  const cmd = args.shift().toLowerCase();
+
+  if (!client.commands.has(command)) return;
+
+  try {
+    client.commands.get(command).execute(message, args);
+  } catch (error) {
+    console.error(error);
+    message.reply(`There was an issue executing that command`);
+  }
 });
 
 function process_command(msg) {
-  const args = msg.content.slice(PREFIX.length).trim().split(/ +/);
+  const args = msg.content.slice(config.prefix.length).trim().split(/ +/);
   const cmd = args.shift().toLowerCase();
 
   switch (cmd) {
@@ -130,7 +143,7 @@ function cmd_banappeal(msg, args) {
     );
 
   setTimeout(() => {
-    const server = client.guilds.cache.get(ERA_DISC);
+    const server = client.guilds.cache.get(config.eraID);
     server.channels.create("banappeal-" + playername); // fix permissions for admins only and player that requested!
     setTimeout(() => {
       const channel = server.channels.cache.find(
@@ -160,4 +173,4 @@ function cmd_delete(msg, arg) {
 }
 */
 
-client.login(BOT_TOKEN);
+client.login(config.token);
