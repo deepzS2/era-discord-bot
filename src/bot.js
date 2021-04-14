@@ -3,11 +3,13 @@ const config = require("./config");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-
 const { handler } = require("./handler");
 
 // To store commands of the bot
 client.commands = new Discord.Collection();
+
+// To store each user command cooldown
+client.cooldowns = new Discord.Collection();
 
 handler(client);
 
@@ -30,11 +32,51 @@ client.on("message", (msg) => {
 
   if (!client.commands.has(cmd)) return;
 
+  const { cooldowns } = client;
+
+  // If there is no cooldowns to the command create one
+  if (!cooldowns.has(command.name)) {
+    cooldowns.set(command.name, new Discord.Collection());
+  }
+
+  // The time now in milliseconds
+  const now = Date.now();
+
+  // Get the timestamp
+  const timestamp = cooldowns.get(command.name);
+
+  // Cooldown amount
+  const cooldownAmount = (command.cooldown || 3) * 1000;
+
+  // If there is a timestamp with the user id
+  if (timestamp.has(message.author.id)) {
+    // Calculate expiration time
+    const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
+
+    // If didn't expired yet
+    if (now < expirationTime) {
+      // Time left
+      const timeLeft = (expirationTime - now) / 1000;
+
+      return message.reply(
+        `Please wait ${timeLeft.toFixed(
+          1
+        )} more second(s) before reusing the \`${command.name}\` command`
+      );
+    }
+  }
+
+  // Set the timestamps with user id and the timestamp in milliseconds
+  timestamps.set(message.author.id, now);
+
+  // Timeout to delete after cooldown amount
+  setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+
   try {
     client.commands.get(cmd).execute(msg, args);
   } catch (error) {
     console.error(error);
-    msg.reply('There was an issue executing that command :(');
+    msg.reply("There was an issue executing that command :(");
   }
 });
 
