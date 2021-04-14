@@ -1,8 +1,10 @@
 const config = require("./config");
 
 const Discord = require("discord.js");
-const handler = require("./handler");
 const client = new Discord.Client();
+
+
+const { handler } = require("./handler");
 
 // To store commands of the bot
 client.commands = new Discord.Collection();
@@ -21,23 +23,24 @@ client.on("message", (msg) => {
     msg.react("❌");
   }
 
-  if (!msg.content.startsWith(config.prefix) || message.author.bot) return;
+  if (!msg.content.startsWith(config.PREFIX) || msg.author.bot) return;
 
-  const args = msg.content.slice(config.prefix.length).trim().split(/ +/);
+  const args = msg.content.slice(config.PREFIX.length).trim().split(/ +/);
   const cmd = args.shift().toLowerCase();
 
-  if (!client.commands.has(command)) return;
+  if (!client.commands.has(cmd)) return;
 
   try {
-    client.commands.get(command).execute(message, args);
+    client.commands.get(cmd).execute(msg, args);
   } catch (error) {
     console.error(error);
-    message.reply(`There was an issue executing that command`);
+    msg.reply('There was an issue executing that command :(');
   }
 });
 
+/*
 function process_command(msg) {
-  const args = msg.content.slice(config.prefix.length).trim().split(/ +/);
+  const args = msg.content.slice(config.PREFIX.length).trim().split(/ +/);
   const cmd = args.shift().toLowerCase();
 
   switch (cmd) {
@@ -143,7 +146,7 @@ function cmd_banappeal(msg, args) {
     );
 
   setTimeout(() => {
-    const server = client.guilds.cache.get(config.eraID);
+    const server = client.guilds.cache.get(config.ERA_DISCORD);
     server.channels.create("banappeal-" + playername); // fix permissions for admins only and player that requested!
     setTimeout(() => {
       const channel = server.channels.cache.find(
@@ -151,7 +154,7 @@ function cmd_banappeal(msg, args) {
       );
       channel.send(embed);
       channel.send("@here ```Unban " + playername + " ?```");
-    }, 200);
+    }, 2000);
   }, 1000);
 
   //create timer of 2 days or atleast X votes?
@@ -173,4 +176,4 @@ function cmd_delete(msg, arg) {
 }
 */
 
-client.login(config.token);
+client.login(config.TOKEN);

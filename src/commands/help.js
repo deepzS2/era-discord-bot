@@ -1,61 +1,64 @@
-const { prefix } = require("../config");
+const { PREFIX } = require("../config");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = {
+  //fields
   name: "help",
-  description: "List all command or display the info about a specific command",
+  description: "displays all of our commands or specific command info.",
+
+  fields(embed) {
+    embed.addFields( { name: "<command>", value: "*command that you want to know more about*", inline: false },)
+  },
+
+  usage: '```yaml\nUsage: e!help (<command>)\n```',
+  footer: 'USING ONLY e!help WILL SHOW YOU ALL OUR COMMANDS',
+
+  //run: e!help or e!help <command>
   execute(message, args) {
-    // Just for sending messages splitted
-    const data = [];
+    // all our bot commands
+    const { commands } = message.client; 
 
-    // The client.commands collection
-    const { commands } = message.client;
+    // create cool embed with all the commands/individual command info
+    const embed = new MessageEmbed()
+      .setColor("#fc8c03").setThumbnail("https://i.imgur.com/vrRImoI.png")
+      .setAuthor("ERA DISCORD BOT", "https://i.imgur.com/hOuIomW.png", "https://steamcommunity.com/groups/EraSurfCommunity");
+      
+    // if e!help was used
+    if (!args.length) { 
+      embed.setTitle('🔹 Commands');
+      commands.forEach((command) => {
+        if (command.name) embed.addField(`${PREFIX}${command.name}`, command.description);
+      });
 
-    if (!args.length) {
-      data.push(`Here\'s a list of all my commands:`);
-      data.push(commands.map((command) => command.name).join(", "));
-      data.push(
-        `\nYou can send \`${prefix}help [command name]\` to get info on a specific command`
-      );
-
-      return message.author
-        .send(data, { split: true })
+      return message.author.send(embed)
         .then(() => {
           if (message.channel.type === "dm") return;
-
-          message.reply(`I\'ve sent you a DM with all my commands!`);
-        })
-        .catch((error) => {
-          console.error(
-            `Could not send help DM to ${message.author.tag}.\n`,
-            error
-          );
-          message.reply(
-            `It seems like I can\'t DM you! Do you have DMs disabled?`
-          );
+          message.react('🇩'); message.react('🇲');
+        }).catch((error) => {
+          console.error('[-] Could not send help DM to ' + message.author.tag + '.\n', error);
+          message.reply('It seems like I can\'t DM you! Do you have DMs disabled?');
         });
     }
+    //else, e!help <command> was used so display info about the invidual command
 
-    const name = args[0].toLowerCase();
+    // get <command>
+    const cmd_arg = args[0].toLowerCase();
+    const command = commands.get(cmd_arg);
 
-    // Aliases maybe?
-    const command = commands.get(
-      name
-    ); /* || commands.find(c => c.aliases && c.aliases.includes(name)); */
+    /* 
+    // get aliases maybe? || commands.find(c => c.aliases && c.aliases.includes(name)); 
+    */
 
-    if (!command) {
-      return message.reply(`That\'s not a valid command!`);
-    }
+    if (!command) return message.reply(`That\'s not a valid command :(`);
 
-    data.push(`**Name:** ${command.name}`);
-
-    // if (command.aliases) data.push(`**Aliases:** ${command.aliases.join(', ')}`);
-    if (command.description)
-      data.push(`**Description:** ${command.description}`);
-    // if (command.usage) data.push(`**Usage:** ${prefix}${command.name} ${command.usage}`);
+    embed.setTitle('🔹 ' + command.name);
+    embed.setDescription(command.description + command.usage);
+    if (command.fields) command.fields(embed); // different way to do this?
+    if (command.footer) embed.setFooter(command.footer);
 
     // Cooldown for antispam maybe?
     // data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
 
-    message.channel.send(data, { split: true });
+    message.channel.send(embed);
   },
 };
