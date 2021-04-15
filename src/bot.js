@@ -35,48 +35,42 @@ client.on("message", (msg) => {
   const { cooldowns } = client;
 
   // If there is no cooldowns to the command create one
-  if (!cooldowns.has(command.name)) {
-    cooldowns.set(command.name, new Discord.Collection());
-  }
-
+  if (!cooldowns.has(cmd.name)) cooldowns.set(cmd.name, new Discord.Collection());
+  
   // The time now in milliseconds
   const now = Date.now();
 
   // Get the timestamp
-  const timestamp = cooldowns.get(command.name);
+  const timestamp = cooldowns.get(cmd.name);
 
   // Cooldown amount
-  const cooldownAmount = (command.cooldown || 3) * 1000;
+  const cooldownAmount = (cmd.cooldown || 3) * 1000;
 
   // If there is a timestamp with the user id
-  if (timestamp.has(message.author.id)) {
+  if (timestamp.has(msg.author.id)) {
     // Calculate expiration time
-    const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
+    const expirationTime = timestamp.get(msg.author.id) + cooldownAmount;
 
-    // If didn't expired yet
+    // didn't expired yet
     if (now < expirationTime) {
-      // Time left
       const timeLeft = (expirationTime - now) / 1000;
-
-      return message.reply(
-        `Please wait ${timeLeft.toFixed(
-          1
-        )} more second(s) before reusing the \`${command.name}\` command`
-      );
+      return msg.reply(`please wait ${timeLeft.toFixed(1)} second(s) before using the **\`${cmd}\`** command again 😩`);
     }
   }
 
   // Set the timestamps with user id and the timestamp in milliseconds
-  timestamps.set(message.author.id, now);
+  timestamp.set(msg.author.id, now);
 
   // Timeout to delete after cooldown amount
-  setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+  setTimeout(() => timestamp.delete(msg.author.id), cooldownAmount);
 
   try {
+    // if client has permissions for the command!
     client.commands.get(cmd).execute(msg, args);
+    // else msg.reply("You don't have permissions for this command 👨‍🦲");
   } catch (error) {
     console.error(error);
-    msg.reply("There was an issue executing that command :(");
+    msg.reply("noooo there was an issue executing the command 😔");
   }
 });
 

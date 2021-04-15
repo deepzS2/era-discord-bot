@@ -12,8 +12,8 @@ module.exports = {
       inline: false,
     },
   ],
-  usage: "```yaml\nUsage: e!help (<command>)\n```",
-  cooldown: 5,
+  usage: "e!help (<command>)",
+  cooldown: 3,
   footer: "USING ONLY e!help WILL SHOW YOU ALL OUR COMMANDS",
 
   //run: e!help or e!help <command>
@@ -25,18 +25,13 @@ module.exports = {
     const embed = new MessageEmbed()
       .setColor("#fc8c03")
       .setThumbnail("https://i.imgur.com/vrRImoI.png")
-      .setAuthor(
-        "ERA DISCORD BOT",
-        "https://i.imgur.com/hOuIomW.png",
-        "https://steamcommunity.com/groups/EraSurfCommunity"
-      );
+      .setAuthor("ERA DISCORD BOT", "https://i.imgur.com/hOuIomW.png", "https://steamcommunity.com/groups/EraSurfCommunity");
 
     // if e!help was used
     if (!args.length) {
-      embed.setTitle("🔹 Commands");
+      embed.setTitle("🔹 Commands").setFooter('FOR SPECIFIC COMMAND USAGE, TRY e!help <command>');
       commands.forEach((command) => {
-        if (command.name)
-          embed.addField(`${PREFIX}${command.name}`, command.description);
+        if (command.name) embed.addField(`${PREFIX}${command.name}`, command.description);
       });
 
       return message.author
@@ -47,13 +42,8 @@ module.exports = {
           message.react("🇲");
         })
         .catch((error) => {
-          console.error(
-            "[-] Could not send help DM to " + message.author.tag + ".\n",
-            error
-          );
-          message.reply(
-            "It seems like I can't DM you! Do you have DMs disabled?"
-          );
+          console.error("[-] Could not send help DM to " + message.author.tag + ".\n", error);
+          message.reply("**error!** it seems like I can't DM you! Do you have DMs disabled?  🤔");
         });
     }
     //else, e!help <command> was used so display info about the invidual command
@@ -66,18 +56,14 @@ module.exports = {
     // get aliases maybe? || commands.find(c => c.aliases && c.aliases.includes(name)); 
     */
 
-    if (!command) return message.reply(`That\'s not a valid command :(`);
+    if (!command) return message.reply(`that\'s not a valid command  😔`);
 
     embed.setTitle("🔹 " + command.name);
-    embed.setDescription(command.description + command.usage);
+    embed.setDescription(command.description + '```yaml\nUsage: ' + command.usage + '\n```');
 
-    if (command.cooldown)
-      embed.addField("Cooldown time", `${command.cooldown} seconds`);
-    if (command.args) embed.addFields(command.args);
-    if (command.footer) embed.setFooter(command.footer);
-
-    // Cooldown for antispam maybe?
-    // data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
+    //if (command.cooldown) embed.addField("Cooldown time", `${command.cooldown} seconds`);
+    if (command.args)     embed.addFields(command.args);
+    if (command.footer)   embed.setFooter(command.footer);
 
     message.channel.send(embed);
   },
