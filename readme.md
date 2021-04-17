@@ -1,10 +1,10 @@
 # ERA Bot
-#### **Era's discord bot**
-![](https://i.imgur.com/phGrGwC.png | width=100)
+
+<img src="https://i.imgur.com/phGrGwC.png" width="400" height="400" />
 
 
 ## Bot still under development
-in case you find any bugs or want to suggest, feel free to do a Pull Request or contact me.
+in case you find any bugs or want to suggest something, feel free to do a pull request or contact me.
 
 
 ## **Join us**
@@ -17,12 +17,11 @@ e!
 
 
 ## **commands**
-- e!help [command]
-- e!topspeed <map> [count]
-- e!ban <name> <steamid> <time> <reason>
-- e!unban <steamid>
-- e!banappeal soon
-* note: < > = required; [ ] = optional*
+- e!help
+- e!topspeed
+- e!ban
+- e!unban
+- e!banappeal
 
 
 ## **Very cool people <3**
