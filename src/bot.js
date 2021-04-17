@@ -30,8 +30,10 @@ client.on("message", (msg) => {
   const args = msg.content.slice(config.PREFIX.length).trim().split(/ +/);
   const cmd = args.shift().toLowerCase();
 
-  if (!client.commands.has(cmd)) return;
+  if (!client.commands.has(cmd))  return msg.reply('that command does not exist 👨‍🦲');
 
+  if (client.commands.get(cmd).disabled) return msg.reply('that command is disabled 👨‍🦲');
+  
   const { cooldowns } = client;
 
   // If there is no cooldowns to the command create one
@@ -65,136 +67,12 @@ client.on("message", (msg) => {
   setTimeout(() => timestamp.delete(msg.author.id), cooldownAmount);
 
   try {
-    // if client has permissions for the command!
     client.commands.get(cmd).execute(msg, args);
-    // else msg.reply("You don't have permissions for this command 👨‍🦲");
   } catch (error) {
     console.error(error);
     msg.reply("noooo there was an issue executing the command 😔");
   }
 });
-
-/*
-function process_command(msg) {
-  const args = msg.content.slice(config.PREFIX.length).trim().split(/ +/);
-  const cmd = args.shift().toLowerCase();
-
-  switch (cmd) {
-    case "help": {
-      cmd_help(msg);
-      break;
-    }
-    case "banappeal": {
-      cmd_banappeal(msg, args);
-      break;
-    }
-    //case 'delete': { cmd_delete(msg, args); break; }
-    default: {
-      msg.author.send("Command not found :[ Try ``e!help``");
-      break;
-    }
-  }
-}
-
-function cmd_help(msg) {
-  const embed = new Discord.MessageEmbed()
-    .setAuthor(
-      "ERA DISCORD BOT",
-      "https://i.imgur.com/hOuIomW.png",
-      "https://steamcommunity.com/groups/EraSurfCommunity"
-    )
-    .setColor("#fc8c03")
-    .setTitle("Commands")
-    .setThumbnail("https://i.imgur.com/vrRImoI.png")
-    .addFields(
-      { name: "e!help", value: "displays all of our commands" },
-      {
-        name: "e!banappeal",
-        value: "appeal a ban for our admins to discuss it",
-      }
-    );
-  if (msg.channel.type != "dm") msg.channel.send(embed);
-  else msg.author.send(embed);
-  return;
-}
-
-function cmd_banappeal(msg, args) {
-  if (msg.channel.type != "dm") {
-    msg.delete();
-    msg.author.send("Hi :] Use my commands here. `e!help`");
-    return;
-  }
-
-  if (args.length < 3) {
-    const embed = new Discord.MessageEmbed()
-      .setAuthor(
-        "ERA DISCORD BOT",
-        "https://i.imgur.com/hOuIomW.png",
-        "https://steamcommunity.com/groups/EraSurfCommunity"
-      )
-      .setThumbnail("https://i.imgur.com/vrRImoI.png")
-      .setColor("#fc8c03")
-      .setTitle(":information_source:  Ban appeal usage  :information_source:")
-      .setDescription("```e!banappeal <name> <link> <reason>```")
-      .addFields(
-        { name: "name", value: "your ingame nickname", inline: true },
-        {
-          name: "link",
-          value: "your current steam account link",
-          inline: true,
-        },
-        {
-          name: "reason",
-          value: "reason on why we should unban you",
-          inline: true,
-        }
-      )
-      .setFooter(
-        "USING THIS COMMAND IN A NON SERIOUS WAY WILL RESULT IN A BAN",
-        "https://i.imgur.com/cj2KuzF.png"
-      );
-    msg.author.send(embed);
-    return;
-  }
-
-  // check if player is banned from mysql
-  // check if player alerady has req a ban appeal in the past or one atm
-
-  const playername = args.shift();
-  const steamlink = args.shift();
-  const reason = args.join(" ");
-
-  const embed = new Discord.MessageEmbed()
-    .setColor("#0099ff")
-    .setTitle(":oncoming_police_car: NEW BAN APPEAL :oncoming_police_car:")
-    .setTimestamp()
-    .setAuthor(
-      "ERA DISCORD BOT",
-      "https://i.imgur.com/hOuIomW.png",
-      "https://steamcommunity.com/groups/EraSurfCommunity"
-    )
-    .setDescription("Lets decide if we keep this player banned or not.")
-    .setThumbnail("https://i.imgur.com/vrRImoI.png")
-    .addFields(
-      { name: ":user:  Player name:", value: playername },
-      { name: ":steam:  Steam link:", value: steamlink },
-      { name: ":speech_balloon:  Reason:", value: reason }
-    );
-
-  setTimeout(() => {
-    const server = client.guilds.cache.get(config.ERA_DISCORD);
-    server.channels.create("banappeal-" + playername); // fix permissions for admins only and player that requested!
-    setTimeout(() => {
-      const channel = server.channels.cache.find(
-        (guild) => guild.name === "banappeal-" + playername
-      );
-      channel.send(embed);
-      channel.send("@here ```Unban " + playername + " ?```");
-    }, 2000);
-  }, 1000);
-
-  //create timer of 2 days or atleast X votes?
-}
 
 /*
 function cmd_delete(msg, arg) {

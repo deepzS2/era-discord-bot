@@ -14,7 +14,8 @@ module.exports = {
   ],
   usage: "e!help (<command>)",
   cooldown: 3,
-  footer: "USING ONLY e!help WILL SHOW YOU ALL OUR COMMANDS",
+  footer: "USING ONLY e!help WILL SHOW YOU ALL OUR COMMANDS; NOTE: < > = REQUIRED , [ ] = OPTIONAL",
+  disabled: false,
 
   //run: e!help or e!help <command>
   execute(message, args) {
@@ -25,7 +26,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setColor("#fc8c03")
       .setThumbnail("https://i.imgur.com/vrRImoI.png")
-      .setAuthor("ERA DISCORD BOT", "https://i.imgur.com/hOuIomW.png", "https://steamcommunity.com/groups/EraSurfCommunity");
+      //.setAuthor("ERA DISCORD BOT", "https://i.imgur.com/hOuIomW.png", "https://steamcommunity.com/groups/EraSurfCommunity");
 
     // if e!help was used
     if (!args.length) {
