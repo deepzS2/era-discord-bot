@@ -35,17 +35,7 @@ module.exports = {
         if (command.name) embed.addField(`${PREFIX}${command.name}`, command.description);
       });
 
-      return message.author
-        .send(embed)
-        .then(() => {
-          if (message.channel.type === "dm") return;
-          message.react("🇩");
-          message.react("🇲");
-        })
-        .catch((error) => {
-          console.error("[-] Could not send help DM to " + message.author.tag + ".\n", error);
-          message.reply("**error!** it seems like I can't DM you! Do you have DMs disabled?  🤔");
-        });
+      return message.reply(embed);
     }
     //else, e!help <command> was used so display info about the invidual command
 

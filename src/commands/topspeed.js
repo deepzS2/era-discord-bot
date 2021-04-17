@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const { EE_TOPSPEED_HOST, EE_TOPSPEED_USER, EE_TOPSPEED_PW, EE_TOPSPEED_DB } = require("../config");
 
 /*
 feel free to optimize this command xD
@@ -94,10 +95,10 @@ module.exports = {
 
     var mysql = require('mysql');
     var connection = mysql.createConnection({
-        host     : 'localhost',
-        user     : 'root',
-        password : '',
-        database : 'ee'
+        host     : EE_TOPSPEED_HOST,
+        user     : EE_TOPSPEED_USER,
+        password : EE_TOPSPEED_PW,
+        database : EE_TOPSPEED_DB
     });
 
     let query_topspeed = 'SELECT name, speed  FROM topspeed WHERE map = \''+map+'\' ORDER BY speed DESC LIMIT '+count+'';
