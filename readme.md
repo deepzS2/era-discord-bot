@@ -1,4 +1,4 @@
-# ERA Bot
+# ERA Discord Bot
 
 <img src="https://i.imgur.com/phGrGwC.png" width="400" height="400" />
 
@@ -16,7 +16,7 @@ in case you find any bugs or want to suggest something, feel free to do a pull r
 e!
 
 
-## **commands**
+## **Commands**
 - e!help
 - e!topspeed
 - e!ban
