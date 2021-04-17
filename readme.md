@@ -1,18 +1,18 @@
 # ERA Bot
-#### **era's discord bot**
-![alt text](https://i.imgur.com/phGrGwC.png)
+#### **Era's discord bot**
+![](https://i.imgur.com/phGrGwC.png | width=100)
 
 
-## bot still under development
+## Bot still under development
 in case you find any bugs or want to suggest, feel free to do a Pull Request or contact me.
 
 
-## **join us**
-- Discord [discord](https://discord.gg/dSRFHKr)
-- Steam [steam group](https://discord.gg/dSRFHKr)
+## **Join us**
+- [discord](https://discord.gg/dSRFHKr)
+- [steam group](https://discord.gg/dSRFHKr)
 
 
-## **prefix**
+## **Prefix**
 e!
 
 
@@ -25,6 +25,6 @@ e!
 * note: < > = required; [ ] = optional*
 
 
-## **very cool people <3**
+## **Very cool people <3**
 - deepz
 - umicycle
