@@ -11,6 +11,8 @@ module.exports = {
     footer: "PLEASE THINK TWICE BEFORE USING THIS COMMAND",
     execute(message, args) {
 
+        // if channel is not 825754706390286386 dont let user use this command
+
         if (args.length < 3) {
             return message.reply('❌  **wrong usage**, please check **`e!help ban`**  😾');
         }
