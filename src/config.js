@@ -3,6 +3,9 @@ require("dotenv").config();
 const config = {
   TOKEN: process.env.TOKEN,
   PREFIX: "e!",
+
+  /* change these to test locally */
+
   ERA_DISCORD: process.env.ERA_DISCORD,
 
   EE_BANS_HOST: process.env.EE_BANS_HOST,

@@ -12,7 +12,7 @@ const aliases = [
   [ '#e0c082', 'https://i.imgur.com/MUk8iIm.png', 'surf_ski_3_nova_inf_v1e', 'ski3', 'ski_3'],
   [ '#9c7c40', 'https://i.imgur.com/1YaERQc.png', 'surf_banocanyon_e', 'bano', 'banocanyon'],
   [ '#f5edd7', 'https://i.imgur.com/V33qqGb.png', 'surf_buckwild2_so_v4', 'buckwild', 'buckwild2', 'buckwild_2', 'buck-wild', 'buck_wild_2'],
-  [ '#070a07', 'https://i.imgur.com/rcBrkX3.jpg', 'surf_colos2', 'colos', 'colos2'],
+  [ '#070a07', 'https://i.imgur.com/uly6GaP.jpg', 'surf_colos2', 'colos', 'colos2'],
   [ '#d6d4ce', 'https://i.imgur.com/y8py8s1.png', 'surf_greatriver_csgofix_e', 'classic', 'csgofix'],
   [ '#3ba182', 'https://i.imgur.com/hs5vys2.png', 'surf_quadpipe', 'quadpipe'],
   [ '#c4aa68', 'https://i.imgur.com/C537Bgs.png', 'surf_pyramidduel_e', 'pyramid', 'pyra', 'pyramidduel', 'pyramid-duel', 'pyraduel'],

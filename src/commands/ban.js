@@ -22,7 +22,7 @@ module.exports = {
         { name: "`<time>`", value: "*ban time in minutes (0 = permanent)*", inline: false, },
         { name: "`<reason>`", value: "*ban reason*", inline: false, }
     ],
-    usage: "e!ban <steamid> <time> <reason>",
+    usage: "e!ban <name> <steamid> <time> <reason>",
     cooldown: 5,
     footer: "PLEASE THINK TWICE BEFORE USING THIS COMMAND",
     disabled: false,
@@ -48,17 +48,21 @@ module.exports = {
             database: config.EE_BANS_DB
         });
 
+        const name = args.shift();
         const steamid = args.shift();
         const time = args.shift();
         const reason = args.join(" ");
 
         if (isNaN(time)) {
             return message.reply('❌  **error! `<time>`** argument needs to be number, please check **``e!help ban``**  ❌');
+        } else if (!isNaN(name)) {
+            return message.reply('❌  **error! `<name>`** argument invalid, please check **``e!help ban``**  ❌');
         } else if (!isNaN(steamid)) {
             return message.reply('❌  **error! `<steamid>`** argument invalid, please check **``e!help ban``**  ❌');
         } else if (!isNaN(reason)) {
             return message.reply('❌  **error! `<reason>`** argument invalid, please check **``e!help ban``**  ❌');
         }
+        
 
         let query_check = 'SELECT steam_id, ban_length FROM eraevil_bans WHERE steam_id = \''+steamid+'\'';
         
@@ -68,8 +72,10 @@ module.exports = {
             if (results.length) {
                return message.reply('🚷  user **`'+steamid+'`** is already banned  🚷');
             } else {
-                // todo: fix this ban query
-                let query_ban = `REPLACE INTO eraevil_bans VALUES (player_name, steam_id, ban_length, ban_reason, banned_by, timestamp)`;
+                // todo: fix this ban query (get admin name that banned)
+                let query_ban = `REPLACE INTO eraevil_bans VALUES 
+                (player_name, steam_id, ban_length, ban_reason, banned_by, timestamp)
+                VALUES ( \`${name}\`, \`${steamid}\`, \`${time}\`, \`${reason}\`, 'discord admin', CURRENT_TIMESTAMP() )`;
                 connection.query(query_ban, function (error, results, fields) {
                     if (error) throw error;
                     else {
