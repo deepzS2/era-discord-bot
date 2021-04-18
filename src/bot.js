@@ -13,6 +13,10 @@ client.cooldowns = new Discord.Collection();
 
 handler(client);
 
+process.on('uncaughtException', function (err) {
+  console.log(err);
+})
+
 client.on("ready", () => {
   console.log("Connected as " + client.user.tag);
   client.user.setActivity("ON ERA/EVIL CSURF SERVERS", { type: "PLAYING" });

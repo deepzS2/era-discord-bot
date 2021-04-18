@@ -54,7 +54,7 @@ module.exports = {
         
         connection.connect();
         connection.query(query_check, function (error, results, fields) {
-            if (error) throw error;
+            if (error) console.log(error);
             if (!results.length) {
                return message.reply('🚷  user **`'+steamid+'`** is not banned  🚷');
             } else {
@@ -63,7 +63,7 @@ module.exports = {
                 connection.query(query_unban, function (error, results, fields) {
                     if (error) {
                         console.log(query_ban);
-                        throw error;
+                        console.log(error);
                     }
                     else {
                         message.reply('✅  you have unbanned **`'+steamid+'`**  ✅');
