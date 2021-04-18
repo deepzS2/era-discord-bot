@@ -1,11 +1,8 @@
-const { EE_BANS_HOST } = require("../config");
-const { EE_BANS_DB } = require("../config");
-const { EE_BANS_USER } = require("../config");
-const { EE_BANS_PW } = require("../config");
+const { EE_BANS_HOST, EE_BANS_USER, EE_BANS_PW, EE_BANS_DB } = require("../config");
 
 function is_admin(message) {
     if (    message.member.roles.cache.some(role => role.name === 'Server Admins')
-        ||  message.member.roles.cache.some(role => role.name === 'Owner')) {
+        ||  message.member.roles.cache.some(role => role.name === 'Owners')) {
         return 1
     }
     else {
@@ -41,10 +38,10 @@ module.exports = {
 
         var mysql = require('mysql');
         var connection = mysql.createConnection({
-            host: config.EE_BANS_HOST, 
-            user: config.EE_BANS_USER, 
-            password: config.EE_BANS_PW, 
-            database: config.EE_BANS_DB
+            host:     EE_BANS_HOST, 
+            user:     EE_BANS_USER, 
+            password: EE_BANS_PW, 
+            database: EE_BANS_DB
         });
 
         const steamid = args.shift();
@@ -64,7 +61,10 @@ module.exports = {
                 // todo: fix this ban query
                 let query_unban = 'DELETE FROM eraevil_bans WHERE steam_id =\''+steamid+'\'';
                 connection.query(query_unban, function (error, results, fields) {
-                    if (error) throw error;
+                    if (error) {
+                        console.log(query_ban);
+                        throw error;
+                    }
                     else {
                         message.reply('✅  you have unbanned **`'+steamid+'`**  ✅');
                     }

@@ -1,11 +1,8 @@
-const { EE_BANS_HOST } = require("../config");
-const { EE_BANS_DB } = require("../config");
-const { EE_BANS_USER } = require("../config");
-const { EE_BANS_PW } = require("../config");
+const { EE_BANS_HOST, EE_BANS_USER, EE_BANS_PW, EE_BANS_DB } = require("../config");
 
 function is_admin(message) {
     if (    message.member.roles.cache.some(role => role.name === 'Server Admins')
-        ||  message.member.roles.cache.some(role => role.name === 'Owner')) {
+        ||  message.member.roles.cache.some(role => role.name === 'Owners')) {
         return 1
     }
     else {
@@ -42,10 +39,10 @@ module.exports = {
 
         var mysql = require('mysql');
         var connection = mysql.createConnection({
-            host: config.EE_BANS_HOST, 
-            user: config.EE_BANS_USER, 
-            password: config.EE_BANS_PW, 
-            database: config.EE_BANS_DB
+            host:     EE_BANS_HOST, 
+            user:     EE_BANS_USER, 
+            password: EE_BANS_PW, 
+            database: EE_BANS_DB
         });
 
         const name = args.shift();
@@ -73,11 +70,12 @@ module.exports = {
                return message.reply('🚷  user **`'+steamid+'`** is already banned  🚷');
             } else {
                 // todo: fix this ban query (get admin name that banned)
-                let query_ban = `REPLACE INTO eraevil_bans VALUES 
-                (player_name, steam_id, ban_length, ban_reason, banned_by, timestamp)
-                VALUES ( \`${name}\`, \`${steamid}\`, \`${time}\`, \`${reason}\`, 'discord admin', CURRENT_TIMESTAMP() )`;
+                let query_ban = 'REPLACE INTO eraevil_bans (player_name, steam_id, ban_length, ban_reason, banned_by, timestamp) VALUES ( \''+name+'\', \''+steamid+'\', \''+time+'\', \''+reason+'\', \'discord admin\', CURRENT_TIMESTAMP())';
                 connection.query(query_ban, function (error, results, fields) {
-                    if (error) throw error;
+                    if (error) {
+                        console.log(query_ban);
+                        throw error;
+                    }
                     else {
                         let bantime = time==0?'permanently':time+' minutes';
                         message.reply('❌  you have banned **`'+steamid+'`** ('+bantime+')  ❌');
