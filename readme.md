@@ -9,7 +9,7 @@ in case you find any bugs or want to suggest something, feel free to do a pull r
 
 ## **Join us**
 - [discord](https://discord.gg/dSRFHKr)
-- [steam group](https://discord.gg/dSRFHKr)
+- [steam group](https://steamcommunity.com/groups/EraSurfCommunity)
 
 
 ## **Prefix**
