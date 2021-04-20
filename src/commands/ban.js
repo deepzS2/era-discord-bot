@@ -5,16 +5,7 @@ const {
   EE_BANS_DB,
 } = require("../config")
 
-function is_admin(message) {
-  if (
-    message.member.roles.cache.some((role) => role.name === "Server Admins") ||
-    message.member.roles.cache.some((role) => role.name === "Owners")
-  ) {
-    return 1
-  } else {
-    return 0
-  }
-}
+const { is_admin } = require("../functions")
 
 module.exports = {
   name: "ban",
@@ -123,4 +114,3 @@ module.exports = {
     })
   },
 }
-
