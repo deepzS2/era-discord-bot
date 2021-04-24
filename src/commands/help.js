@@ -39,44 +39,6 @@ module.exports = {
         if (command.name)
           embed.addField(`${PREFIX}${command.name}`, command.description)
       })
-      // The client.commands collection
-      const { commands } = message.client
-
-      // The embed
-      const embed = new MessageEmbed()
-        .setColor("#fc8c03")
-        .setAuthor(
-          "ERA DISCORD BOT",
-          "https://i.imgur.com/hOuIomW.png",
-          "https://steamcommunity.com/groups/EraSurfCommunity"
-        )
-        .setThumbnail("https://i.imgur.com/vrRImoI.png")
-
-      // If display all commands
-      if (!args.length) {
-        embed.setTitle("Commands")
-
-        commands.forEach((command) => {
-          embed.addField(`${prefix}${commandName}`, command.description)
-        })
-
-        return message.author
-          .send(embed)
-          .then(() => {
-            if (message.channel.type === "dm") return
-
-            message.reply(`I\'ve sent you a DM with all my commands!`)
-          })
-          .catch((error) => {
-            console.error(
-              `Could not send help DM to ${message.author.tag}.\n`,
-              error
-            )
-            message.reply(
-              `It seems like I can\'t DM you! Do you have DMs disabled?`
-            )
-          })
-      }
 
       return message.reply(embed)
     }
@@ -96,15 +58,7 @@ module.exports = {
     embed.setDescription(
       command.description + "```yaml\nUsage: " + command.usage + "\n```"
     )
-    embed.setTitle(command.name)
 
-    if (command.description);
-    embed.setDescription(command.description)
-
-    // if (command.aliases) data.push(`**Aliases:** ${command.aliases.join(', ')}`);
-    // if (command.usage) data.push(`**Usage:** ${prefix}${command.name} ${command.usage}`);
-
-    //if (command.cooldown) embed.addField("Cooldown time", `${command.cooldown} seconds`);
     if (command.args) embed.addFields(command.args)
     if (command.footer) embed.setFooter(command.footer)
 

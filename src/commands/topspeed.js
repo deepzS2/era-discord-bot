@@ -1,9 +1,9 @@
 const { MessageEmbed } = require("discord.js")
 const {
-  EE_TOPSPEED_HOST,
-  EE_TOPSPEED_USER,
-  EE_TOPSPEED_PW,
-  EE_TOPSPEED_DB,
+  EE_HOST,
+  EE_USER,
+  EE_PW,
+  EE_DB,
 } = require("../config")
 
 /*
@@ -213,7 +213,7 @@ module.exports = {
   execute(message, args, client) {
     if (args.length < 1 || args.length > 2) {
       return message.reply(
-        "❌  **wrong usage**, please check **`e!help topspeed`**  😾"
+        "❌  **wrong usage**, please check **`e!help topspeed`** 😾"
       )
     }
 
@@ -222,7 +222,7 @@ module.exports = {
 
     if (!isNaN(map)) {
       return message.reply(
-        "❌  **error! `<map>`** argument needs to be map name, please check **``e!help topspeed``**  ❌"
+        "❌  **error! `<map>`** argument needs to be map name, please check **``e!help topspeed``** ❌"
       )
     }
 
@@ -230,28 +230,28 @@ module.exports = {
       count = args[1]
       if (isNaN(count)) {
         return message.reply(
-          "❌  **error! `<count>`** argument needs to be number, please check **``e!help topspeed``**  ❌"
+          "❌  **error! `<count>`** argument needs to be number, please check **``e!help topspeed``** ❌"
         )
       } else if (count > 10) {
         return message.reply(
-          "❌  **error! `<count>`** argument needs to be less than 10  ❌"
+          "❌  **error! `<count>`** argument needs to be less than 10 ❌"
         )
       }
     }
 
     let mapname = get_map_by_aliases(map)
     if (!mapname) {
-      return message.reply("map not found  😔")
+      return message.reply("map not found 😔")
     }
 
     map = mapname
 
     var mysql = require("mysql")
     var connection = mysql.createConnection({
-      host: EE_TOPSPEED_HOST,
-      user: EE_TOPSPEED_USER,
-      password: EE_TOPSPEED_PW,
-      database: EE_TOPSPEED_DB,
+      host: EE_HOST,
+      user: EE_USER,
+      password: EE_PW,
+      database: EE_DB,
     })
 
     let query_topspeed =
@@ -264,7 +264,7 @@ module.exports = {
 
     connection.connect()
     connection.query(query_topspeed, function (error, results, fields) {
-      if (error) throw error
+      if (error) console.log(error);
       if (results.length) {
         const topspeedmap_embed = new MessageEmbed()
           .setColor(get_map_color(map))
