@@ -139,7 +139,7 @@ const aliases = [
   ],
   [
     "#ffd500",
-    "google.com", // TODO xd
+    "https://i.imgur.com/d0uoOkw.png", // TODO xd
     "surf_monster_dust2_era",
     "monster",
     "monster_dust2",
