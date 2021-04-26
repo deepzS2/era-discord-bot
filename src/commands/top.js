@@ -20,7 +20,6 @@ module.exports = {
     //footer: "",
     disabled: false,
     execute(message, args, client) {
-      
       let count = 1
   
       if (args.length) {

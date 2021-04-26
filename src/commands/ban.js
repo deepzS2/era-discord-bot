@@ -23,7 +23,7 @@ module.exports = {
   usage: "e!ban <name> <steamid> <time> <reason>",
   cooldown: 5,
   footer: "PLEASE THINK TWICE BEFORE USING THIS COMMAND",
-  disabled: true,
+  disabled: false,
   execute(message, args, client) {
     if (message.channel.type != "dm" && !is_admin(message)) {
       return message.reply(
