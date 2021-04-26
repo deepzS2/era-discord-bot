@@ -72,6 +72,7 @@ const aliases = [
     "#d6d4ce",
     "https://i.imgur.com/y8py8s1.png",
     "surf_greatriver_csgofix_e",
+    "greatriver_classic",
     "classic",
     "csgofix",
   ],
@@ -100,6 +101,7 @@ const aliases = [
     "https://i.imgur.com/kQ1Dfij.jpg",
     "surf_skyscraper_v5",
     "skyscraper",
+    "skyscr",
   ],
   ["#f5cb71", "https://i.imgur.com/6omdrnb.jpg", "surf_japan_ptad_v5", "japan"],
   [
@@ -115,7 +117,7 @@ const aliases = [
     "https://i.imgur.com/C9yTfaQ.png",
     "surf_buzzkill2_zavv",
     "buzz",
-    "buzkill",
+    "buzzkill",
     "buzzkill2",
     "buzz2",
   ],
@@ -137,7 +139,7 @@ const aliases = [
   ],
   [
     "#ffd500",
-    "google.com",
+    "google.com", // TODO xd
     "surf_monster_dust2_era",
     "monster",
     "monster_dust2",
