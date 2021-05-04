@@ -68,19 +68,9 @@ module.exports = {
         return message.reply(
           "❌  **error! `<time>`** argument needs to be number, please check **``e!help ban``**  ❌"
         )
-      } else if (!isNaN(name)) {
-        return message.reply(
-          "❌  **error! `<name>`** argument invalid, please check **``e!help ban``**  ❌"
-        )
-      } else if (!isNaN(steamid)) {
-        return message.reply(
-          "❌  **error! `<steamid>`** argument invalid, please check **``e!help ban``**  ❌"
-        )
-      } else if (!isNaN(reason)) {
-        return message.reply(
-          "❌  **error! `<reason>`** argument invalid, please check **``e!help ban``**  ❌"
-        )
-      }
+      } /*
+        check steamid lenght maybe 
+      */
 
       let query_check =
         "SELECT steam_id, ban_length FROM eraevil_bans WHERE steam_id = '" +
