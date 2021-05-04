@@ -6,6 +6,7 @@ const {
 } = require("../config")
 
 const { is_admin } = require("../functions")
+const steamConverter = require("../utils/steamConverter")
 
 module.exports = {
   name: "ban",
@@ -52,65 +53,77 @@ module.exports = {
     })
 
     const name = args.shift()
-    const steamid = args.shift()
+    let steamid = args.shift()
     const time = args.shift()
     const reason = args.join(" ")
 
-    if (isNaN(time)) {
-      return message.reply(
-        "❌  **error! `<time>`** argument needs to be number, please check **``e!help ban``**  ❌"
-      )
-    } else if (!isNaN(name)) {
-      return message.reply(
-        "❌  **error! `<name>`** argument invalid, please check **``e!help ban``**  ❌"
-      )
-    } else if (!isNaN(steamid)) {
-      return message.reply(
-        "❌  **error! `<steamid>`** argument invalid, please check **``e!help ban``**  ❌"
-      )
-    } else if (!isNaN(reason)) {
-      return message.reply(
-        "❌  **error! `<reason>`** argument invalid, please check **``e!help ban``**  ❌"
-      )
-    }
-
-    let query_check =
-      "SELECT steam_id, ban_length FROM eraevil_bans WHERE steam_id = '" +
-      steamid +
-      "'"
-
-    connection.connect()
-    connection.query(query_check, function (error, results, fields) {
-      if (error) console.log(error)
-      if (results.length) {
+    try {
+      steamid = steamConverter(steamid)
+    } catch (error) {
+      // Check the steam converter file and change error messages :D
+      return message.reply(error.message)
+    } finally {
+      // Better using typeof (typeof name !== "string")
+      if (isNaN(time)) {
         return message.reply(
-          "🚷  user **`" + steamid + "`** is already banned  🚷"
+          "❌  **error! `<time>`** argument needs to be number, please check **``e!help ban``**  ❌"
         )
-      } else {
-        // todo: fix this ban query (get admin name that banned)
-        let query_ban =
-          "REPLACE INTO eraevil_bans (player_name, steam_id, ban_length, ban_reason, banned_by, timestamp) VALUES ( '" +
-          name +
-          "', '" +
-          steamid +
-          "', '" +
-          time +
-          "', '" +
-          reason +
-          "', 'discord admin', CURRENT_TIMESTAMP())"
-        connection.query(query_ban, function (error, results, fields) {
-          if (error) {
-            console.log(query_ban)
-            console.log(error)
-          } else {
-            let bantime = time == 0 ? "permanently" : time + " minutes"
-            message.reply(
-              "❌  you have banned **`" + steamid + "`** (" + bantime + ")  ❌"
-            )
-          }
-        })
+      } else if (!isNaN(name)) {
+        return message.reply(
+          "❌  **error! `<name>`** argument invalid, please check **``e!help ban``**  ❌"
+        )
+      } else if (!isNaN(steamid)) {
+        return message.reply(
+          "❌  **error! `<steamid>`** argument invalid, please check **``e!help ban``**  ❌"
+        )
+      } else if (!isNaN(reason)) {
+        return message.reply(
+          "❌  **error! `<reason>`** argument invalid, please check **``e!help ban``**  ❌"
+        )
       }
-      connection.end()
-    })
+
+      let query_check =
+        "SELECT steam_id, ban_length FROM eraevil_bans WHERE steam_id = '" +
+        steamid +
+        "'"
+
+      connection.connect()
+      connection.query(query_check, function (error, results, fields) {
+        if (error) console.log(error)
+        if (results.length) {
+          return message.reply(
+            "🚷  user **`" + steamid + "`** is already banned  🚷"
+          )
+        } else {
+          // todo: fix this ban query (get admin name that banned)
+          let query_ban =
+            "REPLACE INTO eraevil_bans (player_name, steam_id, ban_length, ban_reason, banned_by, timestamp) VALUES ( '" +
+            name +
+            "', '" +
+            steamid +
+            "', '" +
+            time +
+            "', '" +
+            reason +
+            "', 'discord admin', CURRENT_TIMESTAMP())"
+          connection.query(query_ban, function (error, results, fields) {
+            if (error) {
+              console.log(query_ban)
+              console.log(error)
+            } else {
+              let bantime = time == 0 ? "permanently" : time + " minutes"
+              message.reply(
+                "❌  you have banned **`" +
+                  steamid +
+                  "`** (" +
+                  bantime +
+                  ")  ❌"
+              )
+            }
+          })
+        }
+        connection.end()
+      })
+    }
   },
 }
