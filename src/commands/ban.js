@@ -32,7 +32,7 @@ module.exports = {
       )
     }
 
-    if (message.channel.id != "825754706390286386") {
+    if (message.channel.id != "825754706390286386" || message.channel.id != "648501239587405829") { //era eu and sa
       return message.reply(
         "❌  **wrong usage**, this command is only available on **`#bans`** chat  😾"
       )
