@@ -1,9 +1,4 @@
-const {
-  EE_BANS_HOST,
-  EE_BANS_USER,
-  EE_BANS_PW,
-  EE_BANS_DB,
-} = require("../config")
+const { EE_HOST, EE_USER, EE_PW, EE_BANS_DB } = require("../config")
 
 const { is_admin } = require("../functions")
 const steamConverter = require("../utils/steamConverter")
@@ -46,9 +41,9 @@ module.exports = {
 
     var mysql = require("mysql")
     var connection = mysql.createConnection({
-      host: EE_BANS_HOST,
-      user: EE_BANS_USER,
-      password: EE_BANS_PW,
+      host: EE_HOST,
+      user: EE_USER,
+      password: EE_PW,
       database: EE_BANS_DB,
     })
 

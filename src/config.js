@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config()
 
 const config = {
   TOKEN: process.env.TOKEN,
@@ -8,15 +8,15 @@ const config = {
 
   ERA_DISCORD: process.env.ERA_DISCORD,
 
-  EE_BANS_HOST: process.env.EE_BANS_HOST,
+  EE_HOST: process.env.EE_HOST,
+  EE_USER: process.env.EE_USER,
+  EE_PW: process.env.EE_PW,
+
   EE_BANS_DB: process.env.EE_BANS_DB,
-  EE_BANS_USER: process.env.EE_BANS_USER,
-  EE_BANS_PW: process.env.EE_BANS_PW,
-
-  EE_TOPSPEED_HOST: process.env.EE_TOPSPEED_HOST,
   EE_TOPSPEED_DB: process.env.EE_TOPSPEED_DB,
-  EE_TOPSPEED_USER: process.env.EE_TOPSPEED_USER,
-  EE_TOPSPEED_PW: process.env.EE_TOPSPEED_PW,
-};
+  EE_RANK_DB: process.env.EE_RANK_DB,
 
-module.exports = config;
+  STEAM_API: process.env.STEAM_API,
+}
+
+module.exports = config

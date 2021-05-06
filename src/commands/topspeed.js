@@ -1,10 +1,5 @@
 const { MessageEmbed } = require("discord.js")
-const {
-  EE_TOPSPEED_HOST,
-  EE_TOPSPEED_USER,
-  EE_TOPSPEED_PW,
-  EE_TOPSPEED_DB,
-} = require("../config")
+const { EE_HOST, EE_USER, EE_PW, EE_TOPSPEED_DB } = require("../config")
 
 /*
 feel free to optimize this command xD
@@ -248,9 +243,9 @@ module.exports = {
 
     var mysql = require("mysql")
     var connection = mysql.createConnection({
-      host: EE_TOPSPEED_HOST,
-      user: EE_TOPSPEED_USER,
-      password: EE_TOPSPEED_PW,
+      host: EE_HOST,
+      user: EE_USER,
+      password: EE_PW,
       database: EE_TOPSPEED_DB,
     })
 
