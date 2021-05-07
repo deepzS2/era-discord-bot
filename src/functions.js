@@ -1,9 +1,14 @@
+const { Message } = require("discord.js")
 const SteamAPI = require("steamapi")
 
 const { STEAM_API } = require("./config")
 const steam = new SteamAPI(STEAM_API)
 
 module.exports = {
+  /**
+   * Check if the message author is admin
+   * @param {Message} message - The discord message instance
+   */
   is_admin(message) {
     if (
       message.member.roles.cache.some(
@@ -18,12 +23,29 @@ module.exports = {
       return 0
     }
   },
+  /**
+   * Get user by URL
+   * @param {string} url - The steam custom url
+   */
   getSteamByURL: async function (url) {
     try {
       return await steam.resolve(url)
     } catch (error) {
       throw new Error(
         "**Something went wrong while trying to getting Steam ID, try again later!**     :pensive: "
+      )
+    }
+  },
+  /**
+   * Get user summary with Steam ID
+   * @param {string} id - Steam 64
+   */
+  getUserSummary: async function (id) {
+    try {
+      return await steam.getUserSummary(id)
+    } catch (error) {
+      throw new Error(
+        "**Something went wrong while trying to getting steam summary, try again later!**     :pensive: "
       )
     }
   },

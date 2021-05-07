@@ -7,6 +7,7 @@ const config = {
   /* change these to test locally */
 
   ERA_DISCORD: process.env.ERA_DISCORD,
+  DISCORD_ERROR_CHANNEL: process.env.DISCORD_ERROR_CHANNEL,
 
   EE_HOST: process.env.EE_HOST,
   EE_USER: process.env.EE_USER,
