@@ -57,6 +57,7 @@ module.exports = {
         const top_embed = new MessageEmbed()
           .setColor("#f7790a")
           .setTitle("🏆 ERAnk 🏆")
+
           .setDescription(months[m] + ' top players 🏄‍♂️')
           //.setImage("https://i.imgur.com/vrRImoI.png") // get image from his steam url and use it :P
           //.setAuthor("ERA DISCORD BOT", "https://i.imgur.com/vrRImoI.png", "https://steamcommunity.com/groups/EraSurfCommunity");
@@ -78,7 +79,5 @@ module.exports = {
         return message.reply(`no data found 😔`)
       }
     })
-
-
-    },
+   },
   }
