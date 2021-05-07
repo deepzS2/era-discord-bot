@@ -1,4 +1,4 @@
-const { EE_HOST, EE_USER, EE_PW, EE_BANS_DB } = require("../config")
+const { EE_HOST, EE_BANS_USER, EE_BANS_PW, EE_BANS_DB } = require("../config")
 
 const { is_admin } = require("../functions")
 const steamConverter = require("../utils/steamConverter")
@@ -27,7 +27,11 @@ module.exports = {
       )
     }
 
-    if (message.channel.id != "825754706390286386" || message.channel.id != "648501239587405829") { //era eu and sa
+    if (
+      message.channel.id != "825754706390286386" ||
+      message.channel.id != "648501239587405829"
+    ) {
+      //era eu and sa
       return message.reply(
         "❌  **wrong usage**, this command is only available on **`#bans`** chat  😾"
       )
@@ -42,8 +46,8 @@ module.exports = {
     var mysql = require("mysql")
     var connection = mysql.createConnection({
       host: EE_HOST,
-      user: EE_USER,
-      password: EE_PW,
+      user: EE_BANS_USER,
+      password: EE_BANS_PW,
       database: EE_BANS_DB,
     })
 
