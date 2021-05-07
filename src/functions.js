@@ -1,7 +1,7 @@
 const SteamAPI = require("steamapi")
 
-const { STEAM_KEY } = require("./config")
-const steam = new SteamAPI(STEAM_KEY)
+const { STEAM_API } = require("./config")
+const steam = new SteamAPI(STEAM_API)
 
 module.exports = {
   is_admin(message) {
@@ -11,14 +11,14 @@ module.exports = {
       ) ||
       message.member.roles.cache.some((role) => role.name === "Owners") ||
       message.member.roles.cache.some((role) => role.name === "Owner") ||
-      message.member.roles.cache.some((role) => role.name === "Admin+") 
+      message.member.roles.cache.some((role) => role.name === "Admin+")
     ) {
       return 1
     } else {
       return 0
     }
   },
-  async getSteamByURL(url) {
+  getSteamByURL: async function (url) {
     try {
       return await steam.resolve(url)
     } catch (error) {
