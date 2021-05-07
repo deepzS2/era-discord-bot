@@ -67,6 +67,7 @@ const aliases = [
     "#d6d4ce",
     "https://i.imgur.com/y8py8s1.png",
     "surf_greatriver_csgofix_e",
+    "greatriver_classic",
     "classic",
     "csgofix",
   ],
@@ -95,6 +96,7 @@ const aliases = [
     "https://i.imgur.com/kQ1Dfij.jpg",
     "surf_skyscraper_v5",
     "skyscraper",
+    "skyscr",
   ],
   ["#f5cb71", "https://i.imgur.com/6omdrnb.jpg", "surf_japan_ptad_v5", "japan"],
   [
@@ -110,7 +112,7 @@ const aliases = [
     "https://i.imgur.com/C9yTfaQ.png",
     "surf_buzzkill2_zavv",
     "buzz",
-    "buzkill",
+    "buzzkill",
     "buzzkill2",
     "buzz2",
   ],
@@ -132,7 +134,7 @@ const aliases = [
   ],
   [
     "#ffd500",
-    "google.com",
+    "https://i.imgur.com/d0uoOkw.png", // TODO xd
     "surf_monster_dust2_era",
     "monster",
     "monster_dust2",
@@ -208,7 +210,7 @@ module.exports = {
   execute(message, args, client) {
     if (args.length < 1 || args.length > 2) {
       return message.reply(
-        "❌  **wrong usage**, please check **`e!help topspeed`**  😾"
+        "❌  **wrong usage**, please check **`e!help topspeed`** 😾"
       )
     }
 
@@ -217,7 +219,7 @@ module.exports = {
 
     if (!isNaN(map)) {
       return message.reply(
-        "❌  **error! `<map>`** argument needs to be map name, please check **``e!help topspeed``**  ❌"
+        "❌  **error! `<map>`** argument needs to be map name, please check **``e!help topspeed``** ❌"
       )
     }
 
@@ -225,18 +227,18 @@ module.exports = {
       count = args[1]
       if (isNaN(count)) {
         return message.reply(
-          "❌  **error! `<count>`** argument needs to be number, please check **``e!help topspeed``**  ❌"
+          "❌  **error! `<count>`** argument needs to be number, please check **``e!help topspeed``** ❌"
         )
       } else if (count > 10) {
         return message.reply(
-          "❌  **error! `<count>`** argument needs to be less than 10  ❌"
+          "❌  **error! `<count>`** argument needs to be less than 10 ❌"
         )
       }
     }
 
     let mapname = get_map_by_aliases(map)
     if (!mapname) {
-      return message.reply("map not found  😔")
+      return message.reply("map not found 😔")
     }
 
     map = mapname
@@ -246,7 +248,7 @@ module.exports = {
       host: EE_HOST,
       user: EE_USER,
       password: EE_PW,
-      database: EE_TOPSPEED_DB,
+      database: EE_DB,
     })
 
     let query_topspeed =
@@ -259,7 +261,7 @@ module.exports = {
 
     connection.connect()
     connection.query(query_topspeed, function (error, results, fields) {
-      if (error) throw error
+      if (error) console.log(error);
       if (results.length) {
         const topspeedmap_embed = new MessageEmbed()
           .setColor(get_map_color(map))

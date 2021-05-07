@@ -27,7 +27,7 @@ module.exports = {
       )
     }
 
-    if (message.channel.id != "825754706390286386") {
+    if (message.channel.id != "825754706390286386" || message.channel.id != "648501239587405829") { //era eu and sa
       return message.reply(
         "❌  **wrong usage**, this command is only available on **`#bans`** chat  😾"
       )
@@ -63,19 +63,9 @@ module.exports = {
         return message.reply(
           "❌  **error! `<time>`** argument needs to be number, please check **``e!help ban``**  ❌"
         )
-      } else if (!isNaN(name)) {
-        return message.reply(
-          "❌  **error! `<name>`** argument invalid, please check **``e!help ban``**  ❌"
-        )
-      } else if (!isNaN(steamid)) {
-        return message.reply(
-          "❌  **error! `<steamid>`** argument invalid, please check **``e!help ban``**  ❌"
-        )
-      } else if (!isNaN(reason)) {
-        return message.reply(
-          "❌  **error! `<reason>`** argument invalid, please check **``e!help ban``**  ❌"
-        )
-      }
+      } /*
+        check steamid lenght maybe 
+      */
 
       let query_check =
         "SELECT steam_id, ban_length FROM eraevil_bans WHERE steam_id = '" +

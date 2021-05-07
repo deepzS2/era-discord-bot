@@ -17,6 +17,6 @@ const config = {
   EE_RANK_DB: process.env.EE_RANK_DB,
 
   STEAM_API: process.env.STEAM_API,
-}
+};
 
 module.exports = config
