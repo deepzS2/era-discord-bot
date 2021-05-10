@@ -21,7 +21,8 @@ e!
 - e!topspeed
 - e!ban
 - e!unban
-- e!banappeal
+- e!rank
+- e!top
 
 
 ## **Very cool people <3**
