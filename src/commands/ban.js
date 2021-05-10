@@ -1,6 +1,6 @@
-const { EE_HOST, EE_BANS_USER, EE_BANS_PW, EE_BANS_DB } = require("../config")
+const { EE_HOST, EE_USER, EE_PW, EE_DB } = require("../config")
 
-const { is_admin } = require("../functions")
+const { is_admin, is_bans_chat } = require("../functions")
 const steamConverter = require("../utils/steamConverter")
 
 module.exports = {
@@ -23,32 +23,29 @@ module.exports = {
   execute(message, args, client) {
     if (message.channel.type != "dm" && !is_admin(message)) {
       return message.reply(
-        "hmmm you have no permission to use this command  👨‍🦲"
+        "hmmm you have no permission to use this command 👨‍🦲"
       )
     }
 
-    if (
-      message.channel.id != "825754706390286386" ||
-      message.channel.id != "648501239587405829"
-    ) {
+    if (!is_bans_chat(message)) {
       //era eu and sa
       return message.reply(
-        "❌  **wrong usage**, this command is only available on **`#bans`** chat  😾"
+        "❌  **wrong usage**, this command is only available on **`#bans`** chat 😾"
       )
     }
 
     if (args.length < 3) {
       return message.reply(
-        "❌  **wrong usage**, please check **`e!help ban`**  😾"
+        "❌  **wrong usage**, please check **`e!help ban`** 😾"
       )
     }
 
     var mysql = require("mysql")
     var connection = mysql.createConnection({
       host: EE_HOST,
-      user: EE_BANS_USER,
-      password: EE_BANS_PW,
-      database: EE_BANS_DB,
+      user: EE_USER,
+      password: EE_PW,
+      database: EE_DB,
     })
 
     const name = args.shift()
@@ -58,21 +55,15 @@ module.exports = {
 
     try {
       steamid = steamConverter(steamid)
-    } catch (error) {
-      // Check the steam converter file and change error messages :D
-      return message.reply(error.message)
-    } finally {
       // Better using typeof (typeof name !== "string")
       if (isNaN(time)) {
         return message.reply(
-          "❌  **error! `<time>`** argument needs to be number, please check **``e!help ban``**  ❌"
+          "❌  **error! `<time>`** argument needs to be number, please check **``e!help ban``** ❌"
         )
-      } /*
-        check steamid lenght maybe 
-      */
+      }
 
       let query_check =
-        "SELECT steam_id, ban_length FROM eraevil_bans WHERE steam_id = '" +
+        "SELECT player_steamid, ban_length FROM eraevil_bans WHERE player_steamid = '" +
         steamid +
         "'"
 
@@ -86,7 +77,7 @@ module.exports = {
         } else {
           // todo: fix this ban query (get admin name that banned)
           let query_ban =
-            "REPLACE INTO eraevil_bans (player_name, steam_id, ban_length, ban_reason, banned_by, timestamp) VALUES ( '" +
+            "REPLACE INTO eraevil_bans (player_name, player_steamid, ban_length, ban_reason, admin_name, timestamp) VALUES ( '" +
             name +
             "', '" +
             steamid +
@@ -94,7 +85,9 @@ module.exports = {
             time +
             "', '" +
             reason +
-            "', 'discord admin', CURRENT_TIMESTAMP())"
+            "', '" +
+            message.member.user.tag +
+            "', CURRENT_TIMESTAMP())"
           connection.query(query_ban, function (error, results, fields) {
             if (error) {
               console.log(query_ban)
@@ -102,9 +95,7 @@ module.exports = {
             } else {
               let bantime = time == 0 ? "permanently" : time + " minutes"
               message.reply(
-                "❌  you have banned **`" +
-                  steamid +
-                  "`** (" +
+                "❌  you have banned " + name + " (https://steamcommunity.com/profiles/" + steamid + ") (" +
                   bantime +
                   ")  ❌"
               )
@@ -113,6 +104,8 @@ module.exports = {
         }
         connection.end()
       })
+    } catch (error) {
+      return message.reply(error.message)
     }
   },
 }

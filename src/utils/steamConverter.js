@@ -14,7 +14,7 @@ module.exports = function (steam) {
   if (regex64.test(steam)) return steam
 
   if (!regexId.test(steam))
-    throw new Error("❌  **wrong usage**, please provide a valid Steam ID   😾")
+    throw new Error("❌  **wrong usage**, please provide a valid Steam ID  😾")
 
   const split = steam.split(":"),
     x = split[1],
@@ -26,5 +26,5 @@ module.exports = function (steam) {
       .plus(x)
       .toString()
 
-  throw new Error("❌  **Oops**, something went wrong converting Steam ID   😔")
+  throw new Error("❌  **Oops**, something went wrong converting Steam ID 😔")
 }

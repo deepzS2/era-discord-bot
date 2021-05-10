@@ -23,6 +23,15 @@ module.exports = {
       return 0
     }
   },
+
+  /**
+   * Returns true if we are on #bans chnanel, false otherwise.
+   * @param {Message} message - The discord message instance
+   */
+  is_bans_chat(message) {
+    return (message.channel.id === "825754706390286386" || message.channel.id === "648501239587405829");
+  },
+
   /**
    * Get user by URL
    * @param {string} url - The steam custom url

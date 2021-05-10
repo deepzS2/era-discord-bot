@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js")
-const { EE_HOST, EE_USER, EE_PW, EE_TOPSPEED_DB } = require("../config")
+const { EE_HOST, EE_USER, EE_PW, EE_DB } = require("../config")
 
 /*
 feel free to optimize this command xD
