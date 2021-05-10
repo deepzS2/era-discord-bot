@@ -45,7 +45,7 @@ module.exports = {
           console.error(err)
 
           return message.reply(
-            "**Something went wrong while connecting to database, try again later!**     :pensive: "
+            "**Something went wrong while connecting to database, try again later!**  :pensive: "
           )
         }
 
@@ -53,14 +53,14 @@ module.exports = {
           return connection.query(
             `SELECT * FROM erank WHERE name = '${steam}'`,
             (err, results, fields) =>
-              queryResponse(err, results, fields, message, connection)
+              queryResponse(err, results, fields, message, connection, client)
           )
         }
 
         connection.query(
           `SELECT * FROM erank WHERE steamid = ${id}`,
           (err, results, fields) =>
-            queryResponse(err, results, fields, message, connection)
+            queryResponse(err, results, fields, message, connection, client)
         )
       })
     } catch (error) {
@@ -69,7 +69,7 @@ module.exports = {
   },
 }
 
-async function queryResponse(error, results, fields, message, connection) {
+async function queryResponse(error, results, fields, message, connection, client) {
   try {
     const embed = new MessageEmbed()
       .setColor("#f7790a")
@@ -79,7 +79,7 @@ async function queryResponse(error, results, fields, message, connection) {
       logger({ error, client, command: "rank" })
 
       return message.reply(
-        "**Something went wrong while connecting to database, try again later!**     :pensive: "
+        "**Something went wrong while connecting to database, try again later!** :pensive: "
       )
     }
 

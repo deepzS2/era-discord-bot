@@ -11,10 +11,10 @@ const { Client, MessageEmbed } = require("discord.js")
 module.exports = function (args) {
   const { error, client, command } = args
 
-  const guild = client.guilds.get(ERA_DISCORD)
+  const guild = client.guilds.cache.get(ERA_DISCORD)
 
   if (guild) {
-    const channel = guild.channels.get(DISCORD_ERROR_CHANNEL)
+    const channel = guild.channels.cache.get(DISCORD_ERROR_CHANNEL)
 
     if (channel) {
       const embed = new MessageEmbed()
