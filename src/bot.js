@@ -5,6 +5,8 @@ const client = new Discord.Client();
 
 const { handler } = require("./handler");
 
+const Gamedig = require('gamedig');
+
 // To store commands of the bot
 client.commands = new Discord.Collection();
 
@@ -13,14 +15,35 @@ client.cooldowns = new Discord.Collection();
 
 handler(client);
 
+
 process.on('uncaughtException', function (err) {
   console.log(err);
 })
 
+
 client.on("ready", () => {
   console.log("Connected as " + client.user.tag);
-  client.user.setActivity("ON ERA/EVIL CSURF SERVERS", { type: "PLAYING" });
+
+  set_bot_activity();
+  setInterval(() => { set_bot_activity() }, 60000 * 10); // every 10 minuets
 });
+
+function set_bot_activity() {
+  console.log("Trying to query server...");
+  Gamedig.query({
+    type: 'csgo',
+    host: '148.251.11.171',
+    port: '28015',
+  }).then((state) => {
+    let str = `${state.name.replace('[Ultima CS:GO] ', '')} - (${state.players.length}/${state.maxplayers}) on ${state.map} 🏄‍♂️`;
+    console.log("Success! Setting bot activity to: " + str);
+    client.user.setActivity(str, { type: "PLAYING" });
+    //console.log(state);
+  }).catch((error) => {
+    console.log("Server is offline / query failed! \n Error: " + error);
+  });
+}
+
 
 client.on("message", (msg) => {
   // very dumb way of doing it but ok (this is for the unban voting emojis)
@@ -78,20 +101,5 @@ client.on("message", (msg) => {
   }
 });
 
-/*
-function cmd_delete(msg, arg) {
-    if (arg.length != 1 || isNaN(arg)) {
-        const embed = new Discord.MessageEmbed()
-            .setAuthor('ERA DISCORD BOT', 'https://i.imgur.com/hOuIomW.png', 'https://steamcommunity.com/groups/EraSurfCommunity')
-            .setThumbnail('https://i.imgur.com/vrRImoI.png').setColor('#fc8c03')
-            .setTitle(':information_source: Delete messages usage :information_source:').setDescription('```e!delete <n>```')
-            .addFields({ name: 'n', value: 'number of messages to be deleted', inline: true })
-        msg.author.send(embed);
-    }
-
-    msg.delete(1000);
-    msg.channel.bulkDelete(arg);
-}
-*/
 
 client.login(config.TOKEN);
