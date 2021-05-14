@@ -115,7 +115,7 @@ async function queryResponse(error, results, fields, message, connection, client
 
     return message.channel.send(embed)
   } catch (error) {
-    logger({ error, client, command: "rank" })
+    logger({ error, client, author: message.author.username, command: "rank" })
 
     return message.channel.send(
       `**Something went wrong while sending stats, please try again later**     :pensive: `

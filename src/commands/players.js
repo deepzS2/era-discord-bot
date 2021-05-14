@@ -24,11 +24,10 @@ module.exports = {
       host: '148.251.11.171',
       port: '28015',
     }).then((state) => {
-      //console.log(state);
 
+      console.log(state);
       let title = state.name.replace('[Ultima CS:GO] ', '[EU] ');
       let descr = '\n🏄‍♂️ **IP:** `connect '+state.connect+'` \n\n' + '🗺️ **Map:** `'+ state.map+'` \n\n👥 **Players online:**```\n';
-      // todo: put none if none players
 
       const embed = new Discord.MessageEmbed()
         .setColor(get_map_color(state.map))
@@ -40,7 +39,7 @@ module.exports = {
       
       message.reply(embed);
     }).catch((error) => {
-      logger({ error, message, command: "players" });
+      logger({ error, client, author: message.author.username, command: "players" });
       return message.reply("owo something went wrong! server offline or query failed 😔");
     });
 

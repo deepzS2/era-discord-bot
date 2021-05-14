@@ -5,8 +5,11 @@ module.exports = {
    */
   get_map_picture(mapname) {
     const aliasFound = aliases.find((map) => map.includes(mapname))
-    if (!aliasFound) { return 0 } 
-    else { return aliasFound[PICTURE_INDEX] }
+    if (!aliasFound) {
+      return 0
+    } else {
+      return aliasFound[PICTURE_INDEX]
+    }
   },
 
   /**
@@ -15,18 +18,24 @@ module.exports = {
    */
   get_map_color(mapname) {
     const aliasFound = aliases.find((map) => map.includes(mapname))
-    if (!aliasFound) { return 0 } 
-    else { return aliasFound[COLOR_INDEX] }
+    if (!aliasFound) {
+      return 0
+    } else {
+      return aliasFound[COLOR_INDEX]
+    }
   },
 
- /**
+  /**
    * returns map's full name
    * @param {string} mapalias - map's alias (example: ski, xdr, buzz...)
    */
   get_map_by_aliases(mapalias) {
-    const aliasFound = aliases.find((map) => map.includes(mapname))
-    if (!aliasFound) { return 0 } 
-    else { return aliasFound[MAPNAME_INDEX] }
+    const aliasFound = aliases.find((map) => map.includes(mapalias))
+    if (!aliasFound) {
+      return 0
+    } else {
+      return aliasFound[MAPNAME_INDEX]
+    }
   },
 }
 
@@ -194,4 +203,5 @@ const aliases = [
 
 const COLOR_INDEX = 0,
   PICTURE_INDEX = 1,
-  MAPNAME_INDEX = 2;
+  MAPNAME_INDEX = 2
+
